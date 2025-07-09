@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "57.832"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "161"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "562"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "191"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "711"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "4 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.558"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.899"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.729"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.216"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "1.995"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "793"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "798"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.659"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "5.774"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "465"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "632"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "4.978"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "1.251"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "434"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "2.275"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "566"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "3.920"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "395"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "156"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.579"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "20.411"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "340"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "384"
+  }
+}

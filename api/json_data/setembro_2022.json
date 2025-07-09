@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "61.703"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "151"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "575"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "162"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "758"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.320"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "2.097"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.803"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.308"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "1.465"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "754"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.082"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.886"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "6.419"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "492"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "605"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "4.911"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.334"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "206"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "2.627"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "638"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "4.522"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "387"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "130"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "2.741"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "22.466"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "468"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Setembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "396"
+  }
+}

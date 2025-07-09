@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 15 Horas.",
+    "qtd_solicitacoes": "36.192"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "93"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "400"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "88"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "490"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "12 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.347"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "880"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.054"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "796"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.564"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "757"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "544"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "826"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 12 Horas.",
+    "qtd_solicitacoes": "3.740"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "813"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "420"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "3.254"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.044"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "390"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.395"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "496"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "4 Dias e 13 Horas.",
+    "qtd_solicitacoes": "2.203"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "378"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "85"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "4 Dias e 11 Horas.",
+    "qtd_solicitacoes": "2.042"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 22 Horas.",
+    "qtd_solicitacoes": "10.532"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "255"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "306"
+  }
+}

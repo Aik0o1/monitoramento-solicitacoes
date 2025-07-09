@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "80.650"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "209"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "660"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "244"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "1.219"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.695"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "3.377"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "2.530"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.638"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "2.781"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.122"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.184"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "2.486"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "7.887"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "556"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "807"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "6.604"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.543"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 7 Horas.",
+    "qtd_solicitacoes": "798"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "2.740"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 0 Horas.",
+    "qtd_solicitacoes": "0"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "5.874"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "426"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "139"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "4.073"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "28.369"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "518"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Maio de 2025",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "526"
+  }
+}

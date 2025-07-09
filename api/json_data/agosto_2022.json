@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 0 Horas.",
+    "qtd_solicitacoes": "71.485"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "185"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "606"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "211"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "862"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "1.409"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "2.241"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "2.055"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.409"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "2.649"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "872"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.076"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "2.136"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "6.913"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "612"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "676"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "5.633"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.385"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "220"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "2.961"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "654"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "5.128"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "472"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "163"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "3.121"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "26.944"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "440"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Agosto de 2022",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "452"
+  }
+}

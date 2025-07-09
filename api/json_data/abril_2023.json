@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "56.428"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "113"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "554"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "186"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "680"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.069"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "1.841"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.750"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.163"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.171"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "797"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "955"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.961"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "5.698"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "469"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "569"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "4.958"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.150"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "403"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "2.221"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "495"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "4.199"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "435"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "155"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "2.647"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "20.003"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "0 Dias e 7 Horas.",
+    "qtd_solicitacoes": "402"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Abril de 2023",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "384"
+  }
+}

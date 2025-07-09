@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "62.699"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "183"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "467"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "205"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "806"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "929"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "2.069"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "2.082"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.306"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "2.183"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "769"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "956"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.788"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "6.152"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "444"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "481"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "4.972"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "1.258"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "472"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 16 Horas.",
+    "qtd_solicitacoes": "2.434"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "658"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "4.612"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "459"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "159"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "2.666"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "23.392"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "354"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Junho de 2022",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "443"
+  }
+}

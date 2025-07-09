@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "69.150"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 16 Horas.",
+    "qtd_solicitacoes": "184"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "627"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "203"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "904"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.410"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "2.597"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "2.061"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.435"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.474"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.067"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.130"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "2.046"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "7.024"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "600"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "664"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "5.719"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.523"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "593"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "2.478"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "593"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "3.148"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "344"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "144"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "3.292"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "25.998"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "437"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Maio de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "455"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "72.473"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "168"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "614"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "230"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "887"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.277"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "2.541"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.902"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.538"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "2.855"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.027"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.112"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "2.292"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "7.486"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "564"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "591"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "5.969"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.257"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "673"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "2.675"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "588"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "4.897"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "384"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "162"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "3.509"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "26.319"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "441"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Junho de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "515"
+  }
+}

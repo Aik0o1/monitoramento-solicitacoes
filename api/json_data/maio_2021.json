@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "65.995"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "175"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "592"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "188"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "878"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "5 Dias e 6 Horas.",
+    "qtd_solicitacoes": "2.679"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.708"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "1.888"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.494"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "2.471"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "1.375"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "828"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.483"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 13 Horas.",
+    "qtd_solicitacoes": "6.454"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "1.250"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "744"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "5.295"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.589"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "714"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "2.556"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "729"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "4.218"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "502"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "149"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "4.012"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "21.095"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "406"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Maio de 2021",
+    "tempo_medio_aberturas": "2 Dias e 21 Horas.",
+    "qtd_solicitacoes": "523"
+  }
+}

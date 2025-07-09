@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 7 Horas.",
+    "qtd_solicitacoes": "60.779"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "119"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "557"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "200"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "638"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "6 Dias e 10 Horas.",
+    "qtd_solicitacoes": "2.523"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.875"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.536"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.310"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "2.433"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.044"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "833"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.551"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "6.354"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "1.492"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "3 Dias e 16 Horas.",
+    "qtd_solicitacoes": "708"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "5.327"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "4 Dias e 3 Horas.",
+    "qtd_solicitacoes": "1.314"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "688"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "2.193"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "667"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "3.543"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "438"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "127"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "3.554"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "18.823"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "427"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 13 Horas.",
+    "qtd_solicitacoes": "505"
+  }
+}

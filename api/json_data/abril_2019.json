@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "4 Dias e 15 Horas.",
+    "qtd_solicitacoes": "26.900"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "99"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "382"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "129"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "5 Dias e 6 Horas.",
+    "qtd_solicitacoes": "477"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "12 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.607"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "5 Dias e 0 Horas.",
+    "qtd_solicitacoes": "681"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "4 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.092"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "787"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "833"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "660"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "470"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 9 Horas.",
+    "qtd_solicitacoes": "540"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "4 Dias e 19 Horas.",
+    "qtd_solicitacoes": "3.414"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "6 Dias e 16 Horas.",
+    "qtd_solicitacoes": "703"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "364"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 6 Horas.",
+    "qtd_solicitacoes": "3.336"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "5 Dias e 8 Horas.",
+    "qtd_solicitacoes": "883"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "373"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "1.313"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 8 Horas.",
+    "qtd_solicitacoes": "463"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "5 Dias e 2 Horas.",
+    "qtd_solicitacoes": "2.401"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "296"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "2 Dias e 7 Horas.",
+    "qtd_solicitacoes": "77"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "7 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.806"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 6 Horas.",
+    "qtd_solicitacoes": "3.181"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "266"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Abril de 2019",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "267"
+  }
+}

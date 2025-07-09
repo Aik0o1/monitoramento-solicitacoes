@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "74.898"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "196"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "707"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "222"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "926"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "1.454"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "2.504"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.160"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.653"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "1.713"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.029"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.168"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "2.301"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "7.509"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "593"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "664"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "6.317"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.396"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "304"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "3.039"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "660"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "5.344"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "444"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "153"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "3.453"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "27.966"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "498"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Agosto de 2023",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "525"
+  }
+}

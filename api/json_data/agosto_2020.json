@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "54.620"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "3 Dias e 12 Horas.",
+    "qtd_solicitacoes": "139"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "579"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "165"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "751"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "7 Dias e 16 Horas.",
+    "qtd_solicitacoes": "2.066"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "3 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.442"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.521"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.356"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "2.076"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.151"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "736"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.002"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "5.357"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.324"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "627"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "4.564"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "3 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.494"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "554"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "2.481"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "681"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "2.860"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "424"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "127"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "4 Dias e 0 Horas.",
+    "qtd_solicitacoes": "2.683"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "17.719"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "342"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Agosto de 2020",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "399"
+  }
+}

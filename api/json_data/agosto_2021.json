@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "0 Dias e 0 Horas.",
+    "qtd_solicitacoes": "70.617"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "146"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "630"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "242"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "823"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "4 Dias e 8 Horas.",
+    "qtd_solicitacoes": "2.340"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 21 Horas.",
+    "qtd_solicitacoes": "2.095"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "1.808"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.745"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "2.764"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.234"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "980"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.617"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "6.719"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "932"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "795"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "5.912"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.767"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "718"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "2.776"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "871"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "4.917"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "519"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "169"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "4.311"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "22.730"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "494"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Agosto de 2021",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "563"
+  }
+}

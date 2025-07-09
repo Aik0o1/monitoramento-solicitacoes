@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "64.157"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "151"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "659"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "206"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 16 Horas.",
+    "qtd_solicitacoes": "969"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "6 Dias e 4 Horas.",
+    "qtd_solicitacoes": "2.555"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.594"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.825"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.516"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "2.607"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.089"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "917"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.651"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "7.267"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.674"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "4 Dias e 10 Horas.",
+    "qtd_solicitacoes": "647"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "5.925"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.656"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "3 Dias e 21 Horas.",
+    "qtd_solicitacoes": "670"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "2.598"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "769"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "4.658"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "530"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "160"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "4.352"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "16.530"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "494"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Março de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "488"
+  }
+}

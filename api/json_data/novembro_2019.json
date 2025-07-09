@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 23 Horas.",
+    "qtd_solicitacoes": "34.615"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 15 Horas.",
+    "qtd_solicitacoes": "92"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "410"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "102"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "521"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "12 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.607"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 8 Horas.",
+    "qtd_solicitacoes": "987"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "975"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 15 Horas.",
+    "qtd_solicitacoes": "824"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.608"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 16 Horas.",
+    "qtd_solicitacoes": "624"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 13 Horas.",
+    "qtd_solicitacoes": "487"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "640"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 19 Horas.",
+    "qtd_solicitacoes": "3.767"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 22 Horas.",
+    "qtd_solicitacoes": "834"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "406"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 4 Horas.",
+    "qtd_solicitacoes": "3.308"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 21 Horas.",
+    "qtd_solicitacoes": "1.160"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 6 Horas.",
+    "qtd_solicitacoes": "451"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "1.455"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "500"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "2.297"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "359"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "76"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 3 Horas.",
+    "qtd_solicitacoes": "1.933"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 1 Horas.",
+    "qtd_solicitacoes": "8.616"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "294"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Novembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 6 Horas.",
+    "qtd_solicitacoes": "282"
+  }
+}

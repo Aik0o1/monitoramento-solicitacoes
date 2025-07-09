@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "4 Dias e 17 Horas.",
+    "qtd_solicitacoes": "29.644"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "4 Dias e 11 Horas.",
+    "qtd_solicitacoes": "110"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "408"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "144"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "4 Dias e 2 Horas.",
+    "qtd_solicitacoes": "484"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "13 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.797"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "5 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.040"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "5 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.098"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 6 Horas.",
+    "qtd_solicitacoes": "859"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "761"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 10 Horas.",
+    "qtd_solicitacoes": "766"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "4 Dias e 4 Horas.",
+    "qtd_solicitacoes": "527"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "528"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "4 Dias e 20 Horas.",
+    "qtd_solicitacoes": "4.225"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "5 Dias e 1 Horas.",
+    "qtd_solicitacoes": "873"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "413"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 11 Horas.",
+    "qtd_solicitacoes": "3.500"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "5 Dias e 10 Horas.",
+    "qtd_solicitacoes": "963"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "2 Dias e 18 Horas.",
+    "qtd_solicitacoes": "442"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "1.641"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "563"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "4 Dias e 4 Horas.",
+    "qtd_solicitacoes": "2.381"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "325"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "79"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "8 Dias e 7 Horas.",
+    "qtd_solicitacoes": "1.797"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "3.295"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "336"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Maio de 2019",
+    "tempo_medio_aberturas": "3 Dias e 18 Horas.",
+    "qtd_solicitacoes": "289"
+  }
+}

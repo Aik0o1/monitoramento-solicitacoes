@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "66.921"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "176"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "562"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "174"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "964"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.250"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "2.024"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "1.643"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.425"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "2.417"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "945"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "963"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.810"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "6.554"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "3 Dias e 11 Horas.",
+    "qtd_solicitacoes": "446"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "651"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "5.187"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.404"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "500"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "2.523"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "659"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "4.653"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "469"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "154"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "2.666"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "25.853"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "405"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Maio de 2022",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "444"
+  }
+}

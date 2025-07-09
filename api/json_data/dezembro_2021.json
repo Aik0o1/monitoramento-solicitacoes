@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "50.248"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "130"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "506"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "3 Dias e 6 Horas.",
+    "qtd_solicitacoes": "159"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "594"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "4 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.447"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.683"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.625"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.138"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "1.769"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "657"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "706"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.153"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "4.867"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "329"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "464"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "4.084"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.039"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "387"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "2.002"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "538"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "3.667"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "475"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "125"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 7 Horas.",
+    "qtd_solicitacoes": "2.221"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "17.884"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "283"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Dezembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "316"
+  }
+}

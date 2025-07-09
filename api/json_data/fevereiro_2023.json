@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "56.926"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "157"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "473"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "165"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "667"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "883"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.872"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.840"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.035"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "1.237"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "750"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "992"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.962"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "5.850"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "395"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "557"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "5.026"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.092"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "245"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "2.114"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "509"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "4.010"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "398"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "176"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "2.707"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "20.992"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "375"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "447"
+  }
+}

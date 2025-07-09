@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "67.898"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "168"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "654"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "203"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "908"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.303"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.369"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "2.067"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.503"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.215"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "903"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.092"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "2.087"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "7.219"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "472"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "604"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "5.788"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.392"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "341"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "2.728"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "528"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "4.977"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "481"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "157"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "3.195"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "24.709"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "429"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Julho de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "406"
+  }
+}

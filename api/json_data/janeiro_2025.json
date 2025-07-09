@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "84.330"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "218"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "782"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "305"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "1.302"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.485"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "5.435"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "2.331"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.799"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "3.235"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.345"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.298"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "2.695"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "9.408"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "682"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "807"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "7.182"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.863"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "955"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "2.712"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "739"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "6.430"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "467"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "205"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "3.936"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "25.429"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 7 Horas.",
+    "qtd_solicitacoes": "600"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Janeiro de 2025",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "685"
+  }
+}

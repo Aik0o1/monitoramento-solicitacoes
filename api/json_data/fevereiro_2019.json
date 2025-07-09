@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 3 Horas.",
+    "qtd_solicitacoes": "23.595"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 22 Horas.",
+    "qtd_solicitacoes": "95"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "378"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 22 Horas.",
+    "qtd_solicitacoes": "87"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 6 Horas.",
+    "qtd_solicitacoes": "441"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "8 Dias e 6 Horas.",
+    "qtd_solicitacoes": "953"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 9 Horas.",
+    "qtd_solicitacoes": "606"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 21 Horas.",
+    "qtd_solicitacoes": "886"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "776"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "746"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 16 Horas.",
+    "qtd_solicitacoes": "617"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "457"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "468"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 6 Horas.",
+    "qtd_solicitacoes": "3.375"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "7 Dias e 1 Horas.",
+    "qtd_solicitacoes": "737"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 11 Horas.",
+    "qtd_solicitacoes": "329"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "6 Dias e 15 Horas.",
+    "qtd_solicitacoes": "3.050"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 21 Horas.",
+    "qtd_solicitacoes": "852"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 17 Horas.",
+    "qtd_solicitacoes": "424"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "812"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 15 Horas.",
+    "qtd_solicitacoes": "425"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.635"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "329"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "62"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "8 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.832"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 21 Horas.",
+    "qtd_solicitacoes": "2.676"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "287"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "260"
+  }
+}

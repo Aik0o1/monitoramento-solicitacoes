@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "66.576"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "146"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "604"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "169"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "798"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.326"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.246"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.858"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.402"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "2.362"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "919"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.039"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "2.104"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "6.546"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "579"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "572"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "5.553"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.361"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "268"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "2.518"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "553"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "4.713"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "388"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "129"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "3.144"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "24.369"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "477"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Outubro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "433"
+  }
+}

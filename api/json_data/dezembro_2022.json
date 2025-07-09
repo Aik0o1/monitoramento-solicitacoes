@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "48.411"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "140"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "446"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "117"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "670"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.064"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.845"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.501"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.049"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.007"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "500"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "774"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.635"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "5.263"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "235"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "452"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "3.345"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.035"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "151"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "2.039"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "439"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "3.879"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "268"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "150"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "2.162"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "17.630"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "312"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Dezembro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "303"
+  }
+}

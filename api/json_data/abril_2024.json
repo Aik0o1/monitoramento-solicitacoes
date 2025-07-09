@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "81.137"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "209"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "686"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "214"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "988"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.558"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.996"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "2.335"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.552"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "2.940"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.158"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.250"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "2.434"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "8.322"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "607"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "752"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "7.096"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.549"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "781"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "2.941"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "743"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "5.601"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "469"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "178"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "3.924"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "28.642"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "602"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Abril de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "610"
+  }
+}

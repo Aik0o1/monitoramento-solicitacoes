@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "39.055"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "77"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "281"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "2 Dias e 18 Horas.",
+    "qtd_solicitacoes": "76"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "589"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "12 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.455"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 4 Horas.",
+    "qtd_solicitacoes": "851"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.210"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "919"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.849"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "769"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "626"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "884"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 8 Horas.",
+    "qtd_solicitacoes": "4.460"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "957"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "4 Dias e 7 Horas.",
+    "qtd_solicitacoes": "266"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "3.500"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "750"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "396"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "1.442"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "468"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "2.905"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "311"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "81"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "4 Dias e 22 Horas.",
+    "qtd_solicitacoes": "2.190"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "11.164"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "257"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Junho de 2020",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "322"
+  }
+}

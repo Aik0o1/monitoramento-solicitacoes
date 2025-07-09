@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "59.503"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "159"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "493"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "145"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "810"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.235"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "2.167"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "1.571"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.308"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.990"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "686"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "811"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.387"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "6.423"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "505"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "505"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "4.627"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "1.075"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "517"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "2.135"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "498"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "4.081"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "313"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "153"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.755"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "22.420"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "400"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Dezembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "334"
+  }
+}

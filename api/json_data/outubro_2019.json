@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 20 Horas.",
+    "qtd_solicitacoes": "30.074"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 0 Horas.",
+    "qtd_solicitacoes": "77"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "482"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 7 Horas.",
+    "qtd_solicitacoes": "94"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 9 Horas.",
+    "qtd_solicitacoes": "395"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "11 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.855"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "909"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.106"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "959"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.504"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "659"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "488"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "624"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 1 Horas.",
+    "qtd_solicitacoes": "4.336"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 10 Horas.",
+    "qtd_solicitacoes": "823"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 11 Horas.",
+    "qtd_solicitacoes": "411"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "3.203"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 6 Horas.",
+    "qtd_solicitacoes": "1.104"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 0 Horas.",
+    "qtd_solicitacoes": "370"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.637"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "454"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "2.612"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "312"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "56"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 3 Horas.",
+    "qtd_solicitacoes": "1.674"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "3.416"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "286"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Outubro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "228"
+  }
+}

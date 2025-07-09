@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "63.461"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "142"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "616"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "135"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "710"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.366"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "2.154"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.711"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.229"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "2.220"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "857"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "957"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.935"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "6.368"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "2 Dias e 7 Horas.",
+    "qtd_solicitacoes": "533"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "573"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "5.111"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.441"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "265"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "2.458"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "523"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "4.489"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "384"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "123"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "3.038"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "23.309"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "403"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Setembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "411"
+  }
+}

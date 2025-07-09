@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "81.397"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "193"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "680"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "205"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "968"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.530"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "2.896"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "2.089"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.761"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "2.763"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.024"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.117"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "2.320"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "8.418"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "607"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "609"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "6.684"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.519"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "710"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "2.692"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "625"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "5.815"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "415"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "155"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "4.006"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "30.538"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "536"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Outubro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "522"
+  }
+}

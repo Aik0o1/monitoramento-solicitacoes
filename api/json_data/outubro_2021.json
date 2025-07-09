@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "56.396"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "136"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "528"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "178"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "636"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "4 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.780"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.597"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.554"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "1.183"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.816"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "709"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "753"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.404"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "4.919"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "613"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "547"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "4.625"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "1.337"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "504"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "2.263"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "646"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 21 Horas.",
+    "qtd_solicitacoes": "3.962"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 16 Horas.",
+    "qtd_solicitacoes": "363"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "123"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "3.664"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "19.863"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "336"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Outubro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "357"
+  }
+}

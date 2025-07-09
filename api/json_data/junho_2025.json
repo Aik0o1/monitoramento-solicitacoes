@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "76.986"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "193"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "651"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "228"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.059"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.297"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "3.342"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "2.178"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.805"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "2.759"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.059"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.195"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "1 Dias e 16 Horas.",
+    "qtd_solicitacoes": "2.304"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "8.055"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "2 Dias e 18 Horas.",
+    "qtd_solicitacoes": "539"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "662"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "6.576"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.453"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 5 Horas.",
+    "qtd_solicitacoes": "781"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "2.497"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "638"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "5.931"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "417"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "165"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "4.030"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "26.147"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 6 Horas.",
+    "qtd_solicitacoes": "499"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Junho de 2025",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "526"
+  }
+}

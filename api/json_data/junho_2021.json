@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "68.177"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "151"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "567"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "220"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "868"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "4 Dias e 9 Horas.",
+    "qtd_solicitacoes": "2.661"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "3 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.869"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.875"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.587"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "2.601"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.241"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "861"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.663"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "6.782"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.423"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "702"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "5.657"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.410"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "810"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "2.522"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "707"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "4.451"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "505"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "134"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "4.050"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "21.981"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "402"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Junho de 2021",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "477"
+  }
+}

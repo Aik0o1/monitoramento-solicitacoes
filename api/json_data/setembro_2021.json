@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "62.334"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "166"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "563"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "197"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "823"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "4 Dias e 8 Horas.",
+    "qtd_solicitacoes": "2.079"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.901"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.704"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.451"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.312"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "990"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "809"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.467"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "5.987"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "672"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "846"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "5.017"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.370"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 20 Horas.",
+    "qtd_solicitacoes": "660"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "2.649"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "745"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 16 Horas.",
+    "qtd_solicitacoes": "4.122"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "535"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "144"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 7 Horas.",
+    "qtd_solicitacoes": "4.084"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "20.165"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "438"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Setembro de 2021",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "438"
+  }
+}

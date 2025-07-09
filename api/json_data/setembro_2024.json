@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "75.889"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "159"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "576"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "193"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 19 Horas.",
+    "qtd_solicitacoes": "874"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.420"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "2.740"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.941"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.451"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "2.607"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "984"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.108"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "2.090"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "7.838"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "616"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "592"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "6.115"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.458"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "631"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "2.811"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "602"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "5.303"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "434"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "138"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "3.635"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "28.544"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 5 Horas.",
+    "qtd_solicitacoes": "497"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Setembro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "532"
+  }
+}

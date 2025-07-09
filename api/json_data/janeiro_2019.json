@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 13 Horas.",
+    "qtd_solicitacoes": "20.479"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "6 Dias e 12 Horas.",
+    "qtd_solicitacoes": "74"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "300"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "106"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 12 Horas.",
+    "qtd_solicitacoes": "294"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "8 Dias e 10 Horas.",
+    "qtd_solicitacoes": "878"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 20 Horas.",
+    "qtd_solicitacoes": "538"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "6 Dias e 4 Horas.",
+    "qtd_solicitacoes": "697"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 14 Horas.",
+    "qtd_solicitacoes": "698"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 10 Horas.",
+    "qtd_solicitacoes": "656"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 23 Horas.",
+    "qtd_solicitacoes": "580"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 8 Horas.",
+    "qtd_solicitacoes": "383"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 10 Horas.",
+    "qtd_solicitacoes": "377"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 21 Horas.",
+    "qtd_solicitacoes": "3.238"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "6 Dias e 19 Horas.",
+    "qtd_solicitacoes": "597"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 19 Horas.",
+    "qtd_solicitacoes": "386"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "8 Dias e 18 Horas.",
+    "qtd_solicitacoes": "2.247"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 18 Horas.",
+    "qtd_solicitacoes": "836"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 11 Horas.",
+    "qtd_solicitacoes": "387"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 18 Horas.",
+    "qtd_solicitacoes": "938"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "437"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "6 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.638"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "241"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "64"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "9 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.292"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 17 Horas.",
+    "qtd_solicitacoes": "2.088"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "258"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Janeiro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "251"
+  }
+}

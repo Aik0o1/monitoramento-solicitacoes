@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "49.214"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "139"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "514"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "162"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "676"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "5 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.297"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.605"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.496"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 6 Horas.",
+    "qtd_solicitacoes": "983"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.899"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "764"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 7 Horas.",
+    "qtd_solicitacoes": "725"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.389"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "5.108"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "392"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "526"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "4.172"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.132"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "408"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "1.734"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "506"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "3 Dias e 21 Horas.",
+    "qtd_solicitacoes": "3.643"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "298"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "128"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 13 Horas.",
+    "qtd_solicitacoes": "2.222"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "16.661"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "291"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Janeiro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "344"
+  }
+}

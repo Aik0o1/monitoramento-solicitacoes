@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "55.497"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "138"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "459"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "139"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "673"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.249"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.997"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.516"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.242"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.979"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "754"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "777"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.512"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "5.985"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "389"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "501"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "4.235"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.030"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 8 Horas.",
+    "qtd_solicitacoes": "227"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "2.161"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "499"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "3.897"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "311"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "121"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "2.328"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "20.620"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "339"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Dezembro de 2023",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "419"
+  }
+}

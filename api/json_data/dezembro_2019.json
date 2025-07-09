@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 13 Horas.",
+    "qtd_solicitacoes": "26.210"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "59"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "332"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "85"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "285"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "14 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.244"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 20 Horas.",
+    "qtd_solicitacoes": "690"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "665"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 15 Horas.",
+    "qtd_solicitacoes": "770"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "923"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 22 Horas.",
+    "qtd_solicitacoes": "469"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "347"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "477"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 6 Horas.",
+    "qtd_solicitacoes": "2.931"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "4 Dias e 23 Horas.",
+    "qtd_solicitacoes": "593"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 10 Horas.",
+    "qtd_solicitacoes": "302"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "2.210"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "867"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "290"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.098"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "390"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 16 Horas.",
+    "qtd_solicitacoes": "1.781"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "225"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "40"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 19 Horas.",
+    "qtd_solicitacoes": "1.084"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "5 Dias e 2 Horas.",
+    "qtd_solicitacoes": "7.652"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "221"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Dezembro de 2019",
+    "tempo_medio_aberturas": "3 Dias e 9 Horas.",
+    "qtd_solicitacoes": "180"
+  }
+}

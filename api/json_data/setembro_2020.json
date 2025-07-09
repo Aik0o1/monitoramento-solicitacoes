@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "45.488"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "118"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "456"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "84"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "580"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "6 Dias e 1 Horas.",
+    "qtd_solicitacoes": "1.862"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "1.059"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "1.159"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "1.033"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.733"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "900"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "615"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "746"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "4 Dias e 1 Horas.",
+    "qtd_solicitacoes": "4.664"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.059"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 0 Horas.",
+    "qtd_solicitacoes": "513"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 14 Horas.",
+    "qtd_solicitacoes": "3.819"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.208"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 0 Horas.",
+    "qtd_solicitacoes": "504"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
+    "qtd_solicitacoes": "1.836"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "581"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 22 Horas.",
+    "qtd_solicitacoes": "2.814"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "331"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "99"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "3 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.460"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 12 Horas.",
+    "qtd_solicitacoes": "14.648"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "311"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Setembro de 2020",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "296"
+  }
+}

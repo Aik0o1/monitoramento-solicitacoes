@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "55.823"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 10 Horas.",
+    "qtd_solicitacoes": "135"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "500"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "137"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "664"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "1.180"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "2.066"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "1.540"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.134"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "1.016"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 23 Horas.",
+    "qtd_solicitacoes": "666"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "837"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.637"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "5.434"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 12 Horas.",
+    "qtd_solicitacoes": "448"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "528"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "4.645"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.164"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "207"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "2.238"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "537"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
+    "qtd_solicitacoes": "4.326"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "329"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "129"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "2.631"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
+    "qtd_solicitacoes": "20.984"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "354"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Outubro de 2022",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "357"
+  }
+}

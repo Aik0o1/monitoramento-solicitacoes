@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 17 Horas.",
+    "qtd_solicitacoes": "35.795"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 19 Horas.",
+    "qtd_solicitacoes": "107"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 21 Horas.",
+    "qtd_solicitacoes": "354"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 13 Horas.",
+    "qtd_solicitacoes": "85"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
+    "qtd_solicitacoes": "588"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "12 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.308"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 21 Horas.",
+    "qtd_solicitacoes": "822"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "1.162"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 1 Horas.",
+    "qtd_solicitacoes": "989"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.768"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "880"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "581"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "842"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 10 Horas.",
+    "qtd_solicitacoes": "4.117"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
+    "qtd_solicitacoes": "831"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 20 Horas.",
+    "qtd_solicitacoes": "362"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "3.328"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 18 Horas.",
+    "qtd_solicitacoes": "895"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 3 Horas.",
+    "qtd_solicitacoes": "396"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.309"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "2 Dias e 7 Horas.",
+    "qtd_solicitacoes": "458"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 15 Horas.",
+    "qtd_solicitacoes": "2.735"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "309"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "4 Dias e 0 Horas.",
+    "qtd_solicitacoes": "89"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "4 Dias e 20 Horas.",
+    "qtd_solicitacoes": "1.678"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "4 Dias e 8 Horas.",
+    "qtd_solicitacoes": "9.259"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "255"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Março de 2020",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "288"
+  }
+}

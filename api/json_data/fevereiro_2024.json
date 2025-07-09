@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "71.848"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "175"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "603"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 4 Horas.",
+    "qtd_solicitacoes": "185"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 19 Horas.",
+    "qtd_solicitacoes": "786"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "1.245"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "2.416"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "2.082"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.395"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 21 Horas.",
+    "qtd_solicitacoes": "2.695"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.058"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.180"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "2.285"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "6.995"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "3 Dias e 3 Horas.",
+    "qtd_solicitacoes": "514"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "605"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "6.720"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.310"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "617"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 14 Horas.",
+    "qtd_solicitacoes": "2.329"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "597"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 22 Horas.",
+    "qtd_solicitacoes": "4.823"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 20 Horas.",
+    "qtd_solicitacoes": "440"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "145"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 7 Horas.",
+    "qtd_solicitacoes": "3.446"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "1 Dias e 9 Horas.",
+    "qtd_solicitacoes": "26.225"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 5 Horas.",
+    "qtd_solicitacoes": "430"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Fevereiro de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "547"
+  }
+}

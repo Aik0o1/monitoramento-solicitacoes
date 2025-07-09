@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "78.073"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "203"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 14 Horas.",
+    "qtd_solicitacoes": "643"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "210"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 13 Horas.",
+    "qtd_solicitacoes": "989"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "1.476"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 2 Horas.",
+    "qtd_solicitacoes": "2.736"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "2.108"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.574"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 12 Horas.",
+    "qtd_solicitacoes": "2.905"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.031"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "1.091"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 0 Horas.",
+    "qtd_solicitacoes": "2.345"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 18 Horas.",
+    "qtd_solicitacoes": "7.991"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "583"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 17 Horas.",
+    "qtd_solicitacoes": "653"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 9 Horas.",
+    "qtd_solicitacoes": "6.472"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 13 Horas.",
+    "qtd_solicitacoes": "1.475"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 11 Horas.",
+    "qtd_solicitacoes": "678"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "2.902"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 0 Horas.",
+    "qtd_solicitacoes": "0"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "5.371"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 16 Horas.",
+    "qtd_solicitacoes": "369"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 18 Horas.",
+    "qtd_solicitacoes": "171"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "3.805"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "1 Dias e 5 Horas.",
+    "qtd_solicitacoes": "28.520"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 5 Horas.",
+    "qtd_solicitacoes": "555"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Agosto de 2024",
+    "tempo_medio_aberturas": "0 Dias e 10 Horas.",
+    "qtd_solicitacoes": "524"
+  }
+}

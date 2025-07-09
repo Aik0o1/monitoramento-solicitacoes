@@ -1,0 +1,142 @@
+{
+  "Brasil": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 5 Horas.",
+    "qtd_solicitacoes": "60.603"
+  },
+  "AC": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 14 Horas.",
+    "qtd_solicitacoes": "137"
+  },
+  "AL": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "535"
+  },
+  "AP": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 23 Horas.",
+    "qtd_solicitacoes": "147"
+  },
+  "AM": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 11 Horas.",
+    "qtd_solicitacoes": "850"
+  },
+  "BA": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "5 Dias e 23 Horas.",
+    "qtd_solicitacoes": "2.425"
+  },
+  "CE": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
+    "qtd_solicitacoes": "1.552"
+  },
+  "DF": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.636"
+  },
+  "ES": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 8 Horas.",
+    "qtd_solicitacoes": "1.156"
+  },
+  "GO": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "2.417"
+  },
+  "MA": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 18 Horas.",
+    "qtd_solicitacoes": "1.073"
+  },
+  "MS": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 17 Horas.",
+    "qtd_solicitacoes": "760"
+  },
+  "MT": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 15 Horas.",
+    "qtd_solicitacoes": "1.293"
+  },
+  "MG": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "6.029"
+  },
+  "PA": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 9 Horas.",
+    "qtd_solicitacoes": "1.206"
+  },
+  "PB": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "3 Dias e 10 Horas.",
+    "qtd_solicitacoes": "751"
+  },
+  "PR": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 1 Horas.",
+    "qtd_solicitacoes": "5.244"
+  },
+  "PE": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 23 Horas.",
+    "qtd_solicitacoes": "1.511"
+  },
+  "PI": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "3 Dias e 9 Horas.",
+    "qtd_solicitacoes": "659"
+  },
+  "RJ": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
+    "qtd_solicitacoes": "2.153"
+  },
+  "RN": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
+    "qtd_solicitacoes": "696"
+  },
+  "RS": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
+    "qtd_solicitacoes": "3.955"
+  },
+  "RO": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 10 Horas.",
+    "qtd_solicitacoes": "461"
+  },
+  "RR": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "131"
+  },
+  "SC": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
+    "qtd_solicitacoes": "3.728"
+  },
+  "SP": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
+    "qtd_solicitacoes": "19.258"
+  },
+  "SE": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "1 Dias e 3 Horas.",
+    "qtd_solicitacoes": "389"
+  },
+  "TO": {
+    "periodo_filtrado": "Dados de Abril de 2021",
+    "tempo_medio_aberturas": "2 Dias e 19 Horas.",
+    "qtd_solicitacoes": "451"
+  }
+}
