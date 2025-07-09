@@ -38,7 +38,7 @@ const EstadoPage = () => {
       try {
         const response = await fetch('http://localhost:5000/api/periodos');
         const result = await response.json();
-        
+
         if (result.success) {
           setPeriodosDisponiveis(result.data);
         }
@@ -54,13 +54,13 @@ const EstadoPage = () => {
     if (!selectedMonth || !selectedYear || !estado) return;
 
     setLoading(true);
-    
+
     try {
       const response = await fetch(
         `http://localhost:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
-      
+
       if (result.success) {
         setDadosEstado(result.data);
       } else {
@@ -112,7 +112,7 @@ const EstadoPage = () => {
               </Link>
               <div className="flex items-center space-x-4">
                 <img
-                  src={`/src/assets/bandeiras-brasileiras/${estado.sigla}.png`}
+                  src={`/bandeiras-brasileiras/${estado.sigla}.png`}
                   alt={`Bandeira de ${estado.nome}`}
                   className="w-12 h-8 object-cover rounded border-2 border-white/20"
                 />
@@ -122,9 +122,9 @@ const EstadoPage = () => {
                 </div>
               </div>
             </div>
-            <img 
-              src="https://www.pi.gov.br/wp-content/uploads/2024/11/logo_white.svg" 
-              alt="Governo do Piauí" 
+            <img
+              src="https://www.pi.gov.br/wp-content/uploads/2024/11/logo_white.svg"
+              alt="Governo do Piauí"
               className="header-logo"
             />
           </div>
@@ -152,21 +152,21 @@ const EstadoPage = () => {
                     <SelectValue placeholder="Selecione o mês" />
                   </SelectTrigger>
                   <SelectContent>
-                    {Object.keys(periodosDisponiveis).length > 0 && 
-                     Object.values(periodosDisponiveis).flat()
-                       .map(p => p.mes)
-                       .filter((mes, index, self) => self.indexOf(mes) === index)
-                       .sort((a, b) => Object.keys(mesesMap).indexOf(a) - Object.keys(mesesMap).indexOf(b))
-                       .map((mes) => (
-                         <SelectItem key={mes} value={mes}>
-                           {mesesMap[mes] || mes}
-                         </SelectItem>
-                       ))
+                    {Object.keys(periodosDisponiveis).length > 0 &&
+                      Object.values(periodosDisponiveis).flat()
+                        .map(p => p.mes)
+                        .filter((mes, index, self) => self.indexOf(mes) === index)
+                        .sort((a, b) => Object.keys(mesesMap).indexOf(a) - Object.keys(mesesMap).indexOf(b))
+                        .map((mes) => (
+                          <SelectItem key={mes} value={mes}>
+                            {mesesMap[mes] || mes}
+                          </SelectItem>
+                        ))
                     }
                   </SelectContent>
                 </Select>
               </div>
-              
+
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Ano
@@ -185,8 +185,8 @@ const EstadoPage = () => {
                 </Select>
               </div>
 
-              <Button 
-                onClick={buscarDados} 
+              <Button
+                onClick={buscarDados}
                 disabled={!selectedMonth || !selectedYear || loading}
                 className="w-full md:w-auto"
               >

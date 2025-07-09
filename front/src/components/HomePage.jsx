@@ -47,7 +47,7 @@ const HomePage = () => {
               <Card className="estado-card h-full cursor-pointer">
                 <CardContent className="p-4 flex flex-col items-center text-center space-y-3">
                   <img
-                    src={`/src/assets/bandeiras-brasileiras/${estado.sigla}.png`}
+                    src={`/bandeiras-brasileiras/${estado.sigla}.png`}
                     alt={`Bandeira de ${estado.nome}`}
                     className="bandeira-img"
                     onError={(e) => {
@@ -73,7 +73,7 @@ const HomePage = () => {
           <div className="inline-flex items-center space-x-2 text-sm text-muted-foreground">
             <span>Desenvolvido por</span>
             <img 
-              src={`/src/assets/logoJUCEPI.png`}
+              src={`/logoJUCEPI.png`}
               alt="Governo do Piauí" 
               className="h-10"
             />
@@ -85,4 +85,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
