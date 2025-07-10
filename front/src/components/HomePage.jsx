@@ -17,8 +17,8 @@ const HomePage = () => {
                 className="header-logo"
               />
               <div>
-                <h1 className="text-3xl font-bold text-white">Estados do Brasil</h1>
-                <p className="text-blue-100 mt-1">Sistema de Monitoramento de Solicitações</p>
+                <h1 className="text-3xl font-bold text-white">Estatísticas</h1>
+                <p className="text-blue-100 mt-1">Tempo do processo de abertura de Empresas e demais Pessoas Jurídicas</p>
               </div>
             </div>
           </div>
@@ -73,8 +73,8 @@ const HomePage = () => {
           <div className="inline-flex items-center space-x-2 text-sm text-muted-foreground">
             <span>Desenvolvido por</span>
             <img 
-              src={`/logoJUCEPI.png`}
-              alt="Governo do Piauí" 
+              src={`/logo/logoJUCEPI.png`}
+              alt="JUCEPI" 
               className="h-10"
             />
           </div>
