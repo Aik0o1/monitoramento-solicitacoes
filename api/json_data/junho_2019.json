@@ -1,142 +1,272 @@
 {
-  "Brasil": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 8 Horas.",
-    "qtd_solicitacoes": "20.803"
-  },
-  "AC": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 9 Horas.",
-    "qtd_solicitacoes": "50"
-  },
-  "AL": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 6 Horas.",
-    "qtd_solicitacoes": "293"
-  },
-  "AP": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 1 Horas.",
-    "qtd_solicitacoes": "77"
-  },
-  "AM": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 0 Horas.",
-    "qtd_solicitacoes": "379"
-  },
-  "BA": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "12 Dias e 2 Horas.",
-    "qtd_solicitacoes": "1.129"
-  },
-  "CE": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 3 Horas.",
-    "qtd_solicitacoes": "657"
-  },
-  "DF": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "5 Dias e 23 Horas.",
-    "qtd_solicitacoes": "820"
-  },
-  "ES": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "3 Dias e 2 Horas.",
-    "qtd_solicitacoes": "596"
+  "SE": {
+    "posicao": 1,
+    "tempo_medio_cp_nome": "07:42:20",
+    "tempo_medio_cp_end": "13:13:22",
+    "tempo_medio_cp_total": "14:17:27",
+    "tempo_medio_validacao_cadastral": "00:06:13",
+    "tempo_medio_tempo_de_registro": "30:43:26",
+    "media_tempo_total_para_registro": "45:07:07",
+    "qtd_processo": 215
   },
   "GO": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "1 Dias e 22 Horas.",
-    "qtd_solicitacoes": "789"
+    "posicao": 2,
+    "tempo_medio_cp_nome": "08:23:16",
+    "tempo_medio_cp_end": "13:20:35",
+    "tempo_medio_cp_total": "17:32:34",
+    "tempo_medio_validacao_cadastral": "00:07:05",
+    "tempo_medio_tempo_de_registro": "29:17:59",
+    "media_tempo_total_para_registro": "46:57:40",
+    "qtd_processo": 789
   },
-  "MA": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "3 Dias e 7 Horas.",
-    "qtd_solicitacoes": "525"
-  },
-  "MS": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 14 Horas.",
-    "qtd_solicitacoes": "323"
-  },
-  "MT": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
-    "qtd_solicitacoes": "373"
-  },
-  "MG": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 10 Horas.",
-    "qtd_solicitacoes": "3.017"
-  },
-  "PA": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 3 Horas.",
-    "qtd_solicitacoes": "671"
-  },
-  "PB": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "3 Dias e 20 Horas.",
-    "qtd_solicitacoes": "255"
-  },
-  "PR": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 4 Horas.",
-    "qtd_solicitacoes": "2.390"
-  },
-  "PE": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "3 Dias e 18 Horas.",
-    "qtd_solicitacoes": "691"
-  },
-  "PI": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
-    "qtd_solicitacoes": "303"
-  },
-  "RJ": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 22 Horas.",
-    "qtd_solicitacoes": "1.160"
-  },
-  "RN": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 8 Horas.",
-    "qtd_solicitacoes": "330"
-  },
-  "RS": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "4 Dias e 7 Horas.",
-    "qtd_solicitacoes": "1.868"
+  "AP": {
+    "posicao": 3,
+    "tempo_medio_cp_nome": "07:24:22",
+    "tempo_medio_cp_end": "10:21:12",
+    "tempo_medio_cp_total": "12:28:36",
+    "tempo_medio_validacao_cadastral": "00:06:42",
+    "tempo_medio_tempo_de_registro": "37:02:42",
+    "media_tempo_total_para_registro": "49:38:02",
+    "qtd_processo": 77
   },
   "RO": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 2 Horas.",
-    "qtd_solicitacoes": "194"
+    "posicao": 4,
+    "tempo_medio_cp_nome": "08:37:43",
+    "tempo_medio_cp_end": "16:57:23",
+    "tempo_medio_cp_total": "18:01:01",
+    "tempo_medio_validacao_cadastral": "00:06:11",
+    "tempo_medio_tempo_de_registro": "32:03:26",
+    "media_tempo_total_para_registro": "50:10:39",
+    "qtd_processo": 194
+  },
+  "AL": {
+    "posicao": 5,
+    "tempo_medio_cp_nome": "13:34:33",
+    "tempo_medio_cp_end": "14:14:52",
+    "tempo_medio_cp_total": "19:26:26",
+    "tempo_medio_validacao_cadastral": "03:09:19",
+    "tempo_medio_tempo_de_registro": "31:33:30",
+    "media_tempo_total_para_registro": "54:09:16",
+    "qtd_processo": 293
+  },
+  "RN": {
+    "posicao": 6,
+    "tempo_medio_cp_nome": "09:42:20",
+    "tempo_medio_cp_end": "22:45:47",
+    "tempo_medio_cp_total": "23:25:41",
+    "tempo_medio_validacao_cadastral": "13:46:28",
+    "tempo_medio_tempo_de_registro": "19:10:51",
+    "media_tempo_total_para_registro": "56:23:00",
+    "qtd_processo": 330
   },
   "RR": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 13 Horas.",
-    "qtd_solicitacoes": "42"
+    "posicao": 7,
+    "tempo_medio_cp_nome": "07:46:34",
+    "tempo_medio_cp_end": "37:39:47",
+    "tempo_medio_cp_total": "38:10:35",
+    "tempo_medio_validacao_cadastral": "00:44:46",
+    "tempo_medio_tempo_de_registro": "23:02:36",
+    "media_tempo_total_para_registro": "61:57:58",
+    "qtd_processo": 42
   },
-  "SC": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "6 Dias e 12 Horas.",
-    "qtd_solicitacoes": "1.257"
+  "PI": {
+    "posicao": 8,
+    "tempo_medio_cp_nome": "13:51:00",
+    "tempo_medio_cp_end": "24:32:11",
+    "tempo_medio_cp_total": "26:56:01",
+    "tempo_medio_validacao_cadastral": "00:06:07",
+    "tempo_medio_tempo_de_registro": "38:22:54",
+    "media_tempo_total_para_registro": "65:25:02",
+    "qtd_processo": 303
   },
   "SP": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "2 Dias e 17 Horas.",
-    "qtd_solicitacoes": "2.182"
+    "posicao": 9,
+    "tempo_medio_cp_nome": "10:00:00",
+    "tempo_medio_cp_end": "12:03:24",
+    "tempo_medio_cp_total": "12:03:24",
+    "tempo_medio_validacao_cadastral": "09:34:15",
+    "tempo_medio_tempo_de_registro": "44:13:24",
+    "media_tempo_total_para_registro": "65:51:04",
+    "qtd_processo": 2182
   },
-  "SE": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "1 Dias e 21 Horas.",
-    "qtd_solicitacoes": "215"
+  "RJ": {
+    "posicao": 10,
+    "tempo_medio_cp_nome": "01:54:43",
+    "tempo_medio_cp_end": "30:25:20",
+    "tempo_medio_cp_total": "30:25:20",
+    "tempo_medio_validacao_cadastral": "00:40:46",
+    "tempo_medio_tempo_de_registro": "39:31:35",
+    "media_tempo_total_para_registro": "70:37:42",
+    "qtd_processo": 1160
+  },
+  "MT": {
+    "posicao": 11,
+    "tempo_medio_cp_nome": "03:23:32",
+    "tempo_medio_cp_end": "25:30:49",
+    "tempo_medio_cp_total": "25:51:28",
+    "tempo_medio_validacao_cadastral": "00:13:01",
+    "tempo_medio_tempo_de_registro": "44:49:05",
+    "media_tempo_total_para_registro": "70:53:35",
+    "qtd_processo": 373
+  },
+  "ES": {
+    "posicao": 12,
+    "tempo_medio_cp_nome": "09:58:47",
+    "tempo_medio_cp_end": "18:26:43",
+    "tempo_medio_cp_total": "21:08:16",
+    "tempo_medio_validacao_cadastral": "00:34:06",
+    "tempo_medio_tempo_de_registro": "52:59:56",
+    "media_tempo_total_para_registro": "74:42:19",
+    "qtd_processo": 596
   },
   "TO": {
-    "periodo_filtrado": "Dados de Junho de 2019",
-    "tempo_medio_aberturas": "3 Dias e 5 Horas.",
-    "qtd_solicitacoes": "217"
+    "posicao": 13,
+    "tempo_medio_cp_nome": "20:38:23",
+    "tempo_medio_cp_end": "16:06:55",
+    "tempo_medio_cp_total": "25:10:08",
+    "tempo_medio_validacao_cadastral": "00:07:45",
+    "tempo_medio_tempo_de_registro": "51:51:06",
+    "media_tempo_total_para_registro": "77:09:00",
+    "qtd_processo": 217
+  },
+  "MA": {
+    "posicao": 14,
+    "tempo_medio_cp_nome": "07:10:13",
+    "tempo_medio_cp_end": "23:37:40",
+    "tempo_medio_cp_total": "24:48:49",
+    "tempo_medio_validacao_cadastral": "33:43:51",
+    "tempo_medio_tempo_de_registro": "20:53:36",
+    "media_tempo_total_para_registro": "79:26:16",
+    "qtd_processo": 525
+  },
+  "PE": {
+    "posicao": 15,
+    "tempo_medio_cp_nome": "12:36:28",
+    "tempo_medio_cp_end": "40:27:47",
+    "tempo_medio_cp_total": "40:27:47",
+    "tempo_medio_validacao_cadastral": "00:16:49",
+    "tempo_medio_tempo_de_registro": "49:59:29",
+    "media_tempo_total_para_registro": "90:44:07",
+    "qtd_processo": 691
+  },
+  "PB": {
+    "posicao": 16,
+    "tempo_medio_cp_nome": "11:43:29",
+    "tempo_medio_cp_end": "50:51:44",
+    "tempo_medio_cp_total": "51:57:08",
+    "tempo_medio_validacao_cadastral": "00:12:52",
+    "tempo_medio_tempo_de_registro": "40:33:38",
+    "media_tempo_total_para_registro": "92:43:39",
+    "qtd_processo": 255
+  },
+  "AM": {
+    "posicao": 17,
+    "tempo_medio_cp_nome": "13:17:05",
+    "tempo_medio_cp_end": "32:59:42",
+    "tempo_medio_cp_total": "40:08:18",
+    "tempo_medio_validacao_cadastral": "00:08:12",
+    "tempo_medio_tempo_de_registro": "56:20:48",
+    "media_tempo_total_para_registro": "96:37:19",
+    "qtd_processo": 379
+  },
+  "PA": {
+    "posicao": 18,
+    "tempo_medio_cp_nome": "00:00:00",
+    "tempo_medio_cp_end": "41:05:48",
+    "tempo_medio_cp_total": "41:05:48",
+    "tempo_medio_validacao_cadastral": "08:56:37",
+    "tempo_medio_tempo_de_registro": "49:01:18",
+    "media_tempo_total_para_registro": "99:03:44",
+    "qtd_processo": 671
+  },
+  "CE": {
+    "posicao": 19,
+    "tempo_medio_cp_nome": "14:17:58",
+    "tempo_medio_cp_end": "21:11:11",
+    "tempo_medio_cp_total": "31:49:44",
+    "tempo_medio_validacao_cadastral": "00:17:21",
+    "tempo_medio_tempo_de_registro": "67:32:13",
+    "media_tempo_total_para_registro": "99:39:19",
+    "qtd_processo": 657
+  },
+  "PR": {
+    "posicao": 20,
+    "tempo_medio_cp_nome": "22:06:22",
+    "tempo_medio_cp_end": "18:10:01",
+    "tempo_medio_cp_total": "28:30:19",
+    "tempo_medio_validacao_cadastral": "01:29:36",
+    "tempo_medio_tempo_de_registro": "70:35:26",
+    "media_tempo_total_para_registro": "100:35:22",
+    "qtd_processo": 2390
+  },
+  "RS": {
+    "posicao": 21,
+    "tempo_medio_cp_nome": "04:23:27",
+    "tempo_medio_cp_end": "34:37:09",
+    "tempo_medio_cp_total": "34:52:53",
+    "tempo_medio_validacao_cadastral": "00:48:38",
+    "tempo_medio_tempo_de_registro": "67:48:51",
+    "media_tempo_total_para_registro": "103:30:24",
+    "qtd_processo": 1868
+  },
+  "AC": {
+    "posicao": 22,
+    "tempo_medio_cp_nome": "07:33:17",
+    "tempo_medio_cp_end": "34:16:02",
+    "tempo_medio_cp_total": "34:16:17",
+    "tempo_medio_validacao_cadastral": "04:50:33",
+    "tempo_medio_tempo_de_registro": "66:41:05",
+    "media_tempo_total_para_registro": "105:47:56",
+    "qtd_processo": 50
+  },
+  "MG": {
+    "posicao": 23,
+    "tempo_medio_cp_nome": "08:23:45",
+    "tempo_medio_cp_end": "23:58:01",
+    "tempo_medio_cp_total": "27:10:46",
+    "tempo_medio_validacao_cadastral": "37:21:43",
+    "tempo_medio_tempo_de_registro": "41:39:14",
+    "media_tempo_total_para_registro": "106:11:45",
+    "qtd_processo": 3017
+  },
+  "MS": {
+    "posicao": 24,
+    "tempo_medio_cp_nome": "11:26:52",
+    "tempo_medio_cp_end": "47:05:48",
+    "tempo_medio_cp_total": "50:40:56",
+    "tempo_medio_validacao_cadastral": "00:25:07",
+    "tempo_medio_tempo_de_registro": "59:52:45",
+    "media_tempo_total_para_registro": "110:58:50",
+    "qtd_processo": 323
+  },
+  "DF": {
+    "posicao": 25,
+    "tempo_medio_cp_nome": "03:14:49",
+    "tempo_medio_cp_end": "32:01:07",
+    "tempo_medio_cp_total": "33:16:51",
+    "tempo_medio_validacao_cadastral": "00:10:00",
+    "tempo_medio_tempo_de_registro": "109:52:05",
+    "media_tempo_total_para_registro": "143:18:57",
+    "qtd_processo": 820
+  },
+  "SC": {
+    "posicao": 26,
+    "tempo_medio_cp_nome": "08:36:39",
+    "tempo_medio_cp_end": "114:58:42",
+    "tempo_medio_cp_total": "114:58:42",
+    "tempo_medio_validacao_cadastral": "00:43:51",
+    "tempo_medio_tempo_de_registro": "40:27:12",
+    "media_tempo_total_para_registro": "156:09:46",
+    "qtd_processo": 1257
+  },
+  "BA": {
+    "posicao": 27,
+    "tempo_medio_cp_nome": "147:47:33",
+    "tempo_medio_cp_end": "125:29:36",
+    "tempo_medio_cp_total": "212:45:23",
+    "tempo_medio_validacao_cadastral": "23:27:57",
+    "tempo_medio_tempo_de_registro": "54:21:37",
+    "media_tempo_total_para_registro": "290:34:57",
+    "qtd_processo": 1129
   }
 }

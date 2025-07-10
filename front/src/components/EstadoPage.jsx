@@ -1,15 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { ArrowLeft, Clock, FileText, Calendar, TrendingUp } from 'lucide-react';
-import { getEstadoBySigla } from '../data/estados';
+import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  ArrowLeft,
+  Clock,
+  FileText,
+  Calendar,
+  TrendingUp,
+  Trophy,
+} from "lucide-react";
+import { getEstadoBySigla } from "../data/estados";
 
 const EstadoPage = () => {
   const { siglaEstado } = useParams();
-  const [selectedMonth, setSelectedMonth] = useState('');
-  const [selectedYear, setSelectedYear] = useState('');
+  const [selectedMonth, setSelectedMonth] = useState("");
+  const [selectedYear, setSelectedYear] = useState("");
   const [dadosEstado, setDadosEstado] = useState(null);
   const [loading, setLoading] = useState(false);
   const [periodosDisponiveis, setPeriodosDisponiveis] = useState({});
@@ -18,32 +31,33 @@ const EstadoPage = () => {
 
   // Mapeamento de meses
   const mesesMap = {
-    'janeiro': 'Janeiro',
-    'fevereiro': 'Fevereiro',
-    'março': 'Março',
-    'abril': 'Abril',
-    'maio': 'Maio',
-    'junho': 'Junho',
-    'julho': 'Julho',
-    'agosto': 'Agosto',
-    'setembro': 'Setembro',
-    'outubro': 'Outubro',
-    'novembro': 'Novembro',
-    'dezembro': 'Dezembro'
+    janeiro: "Janeiro",
+    fevereiro: "Fevereiro",
+    março: "Março",
+    marco: "Março",
+    abril: "Abril",
+    maio: "Maio",
+    junho: "Junho",
+    julho: "Julho",
+    agosto: "Agosto",
+    setembro: "Setembro",
+    outubro: "Outubro",
+    novembro: "Novembro",
+    dezembro: "Dezembro",
   };
 
   // Carregar períodos disponíveis
   useEffect(() => {
     const carregarPeriodos = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/periodos');
+        const response = await fetch("http://localhost:5000/api/periodos");
         const result = await response.json();
 
         if (result.success) {
           setPeriodosDisponiveis(result.data);
         }
       } catch (error) {
-        console.error('Erro ao carregar períodos:', error);
+        console.error("Erro ao carregar períodos:", error);
       }
     };
 
@@ -64,11 +78,11 @@ const EstadoPage = () => {
       if (result.success) {
         setDadosEstado(result.data);
       } else {
-        console.error('Erro na API:', result.error);
+        console.error("Erro na API:", result.error);
         setDadosEstado(null);
       }
     } catch (error) {
-      console.error('Erro ao buscar dados:', error);
+      console.error("Erro ao buscar dados:", error);
       setDadosEstado(null);
     } finally {
       setLoading(false);
@@ -85,7 +99,9 @@ const EstadoPage = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">Estado não encontrado</h1>
+          <h1 className="text-2xl font-bold text-foreground mb-4">
+            Estado não encontrado
+          </h1>
           <Link to="/">
             <Button>
               <ArrowLeft className="w-4 h-4 mr-2" />
@@ -105,7 +121,11 @@ const EstadoPage = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link to="/">
-                <Button variant="ghost" size="sm" className="text-white hover:bg-white/10">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-white hover:bg-white/10"
+                >
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   Voltar
                 </Button>
@@ -117,8 +137,12 @@ const EstadoPage = () => {
                   className="w-12 h-8 object-cover rounded border-2 border-white/20"
                 />
                 <div>
-                  <h1 className="text-2xl font-bold text-white">{estado.nome}</h1>
-                  <p className="text-blue-100">{estado.sigla} • {estado.regiao}</p>
+                  <h1 className="text-2xl font-bold text-white">
+                    {estado.nome}
+                  </h1>
+                  <p className="text-blue-100">
+                    {estado.sigla} • {estado.regiao}
+                  </p>
                 </div>
               </div>
             </div>
@@ -153,16 +177,22 @@ const EstadoPage = () => {
                   </SelectTrigger>
                   <SelectContent>
                     {Object.keys(periodosDisponiveis).length > 0 &&
-                      Object.values(periodosDisponiveis).flat()
-                        .map(p => p.mes)
-                        .filter((mes, index, self) => self.indexOf(mes) === index)
-                        .sort((a, b) => Object.keys(mesesMap).indexOf(a) - Object.keys(mesesMap).indexOf(b))
+                      Object.values(periodosDisponiveis)
+                        .flat()
+                        .map((p) => p.mes)
+                        .filter(
+                          (mes, index, self) => self.indexOf(mes) === index
+                        )
+                        .sort(
+                          (a, b) =>
+                            Object.keys(mesesMap).indexOf(a) -
+                            Object.keys(mesesMap).indexOf(b)
+                        )
                         .map((mes) => (
                           <SelectItem key={mes} value={mes}>
                             {mesesMap[mes] || mes}
                           </SelectItem>
-                        ))
-                    }
+                        ))}
                   </SelectContent>
                 </Select>
               </div>
@@ -176,11 +206,13 @@ const EstadoPage = () => {
                     <SelectValue placeholder="Selecione o ano" />
                   </SelectTrigger>
                   <SelectContent>
-                    {Object.keys(periodosDisponiveis).sort((a, b) => a - b).map((ano) => (
-                      <SelectItem key={ano} value={ano}>
-                        {ano}
-                      </SelectItem>
-                    ))}
+                    {Object.keys(periodosDisponiveis)
+                      .sort((a, b) => a - b)
+                      .map((ano) => (
+                        <SelectItem key={ano} value={ano}>
+                          {ano}
+                        </SelectItem>
+                      ))}
                   </SelectContent>
                 </Select>
               </div>
@@ -190,7 +222,7 @@ const EstadoPage = () => {
                 disabled={!selectedMonth || !selectedYear || loading}
                 className="w-full md:w-auto"
               >
-                {loading ? 'Carregando...' : 'Buscar Dados'}
+                {loading ? "Carregando..." : "Buscar Dados"}
               </Button>
             </div>
           </CardContent>
@@ -202,13 +234,13 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <Clock className="w-5 h-5 text-secondary" />
-                  <span>Tempo Médio de Abertura</span>
+                  <Trophy className="w-5 h-5 text-[#034ea2]" />
+                  <span>Posição no Ranking</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-secondary mb-2">
-                  {dadosEstado.tempo_medio_aberturas}
+                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                  {dadosEstado.posicao}
                 </div>
                 <p className="text-sm text-muted-foreground">
                   {dadosEstado.periodo_filtrado}
@@ -219,13 +251,81 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <FileText className="w-5 h-5 text-accent" />
-                  <span>Quantidade de Solicitações</span>
+                  <FileText className="w-5 h-5 text-[#034ea2]" />
+                  <span>Quantidade de solicitações</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-accent mb-2">
-                  {dadosEstado.qtd_solicitacoes}
+                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                  {dadosEstado.qtd_processo}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {dadosEstado.periodo_filtrado}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="metric-card">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center space-x-2 text-lg">
+                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <span>Média de Tempo Total para Registro</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                  {dadosEstado.media_tempo_total_para_registro}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {dadosEstado.periodo_filtrado}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="metric-card">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center space-x-2 text-lg">
+                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <span>Tempo Médio de Abertura</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                  {dadosEstado.tempo_medio_tempo_de_registro}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {dadosEstado.periodo_filtrado}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="metric-card">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center space-x-2 text-lg">
+                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <span>Tempo Médio de Consulta de Nome</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                  {dadosEstado.tempo_medio_cp_nome}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {dadosEstado.periodo_filtrado}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="metric-card">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center space-x-2 text-lg">
+                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <span>Tempo Médio de Consulta de Endereço</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                  {dadosEstado.tempo_medio_cp_end}
                 </div>
                 <p className="text-sm text-muted-foreground">
                   {dadosEstado.periodo_filtrado}
@@ -265,4 +365,3 @@ const EstadoPage = () => {
 };
 
 export default EstadoPage;
-
