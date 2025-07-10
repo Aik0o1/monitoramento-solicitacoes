@@ -34,7 +34,6 @@ const EstadoPage = () => {
     janeiro: "Janeiro",
     fevereiro: "Fevereiro",
     março: "Março",
-    marco: "Março",
     abril: "Abril",
     maio: "Maio",
     junho: "Junho",
@@ -50,7 +49,7 @@ const EstadoPage = () => {
   useEffect(() => {
     const carregarPeriodos = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/periodos");
+        const response = await fetch("http://10.40.25.162:5000/api/periodos");
         const result = await response.json();
 
         if (result.success) {
@@ -71,7 +70,7 @@ const EstadoPage = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
+        `http://10.40.25.162:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
 
@@ -234,12 +233,12 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <Trophy className="w-5 h-5 text-[#034ea2]" />
+                  <Trophy className="w-5 h-5 text-[#007932]" />
                   <span>Posição no Ranking</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                <div className="text-3xl font-bold text-[#007932] mb-2">
                   {dadosEstado.posicao}
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -268,12 +267,12 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <Clock className="w-5 h-5 text-[#fdb913]" />
                   <span>Média de Tempo Total para Registro</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                <div className="text-3xl font-bold text-[#fdb913] mb-2">
                   {dadosEstado.media_tempo_total_para_registro}
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -285,12 +284,12 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <Clock className="w-5 h-5 text-[#fdb913]" />
                   <span>Tempo Médio de Abertura</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                <div className="text-3xl font-bold text-[#fdb913] mb-2">
                   {dadosEstado.tempo_medio_tempo_de_registro}
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -302,12 +301,12 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <Clock className="w-5 h-5 text-[#fdb913]" />
                   <span>Tempo Médio de Consulta de Nome</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                <div className="text-3xl font-bold text-[#fdb913] mb-2">
                   {dadosEstado.tempo_medio_cp_nome}
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -319,12 +318,12 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <Clock className="w-5 h-5 text-[#034ea2]" />
+                  <Clock className="w-5 h-5 text-[#fdb913]" />
                   <span>Tempo Médio de Consulta de Endereço</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                <div className="text-3xl font-bold text-[#fdb913] mb-2">
                   {dadosEstado.tempo_medio_cp_end}
                 </div>
                 <p className="text-sm text-muted-foreground">
