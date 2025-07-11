@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Search } from "lucide-react";
 import { estados, formatNomeParaUrl } from "../data/estados";
 
 const HomePage = () => {
+  const [filtroEstado, setFiltroEstado] = useState("");
+
+  // Filtrar estados baseado no texto digitado
+  const estadosFiltrados = estados.filter((estado) =>
+    estado.nome.toLowerCase().includes(filtroEstado.toLowerCase()) ||
+    estado.sigla.toLowerCase().includes(filtroEstado.toLowerCase())
+  );
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
@@ -34,15 +44,27 @@ const HomePage = () => {
           <h2 className="text-2xl font-semibold text-foreground mb-2">
             Selecione um Estado
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground mb-6">
             Clique em um estado para visualizar as informações de tempo médio e
             quantidade de solicitações.
           </p>
+
+          {/* Filtro de Estados */}
+          <div className="relative max-w-md mb-6">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+            <Input
+              type="text"
+              placeholder="Buscar estado por nome ou sigla..."
+              value={filtroEstado}
+              onChange={(e) => setFiltroEstado(e.target.value)}
+              className="pl-10"
+            />
+          </div>
         </div>
 
         {/* Estados Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {estados.map((estado) => (
+          {estadosFiltrados.map((estado) => (
             <Link
               key={estado.sigla}
               to={`/${estado.sigla.toLowerCase()}`}
@@ -72,6 +94,15 @@ const HomePage = () => {
           ))}
         </div>
 
+        {/* Mensagem quando não há resultados */}
+        {estadosFiltrados.length === 0 && filtroEstado && (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground">
+              Nenhum estado encontrado para "{filtroEstado}"
+            </p>
+          </div>
+        )}
+
         {/* Footer Info */}
         <div className="mt-12 text-center">
           <div className="inline-flex items-center space-x-2 text-sm text-muted-foreground">
@@ -97,3 +128,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+

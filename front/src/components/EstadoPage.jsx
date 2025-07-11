@@ -166,7 +166,7 @@ const EstadoPage = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Mês
@@ -216,15 +216,8 @@ const EstadoPage = () => {
                   </SelectContent>
                 </Select>
               </div>
-
-              <Button
-                onClick={buscarDados}
-                disabled={!selectedMonth || !selectedYear || loading}
-                className="w-full md:w-auto"
-              >
-                {loading ? "Carregando..." : "Buscar Dados"}
-              </Button>
             </div>
+            
           </CardContent>
         </Card>
 
@@ -365,3 +358,4 @@ const EstadoPage = () => {
 };
 
 export default EstadoPage;
+
