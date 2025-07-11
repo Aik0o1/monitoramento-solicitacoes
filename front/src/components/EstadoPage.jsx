@@ -34,6 +34,7 @@ const EstadoPage = () => {
     janeiro: "Janeiro",
     fevereiro: "Fevereiro",
     março: "Março",
+    marco: "Março",
     abril: "Abril",
     maio: "Maio",
     junho: "Junho",
