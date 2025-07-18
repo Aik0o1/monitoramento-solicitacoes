@@ -78,6 +78,8 @@ def get_dados_estado(sigla_estado):
     """Retorna dados de um estado específico para um período"""
     try:
         mes = request.args.get('mes')
+        if mes == "março": mes = "marco"
+        
         ano = request.args.get('ano')
         
         if not mes or not ano:
@@ -122,6 +124,8 @@ def get_todos_dados():
     """Retorna dados de todos os estados para um período"""
     try:
         mes = request.args.get('mes')
+        if mes == "março": mes = "marco"
+        
         ano = request.args.get('ano')
         
         if not mes or not ano:
