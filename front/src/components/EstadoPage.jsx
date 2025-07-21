@@ -29,6 +29,8 @@ const EstadoPage = () => {
 
   const estado = getEstadoBySigla(siglaEstado);
 
+  const API_BASE_URL = import.meta.env.API_BASE_URL;
+
   // Mapeamento de meses
   const mesesMap = {
     janeiro: "Janeiro",
@@ -217,7 +219,6 @@ const EstadoPage = () => {
                 </Select>
               </div>
             </div>
-            
           </CardContent>
         </Card>
 
@@ -228,7 +229,12 @@ const EstadoPage = () => {
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
                   <Trophy className="w-5 h-5 text-[#007932]" />
-                  <span>Posição no Ranking</span>
+                  <span>
+                    Ranking Geral - Tempo de Abertura de Empresas{" "}
+                    <span className="text-sm text-muted-foreground align-super">
+                      1
+                    </span>
+                  </span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -244,13 +250,18 @@ const EstadoPage = () => {
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
-                  <FileText className="w-5 h-5 text-[#034ea2]" />
-                  <span>Quantidade de solicitações</span>
+                  <Trophy className="w-5 h-5 text-[#007932]" />
+                  <span>
+                    Ranking - Tempo de Registro para Abertura de Empresas{" "}
+                    <span className="text-sm text-muted-foreground align-super">
+                      2
+                    </span>
+                  </span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold text-[#034ea2] mb-2">
-                  {dadosEstado.qtd_processo}
+                <div className="text-3xl font-bold text-[#007932] mb-2">
+                  {dadosEstado.posicao_registro}
                 </div>
                 <p className="text-sm text-muted-foreground">
                   {dadosEstado.periodo_filtrado}
@@ -325,6 +336,23 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="metric-card">
+              <CardHeader className="pb-3">
+                <CardTitle className="flex items-center space-x-2 text-lg">
+                  <FileText className="w-5 h-5 text-[#034ea2]" />
+                  <span>Quantidade de solicitações</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold text-[#034ea2] mb-2">
+                  {dadosEstado.qtd_processo}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {dadosEstado.periodo_filtrado}
+                </p>
+              </CardContent>
+            </Card>
           </div>
         )}
 
@@ -352,10 +380,24 @@ const EstadoPage = () => {
             </CardContent>
           </Card>
         )}
+
+        {/* Observações */}
+        {dadosEstado && (
+          <div className="text-muted-foreground text-sm mt-6 space-y-1">
+            <p>
+              <span className="align-super text-[10px]">1 </span>
+              Consulta Prévia no Município + Tempo de Registro na Junta
+              Comercial
+            </p>
+            <p>
+              <span className="align-super text-[10px]">2 </span>
+              Tempo de Registro na Junta Comercial
+            </p>
+          </div>
+        )}
       </main>
     </div>
   );
 };
 
 export default EstadoPage;
-

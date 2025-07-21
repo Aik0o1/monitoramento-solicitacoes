@@ -7,7 +7,8 @@
     "tempo_medio_validacao_cadastral": "00:00:47",
     "tempo_medio_tempo_de_registro": "00:43:43",
     "media_tempo_total_para_registro": "06:19:54",
-    "qtd_processo": 429
+    "qtd_processo": 429,
+    "posicao_registro": 2
   },
   "BA": {
     "posicao": 2,
@@ -17,7 +18,8 @@
     "tempo_medio_validacao_cadastral": "00:25:58",
     "tempo_medio_tempo_de_registro": "01:00:36",
     "media_tempo_total_para_registro": "09:54:48",
-    "qtd_processo": 1303
+    "qtd_processo": 1303,
+    "posicao_registro": 3
   },
   "PI": {
     "posicao": 3,
@@ -27,7 +29,8 @@
     "tempo_medio_validacao_cadastral": "00:01:26",
     "tempo_medio_tempo_de_registro": "00:22:43",
     "media_tempo_total_para_registro": "12:02:17",
-    "qtd_processo": 341
+    "qtd_processo": 341,
+    "posicao_registro": 1
   },
   "PR": {
     "posicao": 4,
@@ -37,7 +40,8 @@
     "tempo_medio_validacao_cadastral": "00:04:21",
     "tempo_medio_tempo_de_registro": "02:14:54",
     "media_tempo_total_para_registro": "12:05:41",
-    "qtd_processo": 5788
+    "qtd_processo": 5788,
+    "posicao_registro": 6
   },
   "RR": {
     "posicao": 5,
@@ -47,7 +51,8 @@
     "tempo_medio_validacao_cadastral": "00:02:02",
     "tempo_medio_tempo_de_registro": "02:58:59",
     "media_tempo_total_para_registro": "12:53:41",
-    "qtd_processo": 157
+    "qtd_processo": 157,
+    "posicao_registro": 8
   },
   "ES": {
     "posicao": 6,
@@ -57,7 +62,8 @@
     "tempo_medio_validacao_cadastral": "00:00:58",
     "tempo_medio_tempo_de_registro": "06:18:59",
     "media_tempo_total_para_registro": "13:23:30",
-    "qtd_processo": 1503
+    "qtd_processo": 1503,
+    "posicao_registro": 15
   },
   "AC": {
     "posicao": 7,
@@ -67,7 +73,8 @@
     "tempo_medio_validacao_cadastral": "00:01:57",
     "tempo_medio_tempo_de_registro": "04:37:15",
     "media_tempo_total_para_registro": "13:39:29",
-    "qtd_processo": 168
+    "qtd_processo": 168,
+    "posicao_registro": 12
   },
   "RS": {
     "posicao": 8,
@@ -77,7 +84,8 @@
     "tempo_medio_validacao_cadastral": "00:01:05",
     "tempo_medio_tempo_de_registro": "05:11:51",
     "media_tempo_total_para_registro": "14:36:08",
-    "qtd_processo": 4977
+    "qtd_processo": 4977,
+    "posicao_registro": 13
   },
   "MS": {
     "posicao": 9,
@@ -87,7 +95,8 @@
     "tempo_medio_validacao_cadastral": "00:02:09",
     "tempo_medio_tempo_de_registro": "03:37:12",
     "media_tempo_total_para_registro": "15:39:11",
-    "qtd_processo": 1092
+    "qtd_processo": 1092,
+    "posicao_registro": 9
   },
   "MT": {
     "posicao": 10,
@@ -97,7 +106,8 @@
     "tempo_medio_validacao_cadastral": "00:01:13",
     "tempo_medio_tempo_de_registro": "04:08:57",
     "media_tempo_total_para_registro": "15:52:58",
-    "qtd_processo": 2087
+    "qtd_processo": 2087,
+    "posicao_registro": 10
   },
   "TO": {
     "posicao": 11,
@@ -107,7 +117,8 @@
     "tempo_medio_validacao_cadastral": "00:01:17",
     "tempo_medio_tempo_de_registro": "04:34:39",
     "media_tempo_total_para_registro": "15:56:04",
-    "qtd_processo": 406
+    "qtd_processo": 406,
+    "posicao_registro": 11
   },
   "MA": {
     "posicao": 12,
@@ -117,7 +128,8 @@
     "tempo_medio_validacao_cadastral": "00:04:37",
     "tempo_medio_tempo_de_registro": "02:03:52",
     "media_tempo_total_para_registro": "16:11:42",
-    "qtd_processo": 903
+    "qtd_processo": 903,
+    "posicao_registro": 5
   },
   "PE": {
     "posicao": 13,
@@ -127,7 +139,8 @@
     "tempo_medio_validacao_cadastral": "00:10:15",
     "tempo_medio_tempo_de_registro": "02:55:16",
     "media_tempo_total_para_registro": "16:25:41",
-    "qtd_processo": 1391
+    "qtd_processo": 1391,
+    "posicao_registro": 7
   },
   "DF": {
     "posicao": 14,
@@ -137,7 +150,8 @@
     "tempo_medio_validacao_cadastral": "00:00:56",
     "tempo_medio_tempo_de_registro": "09:07:26",
     "media_tempo_total_para_registro": "16:58:42",
-    "qtd_processo": 2067
+    "qtd_processo": 2067,
+    "posicao_registro": 18
   },
   "AM": {
     "posicao": 15,
@@ -147,7 +161,8 @@
     "tempo_medio_validacao_cadastral": "00:02:12",
     "tempo_medio_tempo_de_registro": "10:09:33",
     "media_tempo_total_para_registro": "18:12:41",
-    "qtd_processo": 908
+    "qtd_processo": 908,
+    "posicao_registro": 20
   },
   "RO": {
     "posicao": 16,
@@ -157,7 +172,8 @@
     "tempo_medio_validacao_cadastral": "00:01:05",
     "tempo_medio_tempo_de_registro": "06:32:20",
     "media_tempo_total_para_registro": "19:05:29",
-    "qtd_processo": 481
+    "qtd_processo": 481,
+    "posicao_registro": 16
   },
   "AP": {
     "posicao": 17,
@@ -167,7 +183,8 @@
     "tempo_medio_validacao_cadastral": "00:02:00",
     "tempo_medio_tempo_de_registro": "08:57:52",
     "media_tempo_total_para_registro": "22:56:48",
-    "qtd_processo": 203
+    "qtd_processo": 203,
+    "posicao_registro": 17
   },
   "CE": {
     "posicao": 18,
@@ -177,7 +194,8 @@
     "tempo_medio_validacao_cadastral": "00:02:20",
     "tempo_medio_tempo_de_registro": "09:56:25",
     "media_tempo_total_para_registro": "23:01:33",
-    "qtd_processo": 2369
+    "qtd_processo": 2369,
+    "posicao_registro": 19
   },
   "PB": {
     "posicao": 19,
@@ -187,7 +205,8 @@
     "tempo_medio_validacao_cadastral": "00:01:49",
     "tempo_medio_tempo_de_registro": "12:11:27",
     "media_tempo_total_para_registro": "24:17:21",
-    "qtd_processo": 604
+    "qtd_processo": 604,
+    "posicao_registro": 22
   },
   "AL": {
     "posicao": 20,
@@ -197,7 +216,8 @@
     "tempo_medio_validacao_cadastral": "00:00:55",
     "tempo_medio_tempo_de_registro": "16:42:34",
     "media_tempo_total_para_registro": "25:38:29",
-    "qtd_processo": 654
+    "qtd_processo": 654,
+    "posicao_registro": 25
   },
   "RN": {
     "posicao": 21,
@@ -207,7 +227,8 @@
     "tempo_medio_validacao_cadastral": "00:01:03",
     "tempo_medio_tempo_de_registro": "06:15:24",
     "media_tempo_total_para_registro": "26:02:35",
-    "qtd_processo": 528
+    "qtd_processo": 528,
+    "posicao_registro": 14
   },
   "GO": {
     "posicao": 22,
@@ -217,7 +238,8 @@
     "tempo_medio_validacao_cadastral": "00:01:58",
     "tempo_medio_tempo_de_registro": "10:41:01",
     "media_tempo_total_para_registro": "26:20:04",
-    "qtd_processo": 1215
+    "qtd_processo": 1215,
+    "posicao_registro": 21
   },
   "SC": {
     "posicao": 23,
@@ -227,7 +249,8 @@
     "tempo_medio_validacao_cadastral": "00:12:24",
     "tempo_medio_tempo_de_registro": "01:50:08",
     "media_tempo_total_para_registro": "36:01:13",
-    "qtd_processo": 3195
+    "qtd_processo": 3195,
+    "posicao_registro": 4
   },
   "RJ": {
     "posicao": 24,
@@ -237,7 +260,8 @@
     "tempo_medio_validacao_cadastral": "00:08:03",
     "tempo_medio_tempo_de_registro": "14:13:08",
     "media_tempo_total_para_registro": "36:50:46",
-    "qtd_processo": 2728
+    "qtd_processo": 2728,
+    "posicao_registro": 23
   },
   "MG": {
     "posicao": 25,
@@ -247,7 +271,8 @@
     "tempo_medio_validacao_cadastral": "01:35:31",
     "tempo_medio_tempo_de_registro": "19:32:23",
     "media_tempo_total_para_registro": "37:53:00",
-    "qtd_processo": 7219
+    "qtd_processo": 7219,
+    "posicao_registro": 26
   },
   "PA": {
     "posicao": 26,
@@ -257,7 +282,8 @@
     "tempo_medio_validacao_cadastral": "00:41:09",
     "tempo_medio_tempo_de_registro": "14:51:39",
     "media_tempo_total_para_registro": "51:25:48",
-    "qtd_processo": 472
+    "qtd_processo": 472,
+    "posicao_registro": 24
   },
   "SP": {
     "posicao": 27,
@@ -267,6 +293,7 @@
     "tempo_medio_validacao_cadastral": "01:53:46",
     "tempo_medio_tempo_de_registro": "38:47:17",
     "media_tempo_total_para_registro": "53:03:02",
-    "qtd_processo": 24709
+    "qtd_processo": 24709,
+    "posicao_registro": 27
   }
 }
