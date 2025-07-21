@@ -273,7 +273,7 @@ const EstadoPage = () => {
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
                   <Clock className="w-5 h-5 text-[#fdb913]" />
-                  <span>Média de Tempo Total para Registro</span>
+                  <span>Média de Tempo Total - Abertura de Empresas</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -290,7 +290,7 @@ const EstadoPage = () => {
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
                   <Clock className="w-5 h-5 text-[#fdb913]" />
-                  <span>Tempo Médio de Abertura</span>
+                  <span>Tempo Médio de Registro</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
