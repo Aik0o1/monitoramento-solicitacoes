@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="footer bg-blue-800 text-white">
         <div className="grid grid-cols-4">
 
-        <div className="h-3 sm:h-3 bg-yellow-500"></div>
-        <div className="h-3 sm:h-3 bg-red-700"></div>
-        <div className="h-3 sm:h-3 bg-green-700"></div>
-        <div className="h-3 sm:h-3 bg-blue-800"></div>
+        <div className="h-3 sm:h-3 bg-yellow-500 shadow-md"></div>
+        <div className="h-3 sm:h-3 bg-red-700 shadow-md"></div>
+        <div className="h-3 sm:h-3 bg-green-700 shadow-md"></div>
+        <div className="h-3 sm:h-3 bg-blue-800 shadow-md"></div>
         <div className="h-3 sm:h-3"></div>
             
         </div>
@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-container flex flex-col sm:flex-row items-center gap-10 justify-center">
           {/* Logo Section */}
           <div>
-            <img src="/logo/logo-rodape.png" alt="Governo do Piaui" className="h-20" />
+            <img src="/logo/logo-rodape.png" alt="Governo do Piaui" className="h-24" />
           </div>
 
           {/* Orgão Section */}
@@ -72,8 +72,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm">Copyright © 2025 JUCEPI. Todos os Direitos Reservados.</p>
             <div className="flex items-center gap-2 text-sm">
-              <span>Desenvolvido por:</span>
-                     <img src="/logo/logoVertical.png" alt="JUCEPI" className="h-8" />
+              <span className='font-bold'>Desenvolvido por:</span>
+                     <img src="/logo/logoVertical.png" alt="JUCEPI" className="h-10" />
 
             </div>
           </div>
