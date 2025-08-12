@@ -69,7 +69,7 @@ const HomePage = () => {
               placeholder="Buscar estado por nome ou sigla..."
               value={filtroEstado}
               onChange={(e) => setFiltroEstado(e.target.value)}
-              className="pl-10 text-sm sm:text-base"
+              className="pl-10 text-sm sm:text-base shadow bg-blue-50"
             />
           </div>
         </div>
