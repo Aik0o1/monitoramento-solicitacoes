@@ -51,7 +51,7 @@ const DestaqueDoMes = () => {
       const mesAtual = nomesMeses[mesIndex];
 
       try {
-        const response = await fetch(`/api/dados?mes=${mesAtual}&ano=${ano}`);
+        const response = await fetch(`http://127.0.0.1:5000/api/dados?mes=${mesAtual}&ano=${ano}`);
 
         if (response.ok) {
           const result = await response.json();
@@ -195,7 +195,8 @@ const DestaqueDoMes = () => {
               <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl w-full p-4 sm:p-6">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                   {/* Seção do Estado */}
-                  <div className="flex items-center gap-3 flex-1 min-w-0">
+                    <a href={`https://rankingnacional.jucepi.pi.gov.br/${destaqueData.sigla}`}>
+                  <div className="flex items-center gap-3 flex-1 min-w-0 hover:bg-gray-100 p-1 rounded-2xl ">
                     <div className="relative flex-shrink-0">
                       <img
                         src={`/bandeiras-brasileiras/${destaqueData.sigla}.png`}
@@ -204,7 +205,7 @@ const DestaqueDoMes = () => {
                         onError={(e) => {
                           e.target.style.display = "none";
                         }}
-                      />
+                        />
                       {/* Efeito de brilho na bandeira */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse rounded"></div>
                     </div>
@@ -218,6 +219,7 @@ const DestaqueDoMes = () => {
                       </p>
                     </div>
                   </div>
+                        </a>
 
                   {/* Seção do Tempo Médio */}
                   <div className="flex-shrink-0 w-full sm:w-auto">
