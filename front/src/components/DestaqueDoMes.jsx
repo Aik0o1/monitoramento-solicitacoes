@@ -148,7 +148,7 @@ const DestaqueDoMes = () => {
 
   return (
     <div className="mb-4 sm:mb-8 px-2 sm:px-0">
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-400 via-orange-500 to-red-500 p-1 shadow-2xl">
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-800 via-green-600 to-blue-800 p-1 shadow-2xl">
         {/* Efeito de brilho animado */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
 
@@ -162,7 +162,7 @@ const DestaqueDoMes = () => {
 
         <div className="relative bg-white rounded-xl p-3 sm:p-6">
           {/* Badge de destaque */}
-          <div className="absolute -top-2 sm:-top-1 left-3 sm:left-6 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-2 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg">
+          <div className="absolute -top-2 sm:-top-1 left-3 sm:left-6 bg-gradient-to-r from-blue-800 to-green-600 text-white px-2 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-bold shadow-lg">
             🏆 Destaque - {formatarMes(destaqueData.mes)} de {destaqueData.ano}
           </div>
 
@@ -191,50 +191,50 @@ const DestaqueDoMes = () => {
                 </div>
               </div>
 
-{/* Informações do estado */}
-<div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl w-full p-4 sm:p-6">
-  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-    {/* Seção do Estado */}
-    <div className="flex items-center gap-3 flex-1 min-w-0">
-      <div className="relative flex-shrink-0">
-        <img
-          src={`/bandeiras-brasileiras/${destaqueData.sigla}.png`}
-          alt={`Bandeira de ${destaqueData.nome}`}
-          className="w-12 h-8 sm:w-14 sm:h-10 object-cover rounded border-2 border-white shadow-md"
-          onError={(e) => {
-            e.target.style.display = "none";
-          }}
-        />
-        {/* Efeito de brilho na bandeira */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse rounded"></div>
-      </div>
-      
-      <div className="flex-1 min-w-0">
-        <h3 className="text-lg sm:text-xl font-bold text-gray-800 truncate mb-1">
-          {destaqueData.nome}
-        </h3>
-        <p className="text-sm sm:text-base text-gray-600 font-medium">
-          {destaqueData.sigla} • {destaqueData.regiao}
-        </p>
-      </div>
-    </div>
+              {/* Informações do estado */}
+              <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-xl w-full p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  {/* Seção do Estado */}
+                  <div className="flex items-center gap-3 flex-1 min-w-0">
+                    <div className="relative flex-shrink-0">
+                      <img
+                        src={`/bandeiras-brasileiras/${destaqueData.sigla}.png`}
+                        alt={`Bandeira de ${destaqueData.nome}`}
+                        className="w-12 h-8 sm:w-14 sm:h-10 object-cover rounded border-2 border-white shadow-md"
+                        onError={(e) => {
+                          e.target.style.display = "none";
+                        }}
+                      />
+                      {/* Efeito de brilho na bandeira */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse rounded"></div>
+                    </div>
 
-    {/* Seção do Tempo Médio */}
-    <div className="flex-shrink-0 w-full sm:w-auto">
-      <div className="bg-white/50 sm:bg-transparent rounded-lg p-3 sm:p-0 text-left sm:text-right">
-        <div className="flex items-center gap-2 text-orange-600 mb-2 justify-start sm:justify-end">
-          <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
-          <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">
-            Tempo Médio de Abertura
-          </span>
-        </div>
-        <div className="text-2xl sm:text-3xl font-bold text-orange-600">
-          {destaqueData.dados.media_tempo_total_para_registro}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg sm:text-xl font-bold text-gray-800 truncate mb-1">
+                        {destaqueData.nome}
+                      </h3>
+                      <p className="text-sm sm:text-base text-gray-600 font-medium">
+                        {destaqueData.sigla} • {destaqueData.regiao}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Seção do Tempo Médio */}
+                  <div className="flex-shrink-0 w-full sm:w-auto">
+                    <div className="bg-white/50 sm:bg-transparent rounded-lg p-3 sm:p-0 text-left sm:text-right">
+                      <div className="flex items-center gap-2 text-orange-600 mb-2 justify-start sm:justify-end">
+                        <Clock className="w-4 h-4 sm:w-5 sm:h-5" />
+                        <span className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                          Tempo Médio de Abertura
+                        </span>
+                      </div>
+                      <div className="text-2xl sm:text-3xl font-bold text-orange-600">
+                        {destaqueData.dados.media_tempo_total_para_registro}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
 
