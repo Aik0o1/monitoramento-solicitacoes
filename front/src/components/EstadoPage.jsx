@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Footer from "./Footer";
 import {
   Select,
   SelectContent,
@@ -37,8 +38,8 @@ const ORDEM_MESES = [
 
 const EstadoPage = () => {
   const { siglaEstado: siglaDaUrl } = useParams();
-  const siglaEstado = siglaDaUrl ? siglaDaUrl.toUpperCase() : '';  console.log(siglaEstado);
-  
+  const siglaEstado = siglaDaUrl ? siglaDaUrl.toUpperCase() : '';
+
   const [selectedMonth, setSelectedMonth] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
   const [dadosEstado, setDadosEstado] = useState(null);
@@ -68,7 +69,7 @@ const EstadoPage = () => {
     const carregarPeriodos = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://10.40.25.162:5000/api/periodos");
+        const response = await fetch("http://localhost:5000/api/periodos");
         const result = await response.json();
         if (result.success) {
           setPeriodosDisponiveis(result.data);
@@ -107,7 +108,7 @@ const EstadoPage = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://10.40.25.162:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
+        `http://localhost:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {
@@ -451,6 +452,7 @@ const EstadoPage = () => {
           </div>
         )}
       </main>
+      <Footer></Footer>
     </div>
   );
 };
