@@ -10,9 +10,9 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Ranking />} />
           <Route path="/:siglaEstado" element={<EstadoPage />} />
-          <Route path="/ranking" element={<Ranking />}/>
+          <Route path="/estatisticas" element={<HomePage />}/>
         </Routes>
       </div>
     </Router>

@@ -38,7 +38,7 @@ const ORDEM_MESES = [
 
 const EstadoPage = () => {
   const { siglaEstado: siglaDaUrl } = useParams();
-  const siglaEstado = siglaDaUrl ? siglaDaUrl.toUpperCase() : '';
+  const siglaEstado = siglaDaUrl ? siglaDaUrl.toUpperCase() : "";
 
   const [selectedMonth, setSelectedMonth] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
@@ -135,62 +135,64 @@ const EstadoPage = () => {
     }
   };
 
-  if (!estado) {
-    return (
-      <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">
-            Estado não encontrado
-          </h1>
-          <Link to="/">
-            <Button>
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Voltar para a lista
-            </Button>
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  const handleGoBack = () => {
+    navigate(-1);
+  };
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header - Dropdown de estado removido daqui */}
-      <header className="page-header py-6 px-4">
+      {/* Header */}
+      <header className="page-header py-4 md:py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <div className="flex items-center justify-between sm:flex-row flex-col">
-            <div className="flex items-center space-x-4">
-              <Link to="/">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="text-white hover:bg-white/10 cursor-pointer"
-                >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Voltar
-                </Button>
-              </Link>
-              <div className="flex items-center space-x-4">
-                <img
-                  src={`/bandeiras-brasileiras/${estado.sigla}.png`}
-                  alt={`Bandeira de ${estado.nome}`}
-                  className="w-12 h-8 object-cover rounded border-2 border-white/20"
-                />
-                <div>
-                  <h1 className="text-2xl font-bold text-white">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6 w-full">
+            {/* Botão Voltar - sempre à esquerda */}
+            <div className="flex justify-start w-full lg:w-auto lg:flex-shrink-0 order-1 lg:order-none">
+              <Button
+                onClick={handleGoBack}
+                variant="ghost"
+                size="sm"
+                className="text-white hover:bg-white/10 cursor-pointer text-xs sm:text-sm"
+              >
+                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                Voltar
+              </Button>
+            </div>
+
+            {/* Seção Central - Bandeira + Info do Estado */}
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
+              <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm">
+                <span className="font-bold text-white">JUNTA COMERCIAL</span>
+                <span className="text-blue-100">DO PIAUÍ - JUCEPI</span>
+              </div>
+              <img
+                src="https://www.pi.gov.br/wp-content/uploads/2024/11/logo_white.svg"
+                alt="Governo do Piauí"
+                className="header-logo h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[120px] sm:max-w-[150px] md:max-w-[180px] lg:max-w-none"
+              />
+            </div>
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full lg:flex-1 order-3 lg:order-none">
+              <div className="flex items-center gap-3 sm:gap-4">
+                {/* Bandeira do Estado */}
+                <div className="flex-shrink-0">
+                  <img
+                    src={`/bandeiras-brasileiras/${estado.sigla}.png`}
+                    alt={`Bandeira de ${estado.nome}`}
+                    className="w-14 h-10 sm:w-12 sm:h-8 md:w-14 md:h-9 object-cover rounded border-2 border-white/20 shadow-sm"
+                  />
+                </div>
+
+                {/* Informações do Estado */}
+                <div className="text-center sm:text-left">
+                  <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight">
                     {estado.nome}
                   </h1>
-                  <p className="text-blue-100">
+                  <p className="text-blue-100 text-xs sm:text-sm md:text-base mt-0.5">
                     {estado.sigla} • {estado.regiao}
                   </p>
                 </div>
               </div>
             </div>
-            <img
-              src="https://www.pi.gov.br/wp-content/uploads/2024/11/logo_white.svg"
-              alt="Governo do Piauí"
-              className="header-logo"
-            />
+            {/* Logo do Governo - sempre à direita */}
           </div>
         </div>
       </header>
@@ -206,9 +208,7 @@ const EstadoPage = () => {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            {/* 1. Grid atualizado para 3 colunas em telas médias e maiores */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {/* 2. Dropdown de Estado adicionado aqui */}
               <div>
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Estado
@@ -278,7 +278,6 @@ const EstadoPage = () => {
           </CardContent>
         </Card>
 
-        {/* ... restante do seu componente (Dados, Loading, etc.) permanece o mesmo */}
         {dadosEstado && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <Card className="metric-card">
