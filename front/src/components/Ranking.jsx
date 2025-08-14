@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Trophy, Medal, Award, Calendar } from 'lucide-react';
+import { Trophy, Medal, Award, Calendar, Download, List } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,6 +18,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
 import { getEstadoBySigla, estados } from "../data/estados";
 
 // Mapeamento das métricas com nomes amigáveis
@@ -30,21 +31,40 @@ const metricas = {
 
 // As constantes não precisam de exportação
 const ORDEM_MESES = [
-    "janeiro", "fevereiro", "março", "abril", "maio", "junho",
-    "julho", "agosto", "setembro", "outubro", "novembro", "dezembro",
+    "janeiro",
+    "fevereiro",
+    "março",
+    "abril",
+    "maio",
+    "junho",
+    "julho",
+    "agosto",
+    "setembro",
+    "outubro",
+    "novembro",
+    "dezembro",
 ];
 
 const mesesMap = {
-    "janeiro": "Janeiro", "fevereiro": "Fevereiro", "marco": "Março", "abril": "Abril",
-    "maio": "Maio", "junho": "Junho", "julho": "Julho", "agosto": "Agosto",
-    "setembro": "Setembro", "outubro": "Outubro", "novembro": "Novembro", "dezembro": "Dezembro",
+    janeiro: "Janeiro",
+    fevereiro: "Fevereiro",
+    março: "Março",
+    abril: "Abril",
+    maio: "Maio",
+    junho: "Junho",
+    julho: "Julho",
+    agosto: "Agosto",
+    setembro: "Setembro",
+    outubro: "Outubro",
+    novembro: "Novembro",
+    dezembro: "Dezembro",
 };
 
 // Ícones para cada posição
 const iconMap = {
     1: Trophy,
     2: Medal,
-    3: Award,
+    3: Medal,
 };
 
 // Cores para cada posição usando as cores especificadas
@@ -65,21 +85,27 @@ const Ranking = () => {
     const [periodos, setPeriodos] = useState({});
     const [selectedMonth, setSelectedMonth] = useState(null);
     const [selectedYear, setSelectedYear] = useState(null);
-    const [selectedMetrica, setSelectedMetrica] = useState("media_tempo_total_para_registro");
+    const [selectedMetrica, setSelectedMetrica] = useState(
+        "media_tempo_total_para_registro"
+    );
     const [loading, setLoading] = useState(true);
     const [dadosEstados, setDadosEstados] = useState([]);
 
     useEffect(() => {
         const carregarDadosIniciais = async () => {
             try {
-                const response = await fetch(`http://127.0.0.1:5000/api/periodos`);
+                const response = await fetch(`http://10.40.25.162:5000/api/periodos`);
                 const result = await response.json();
                 if (result.success && Object.keys(result.data).length > 0) {
                     setPeriodos(result.data);
-                    const anoMaisRecente = Object.keys(result.data).sort((a, b) => b - a)[0];
+                    const anoMaisRecente = Object.keys(result.data).sort(
+                        (a, b) => b - a
+                    )[0];
                     const mesesDoAno = result.data[anoMaisRecente];
                     const mesMaisRecente = mesesDoAno.sort(
-                        (a, b) => ORDEM_MESES.indexOf(b.mes.toLowerCase()) - ORDEM_MESES.indexOf(a.mes.toLowerCase())
+                        (a, b) =>
+                            ORDEM_MESES.indexOf(b.mes.toLowerCase()) -
+                            ORDEM_MESES.indexOf(a.mes.toLowerCase())
                     )[0].mes;
                     setSelectedYear(anoMaisRecente);
                     setSelectedMonth(mesMaisRecente);
@@ -96,27 +122,38 @@ const Ranking = () => {
         setLoading(true);
         try {
             const response = await fetch(
-                `http://localhost:5000/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
+                `http://10.40.25.162:5000/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
             );
             const result = await response.json();
             if (result.success) {
                 // Ordenar baseado na métrica selecionada
-                const dadosOrdenados = Object.entries(result.data)
-                    .sort(([, valorA], [, valorB]) => {
-                        if (selectedMetrica === 'posicao' || selectedMetrica === 'posicao_registro') {
+                const dadosOrdenados = Object.entries(result.data).sort(
+                    ([, valorA], [, valorB]) => {
+                        if (
+                            selectedMetrica === "posicao" ||
+                            selectedMetrica === "posicao_registro"
+                        ) {
                             return valorA[selectedMetrica] - valorB[selectedMetrica];
-                        } else if (selectedMetrica === 'qtd_processo') {
+                        } else if (selectedMetrica === "qtd_processo") {
                             return valorB[selectedMetrica] - valorA[selectedMetrica]; // Maior quantidade primeiro
                         } else {
                             // Para métricas de tempo, converter para segundos para comparação
                             const timeToSeconds = (timeStr) => {
                                 if (!timeStr || timeStr === "N/A") return 999999;
-                                const parts = timeStr.split(':');
-                                return parseInt(parts[0]) * 3600 + parseInt(parts[1]) * 60 + parseInt(parts[2]);
+                                const parts = timeStr.split(":");
+                                return (
+                                    parseInt(parts[0]) * 3600 +
+                                    parseInt(parts[1]) * 60 +
+                                    parseInt(parts[2])
+                                );
                             };
-                            return timeToSeconds(valorA[selectedMetrica]) - timeToSeconds(valorB[selectedMetrica]);
+                            return (
+                                timeToSeconds(valorA[selectedMetrica]) -
+                                timeToSeconds(valorB[selectedMetrica])
+                            );
                         }
-                    });
+                    }
+                );
                 setDadosEstados(dadosOrdenados);
             } else {
                 console.error("Erro na API:", result.error);
@@ -148,7 +185,7 @@ const Ranking = () => {
             position: index + 1, // Posição baseada na métrica selecionada
             estado: getEstadoBySigla(uf),
             sigla: uf,
-            valor: data[selectedMetrica]
+            valor: data[selectedMetrica],
         }));
 
         // Reordena para o layout visual: 2º, 1º, 3º
@@ -159,13 +196,49 @@ const Ranking = () => {
     };
 
     const formatarValor = (valor, metrica) => {
-        if (metrica === 'qtd_processo') {
+        if (metrica === "qtd_processo") {
             return valor.toLocaleString();
-        } else if (metrica === 'posicao' || metrica === 'posicao_registro') {
+        } else if (metrica === "posicao" || metrica === "posicao_registro") {
             return `#${valor}`;
         } else {
             return valor || "N/A";
         }
+    };
+
+    // Função para exportar tabela
+    const exportarTabela = () => {
+        if (!dadosEstados || dadosEstados.length === 0) return;
+
+        const headers = ["Posição", "Estado", "UF", "Tempo"];
+        const rows = dadosEstados.map(([uf, data], index) => {
+            const estado = getEstadoBySigla(uf);
+            return [
+                index + 1,
+                estado.nome,
+                uf,
+                formatarValor(data[selectedMetrica], selectedMetrica),
+            ];
+        });
+
+        // Criar CSV
+        const csvContent = [headers, ...rows]
+            .map((row) => row.map((field) => `"${field}"`).join(","))
+            .join("\n");
+
+        // Download do arquivo
+        const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+        const link = document.createElement("a");
+        const url = URL.createObjectURL(blob);
+        link.setAttribute("href", url);
+        const filename = `ranking_${metricas[selectedMetrica].replace(
+            /\s+/g,
+            "_"
+        )}_${selectedMonth}_${selectedYear}.csv`;
+        link.setAttribute("download", filename);
+        link.style.visibility = "hidden";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     };
 
     const orderedWinnersFromAPI = getPodiumData();
@@ -173,9 +246,15 @@ const Ranking = () => {
     if (loading && dadosEstados.length === 0) {
         return (
             <div className="min-h-screen bg-background">
-                <Header titulo="Estatísticas" subtitulo="Ranking" showBackButton={true} />
+                <Header
+                    titulo="Ranking"
+                    subtitulo="Classificação dos estados quanto aos tempos"
+                    showBackButton={true}
+                />
                 <div className="flex justify-center items-center py-20">
-                    <p className="text-lg" style={{ color: '#231f20' }}>Carregando dados...</p>
+                    <p className="text-lg" style={{ color: "#231f20" }}>
+                        Carregando dados...
+                    </p>
                 </div>
                 <Footer />
             </div>
@@ -184,24 +263,27 @@ const Ranking = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            <Header titulo="Ranking" subtitulo="" showBackButton={true} />
+            <Header titulo="Ranking" subtitulo="Classificação dos estados quanto aos tempos" showBackButton={true} />
 
             <main className="container mx-auto max-w-6xl px-4 py-8">
                 {/* Filtros */}
-                <Card className="mb-8" >
+                <Card className="mb-8">
                     <CardHeader>
                         <CardTitle className="flex items-center space-x-2 text-primary">
                             <Calendar className="w-5 h-5" />
                             <span className="text-black">Filtros</span>
                         </CardTitle>
                     </CardHeader>
-                    <CardContent >
+                    <CardContent>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <div>
                                 <label className="block text-sm font-medium text-foreground mb-2">
                                     Métrica
                                 </label>
-                                <Select value={selectedMetrica} onValueChange={setSelectedMetrica}>
+                                <Select
+                                    value={selectedMetrica}
+                                    onValueChange={setSelectedMetrica}
+                                >
                                     <SelectTrigger>
                                         <SelectValue placeholder="Selecione a métrica" />
                                     </SelectTrigger>
@@ -223,13 +305,15 @@ const Ranking = () => {
                                         <SelectValue placeholder="Selecione o mês" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        {periodos && Object.keys(periodos).length > 0 &&
+                                        {periodos &&
+                                            Object.keys(periodos).length > 0 &&
                                             selectedYear &&
                                             periodos[selectedYear] &&
                                             periodos[selectedYear]
-                                                .sort((a, b) =>
-                                                    ORDEM_MESES.indexOf(a.mes.toLowerCase()) -
-                                                    ORDEM_MESES.indexOf(b.mes.toLowerCase())
+                                                .sort(
+                                                    (a, b) =>
+                                                        ORDEM_MESES.indexOf(a.mes.toLowerCase()) -
+                                                        ORDEM_MESES.indexOf(b.mes.toLowerCase())
                                                 )
                                                 .map((periodo) => (
                                                     <SelectItem key={periodo.mes} value={periodo.mes}>
@@ -249,134 +333,209 @@ const Ranking = () => {
                                         <SelectValue placeholder="Selecione o ano" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        {periodos && Object.keys(periodos)
-                                            .sort((a, b) => b - a) // Anos mais recentes primeiro
-                                            .map((ano) => (
-                                                <SelectItem key={ano} value={ano}>
-                                                    {ano}
-                                                </SelectItem>
-                                            ))}
+                                        {periodos &&
+                                            Object.keys(periodos)
+                                                .sort((a, b) => b - a) // Anos mais recentes primeiro
+                                                .map((ano) => (
+                                                    <SelectItem key={ano} value={ano}>
+                                                        {ano}
+                                                    </SelectItem>
+                                                ))}
                                     </SelectContent>
                                 </Select>
                             </div>
-
-                            
                         </div>
                     </CardContent>
                 </Card>
 
-                <div className="w-full">
-                    <div className="mb-8 text-center">
-                        <h1 className="text-2xl sm:text-4xl font-bold mb-2 flex items-center justify-center gap-2" style={{ color: '#034ea2' }}>
-                            {metricas[selectedMetrica]}
-                        </h1>
-                        <p className="text-gray-600 text-base sm:text-lg">
-                            {selectedMonth && selectedYear ? `${mesesMap[selectedMonth.toLowerCase()]} de ${selectedYear}` : 'Parabéns aos nossos campeões!'}
-                        </p>
+                {/* SEÇÃO DO PÓDIO */}
+                <div className="podio-ranking mb-16">
+                    <div className="flex items-center justify-between mb-6">
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <Trophy className="w-6 h-6" style={{ color: "#034ea2" }} />
+                                <h2 className="text-xl font-bold" style={{ color: "#034ea2" }}>
+                                    {metricas[selectedMetrica]} - Top 3
+
+                                </h2>
+                            </div>
+                            <div className="text-sm text-gray-600 mt-1">
+
+                                {selectedMonth && selectedYear && (
+                                    <span>
+                                        {" "}
+                                        {mesesMap[selectedMonth.toLowerCase()]} de {selectedYear}
+                                    </span>
+                                )}
+                            </div>
+                        </div>
                     </div>
 
                     {loading && <p className="text-center">Atualizando ranking...</p>}
 
-                    {/* Pódio com largura igual à tabela */}
                     {!loading && orderedWinnersFromAPI.length > 0 ? (
-                        <>
-                            <div className="w-full mb-8 sm:mb-12">
-                                <div className="relative flex items-end justify-center gap-2 sm:gap-4 lg:gap-8 mb-6 sm:mb-8">
-                                    {orderedWinnersFromAPI.map((winner) => {
-                                        const IconComponent = iconMap[winner.position] || Trophy;
-                                        const color = colorMap[winner.position] || 'bg-gray-400';
-                                        const height = heightMap[winner.position] || 'h-24';
+                        <div className="top3-ranking w-full mb-8 sm:mb-12">
+                            <div className="relative flex items-end justify-center gap-2 sm:gap-4 lg:gap-8 mb-6 sm:mb-8">
+                                {orderedWinnersFromAPI.map((winner) => {
+                                    const IconComponent = iconMap[winner.position] || Trophy;
+                                    const color = colorMap[winner.position] || "bg-gray-400";
+                                    const height = heightMap[winner.position] || "h-24";
 
-                                        return (
-                                            <div key={winner.position} className="flex flex-col items-center w-20 sm:w-32 lg:w-40 text-center">
-                                                <div className="mb-2 sm:mb-4 transform transition-all duration-300 hover:scale-105">
-                                                    <div className="relative mb-2 sm:mb-3">
-                                                        <div className="w-20 h-14 sm:w-32 sm:h-24 lg:w-40 lg:h-28 bg-gray-200 shadow-lg flex items-center justify-center border-2 sm:border-4 border-white overflow-hidden rounded-lg">
-                                                            <img
-                                                                src={`/bandeiras-brasileiras/${winner.sigla}.png`}
-                                                                alt={`Bandeira de ${winner.estado.nome}`}
-                                                                className="w-full h-full object-contain"
-                                                            />
-                                                        </div>
-                                                        {/* Ícone da Posição - Responsivo */}
-                                                        <div className={`absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-6 h-6 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full ${color} flex items-center justify-center shadow-md`}>
-                                                            <IconComponent size={12} className="text-white sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
-                                                        </div>
+                                    return (
+                                        <div
+                                            key={winner.position}
+                                            className="flex flex-col items-center w-20 sm:w-32 lg:w-40 text-center"
+                                        >
+                                            <div className="mb-2 sm:mb-4 transform transition-all duration-300 hover:scale-105">
+                                                <div className="relative mb-2 sm:mb-3">
+                                                    <div className="w-20 h-14 sm:w-32 sm:h-24 lg:w-40 lg:h-28 bg-gray-200 shadow-lg flex items-center justify-center border-2 sm:border-4 border-white overflow-hidden rounded-lg">
+                                                        <img
+                                                            src={`/bandeiras-brasileiras/${winner.sigla}.png`}
+                                                            alt={`Bandeira de ${winner.estado.nome}`}
+                                                            className="w-full h-full object-contain"
+                                                        />
                                                     </div>
-
-                                                    {/* Texto abaixo do Avatar - Responsivo */}
-                                                    <div>
-                                                        <h3 className="font-semibold text-gray-800 text-xs sm:text-base lg:text-lg leading-tight">{winner.estado.nome}</h3>
-                                                        <div className="mt-1 sm:mt-2 inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 lg:px-4 lg:py-2 rounded-full text-xs sm:text-sm lg:text-base font-semibold bg-white shadow-sm">
-                                                            #{winner.position}
-                                                        </div>
-                                                        <div className="mt-1 sm:mt-2 text-xs sm:text-sm lg:text-base font-medium" style={{ color: '#034ea2' }}>
-                                                            {formatarValor(winner.valor, selectedMetrica)}
-                                                        </div>
+                                                    {/* Ícone da Posição - Responsivo */}
+                                                    <div
+                                                        className={`absolute -top-1 -right-1 sm:-top-2 sm:-right-2 w-6 h-6 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full ${color} flex items-center justify-center shadow-md`}
+                                                    >
+                                                        <IconComponent
+                                                            size={12}
+                                                            className="text-white sm:w-5 sm:h-5 lg:w-6 lg:h-6"
+                                                        />
                                                     </div>
                                                 </div>
 
-                                                {/* Bloco do Pódio - Totalmente Responsivo */}
-                                                <div className={`w-16 sm:w-28 lg:w-36 ${height} ${color} rounded-t-lg shadow-lg relative overflow-hidden transition-all duration-300 hover:shadow-xl`}>
-                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-                                                    <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2">
-                                                        <span className="text-white font-bold text-lg sm:text-3xl lg:text-4xl drop-shadow-lg">
-                                                            {winner.position}
-                                                        </span>
+                                                {/* Texto abaixo do Avatar - Responsivo */}
+                                                <div>
+                                                    <h3 className="font-semibold text-gray-800 text-xs sm:text-base lg:text-lg leading-tight">
+                                                        {winner.estado.nome}
+                                                    </h3>
+                                                   
+                                                    <div
+                                                        className="mt-1 sm:mt-2 text-xs sm:text-sm lg:text-base font-medium"
+                                                        style={{ color: "#034ea2" }}
+                                                    >
+                                                        {formatarValor(winner.valor, selectedMetrica)}
                                                     </div>
-                                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
                                                 </div>
                                             </div>
-                                        );
-                                    })}
-                                </div>
-                                <div className="w-full h-4 sm:h-8 lg:h-10 rounded-lg shadow-lg" style={{ background: 'linear-gradient(to right, #034ea2, #007932)' }}></div>
+
+                                            {/* Bloco do Pódio - Totalmente Responsivo */}
+                                            <div
+                                                className={`w-16 sm:w-28 lg:w-36 ${height} ${color} rounded-t-lg shadow-lg relative overflow-hidden transition-all duration-300 hover:shadow-xl`}
+                                            >
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+                                                <div className="absolute bottom-2 sm:bottom-4 left-1/2 transform -translate-x-1/2">
+                                                    <span className="text-white font-bold text-lg sm:text-3xl lg:text-4xl drop-shadow-lg">
+                                                        {winner.position}
+                                                    </span>
+                                                </div>
+                                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
                             </div>
-                        </>
+                        </div>
                     ) : (
-                        !loading && <p className="text-gray-500 text-center">Não há dados de ranking para este período.</p>
+                        !loading && (
+                            <p className="text-gray-500 text-center">
+                                Não há dados de ranking para este período.
+                            </p>
+                        )
                     )}
+                </div>
 
-                    {/* Tabela de Resultados */}
-                    {!loading && dadosEstados.length > 0 && (
-                        <div className="w-full mt-12">
-                            <Card style={{ borderColor: '#034ea2', borderWidth: '1px' }}>
-                                <CardHeader style={{ backgroundColor: '#034ea2' }} className="w-full flex justify-center">
-                                    <CardTitle className="text-white text-sm sm:text-base  align-middle flex justify-center items-center h-full text-center">
-                                        Ranking Completo - {metricas[selectedMetrica]}
-                                    </CardTitle>
-                                </CardHeader>
-                                <CardContent className="p-0">
-                                    <div className="overflow-x-auto">
-                                        <Table>
-                                            <TableHeader>
-                                                <TableRow style={{ backgroundColor: '#f8f9fa' }}>
-                                                    <TableHead className="font-semibold text-xs sm:text-sm" style={{ color: '#034ea2' }}>POSIÇÃO</TableHead>
-                                                    <TableHead className="font-semibold text-xs sm:text-sm" style={{ color: '#034ea2' }}>ESTADO</TableHead>
-                                                    <TableHead className="font-semibold text-xs sm:text-sm" style={{ color: '#034ea2' }}>TEMPO</TableHead>
-                                                </TableRow>
-                                            </TableHeader>
-                                            <TableBody>
-                                                {dadosEstados.map(([uf, data], index) => {
-                                                    const estado = getEstadoBySigla(uf);
-                                                    const posicao = index + 1;
+                {/* SEÇÃO DA TABELA COMPLETA */}
+                <div className="tabela-ranking">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
+                        <div>
+                            <div className="flex items-center gap-2">
+                                <List className="w-6 h-6" style={{ color: "#034ea2" }} />
+                                <h2 className="text-xl font-bold" style={{ color: "#034ea2" }}>
+                                    Ranking Completo
+                                </h2>
+                            </div>
+                            <div className="text-sm text-gray-600 mt-1">
+                                <span className="font-medium">{metricas[selectedMetrica]}</span>
+                                {selectedMonth && selectedYear && (
+                                    <span>
+                                        {" "}
+                                        • {mesesMap[selectedMonth.toLowerCase()]} de {selectedYear}
+                                    </span>
+                                )}
+                            </div>
+                        </div>
+                        {!loading && dadosEstados.length > 0 && (
+                            <Button
+                                onClick={exportarTabela}
+                                variant="outline"
+                                className="flex items-center gap-2 mt-4 sm:mt-0"
+                                style={{ borderColor: "#034ea2", color: "#034ea2" }}
+                            >
+                                <Download className="w-4 h-4" />
+                                Exportar CSV
+                            </Button>
+                        )}
+                    </div>
 
-                                                    return (
-                                                        <TableRow
-                                                            key={uf}
-                                                            className={`hover:bg-gray-50 ${posicao <= 3 ? 'bg-yellow-50' : ''}`}
-                                                        >
-                                                            <TableCell className="font-medium">
-                                                                <div className="flex items-center gap-2">
-                                                                    <span className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold text-white ${posicao === 1 ? 'bg-yellow-500' :
-                                                                            posicao === 2 ? 'bg-gray-400' :
-                                                                                posicao === 3 ? 'bg-orange-500' : 'bg-gray-300'
-                                                                        }`}>
-                                                                        {posicao}
-                                                                    </span>
-                                                                </div>
-                                                            </TableCell>
-                                                            <TableCell>
+                    {!loading && dadosEstados.length > 0 ? (
+                        <Card className="border border-[#034ea2] mb-8 rounded-none py-0">
+                            <CardContent className="p-0">
+                                <div className="overflow-x-auto">
+                                    <Table>
+                                        <TableHeader>
+                                            <TableRow style={{ backgroundColor: "#f8f9fa" }}>
+                                                <TableHead
+                                                    className="font-semibold text-xs sm:text-sm"
+                                                    style={{ color: "#034ea2" }}
+                                                >
+                                                    POSIÇÃO
+                                                </TableHead>
+                                                <TableHead
+                                                    className="font-semibold text-xs sm:text-sm"
+                                                    style={{ color: "#034ea2" }}
+                                                >
+                                                    ESTADO
+                                                </TableHead>
+                                                <TableHead
+                                                    className="font-semibold text-xs sm:text-sm"
+                                                    style={{ color: "#034ea2" }}
+                                                >
+                                                    TEMPO
+                                                </TableHead>
+                                            </TableRow>
+                                        </TableHeader>
+                                        <TableBody>
+                                            {dadosEstados.map(([uf, data], index) => {
+                                                const estado = getEstadoBySigla(uf);
+                                                const posicao = index + 1;
+
+                                                return (
+                                                    <TableRow
+                                                        key={uf}
+                                                        className={`hover:bg-gray-50 ${posicao <= 3 ? "bg-yellow-50" : ""
+                                                            }`}
+                                                    >
+                                                        <TableCell className="font-medium">
+                                                            <div className="flex items-center gap-2">
+                                                                <span
+                                                                    className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold text-white ${posicao === 1
+                                                                            ? "bg-yellow-500"
+                                                                            : posicao === 2
+                                                                                ? "bg-gray-400"
+                                                                                : posicao === 3
+                                                                                    ? "bg-orange-500"
+                                                                                    : "bg-gray-300"
+                                                                        }`}
+                                                                >
+                                                                    {posicao}
+                                                                </span>
+                                                            </div>
+                                                        </TableCell>
+                                                        <TableCell>
+                                                            <a href={`/${uf}`}>
                                                                 <div className="flex items-center gap-2 sm:gap-3">
                                                                     <img
                                                                         src={`/bandeiras-brasileiras/${uf}.png`}
@@ -388,25 +547,37 @@ const Ranking = () => {
                                                                         <div className="text-xs text-gray-500">{uf}</div>
                                                                     </div>
                                                                 </div>
-                                                            </TableCell>
-                                                            <TableCell className="font-medium text-xs sm:text-sm" style={{ color: '#034ea2' }}>
-                                                                {formatarValor(data[selectedMetrica], selectedMetrica)}
-                                                            </TableCell>
-                                                        </TableRow>
-                                                    );
-                                                })}
-                                            </TableBody>
-                                        </Table>
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        </div>
+                                                            </a>
+                                                        </TableCell>
+                                                        <TableCell
+                                                            className="font-medium text-xs sm:text-sm"
+                                                            style={{ color: "#034ea2" }}
+                                                        >
+                                                            {formatarValor(
+                                                                data[selectedMetrica],
+                                                                selectedMetrica
+                                                            )}
+                                                        </TableCell>
+                                                    </TableRow>
+                                                );
+                                            })}
+                                        </TableBody>
+                                    </Table>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    ) : (
+                        !loading && (
+                            <p className="text-gray-500 text-center">
+                                Não há dados para exibir na tabela.
+                            </p>
+                        )
                     )}
                 </div>
             </main>
             <Footer />
         </div>
     );
-}
+};
 
 export default Ranking;
