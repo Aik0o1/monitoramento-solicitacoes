@@ -6,6 +6,8 @@ import { Search } from "lucide-react";
 import { estados, formatNomeParaUrl } from "../data/estados";
 import DestaqueDoMes from "./DestaqueDoMes";
 import Footer from "./Footer";
+import { Button } from "@/components/ui/button";
+import Header from "./Header";
 
 const HomePage = () => {
   const [filtroEstado, setFiltroEstado] = useState("");
@@ -19,39 +21,13 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="page-header py-8 px-4 bg-[#034ea2]">
-        <div className="container  max-w-6xl">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
-            <div className="flex px-6 flex-col sm:gap-15 sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 w-full">
-              <div className=" flex items-center">
-
-              <div className="flex flex-col text-sm">
-                <span className="font-bold">JUNTA COMERCIAL </span>
-                <span>DO PIAUÍ - JUCEPI</span>
-              </div>
-              <img
-                src="/logo/logo-rodape.png"
-                alt="Governo do Piauí"
-                className="header-logo"
-                />
-                </div>
-              <div className="text-center sm:text-left">
-                <h1 className="text-2xl sm:text-3xl font-bold text-white">Estatísticas</h1>
-                <p className="text-blue-100 mt-1 text-sm sm:text-base">
-                  Tempo do processo de abertura de Empresas e demais Pessoas
-                  Jurídicas
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header titulo="Estatísticas" subtitulo="Tempo do processo de abertura de Empresas e demais Pessoas Jurídicas" botao={true} ></Header>
 
       {/* Main Content */}
       <main className="container mx-auto max-w-6xl px-4 py-8">
         {/* Destaque do Mês */}
         <DestaqueDoMes />
-        
+
         <div className="mb-8">
           <h2 className="text-2xl font-semibold text-foreground mb-2">
             Selecione um Estado
@@ -116,7 +92,7 @@ const HomePage = () => {
         )}
 
       </main>
-        <Footer></Footer>
+      <Footer></Footer>
     </div>
   );
 };
