@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Trophy, Medal, Award, Calendar, Download, List } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Select,
@@ -251,7 +251,6 @@ const Ranking = () => {
         <Header
           titulo="Ranking"
           subtitulo="Classificação dos estados quanto aos tempos"
-          showBackButton={true}
         />
         <div className="flex justify-center items-center py-20">
           <p className="text-lg" style={{ color: "#231f20" }}>
@@ -265,7 +264,10 @@ const Ranking = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header titulo="Ranking" subtitulo="Classificação dos estados quanto aos tempos" showBackButton={true} />
+      <Header
+        titulo="Ranking"
+        subtitulo="Classificação dos estados quanto aos tempos"
+      />
 
       <main className="container mx-auto max-w-6xl px-4 py-8">
         {/* Filtros */}
@@ -357,12 +359,10 @@ const Ranking = () => {
               <div className="flex items-center gap-2">
                 <Trophy className="w-6 h-6" style={{ color: "#034ea2" }} />
                 <h2 className="text-xl font-bold" style={{ color: "#034ea2" }}>
-                 {metricas[selectedMetrica]}
-               
+                  {metricas[selectedMetrica]}
                 </h2>
               </div>
               <div className="text-sm text-gray-600 mt-1">
-                            
                 {selectedMonth && selectedYear && (
                   <span>
                     {" "}
@@ -413,7 +413,7 @@ const Ranking = () => {
                           <h3 className="font-semibold text-gray-800 text-xs sm:text-base lg:text-lg leading-tight">
                             {winner.estado.nome}
                           </h3>
-                         
+
                           <div
                             className="mt-1 sm:mt-2 text-xs sm:text-sm lg:text-base font-medium"
                             style={{ color: "#034ea2" }}
@@ -515,13 +515,12 @@ const Ranking = () => {
                         const posicao = index + 1;
 
                         return (
-                          
                           <TableRow
                             key={uf}
                             className={`hover:bg-gray-50 ${
                               posicao <= 3 ? "bg-yellow-50" : ""
                             } cursor-pointer`}
-                             onClick={() => navigate(`/${uf}`)}
+                            onClick={() => navigate(`/${uf}`)}
                           >
                             <TableCell className="font-medium">
                               <div className="flex items-center gap-2">
@@ -541,7 +540,6 @@ const Ranking = () => {
                               </div>
                             </TableCell>
                             <TableCell>
-                               
                               <div className="flex items-center gap-2 sm:gap-3">
                                 <img
                                   src={`/bandeiras-brasileiras/${uf}.png`}
@@ -557,7 +555,6 @@ const Ranking = () => {
                                   </div>
                                 </div>
                               </div>
-                             
                             </TableCell>
                             <TableCell
                               className="font-medium text-xs sm:text-sm"

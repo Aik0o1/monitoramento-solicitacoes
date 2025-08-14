@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <Header titulo="Estatísticas" subtitulo="Tempo do processo de abertura de Empresas e demais Pessoas Jurídicas" botao={true} ></Header>
+      <Header titulo="Estatísticas" subtitulo="Tempo do processo de abertura de Empresas e demais Pessoas Jurídicas"></Header>
 
       {/* Main Content */}
       <main className="container mx-auto max-w-6xl px-4 py-8">

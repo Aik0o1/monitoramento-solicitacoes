@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Header from "./Header";
 import Footer from "./Footer";
 import {
   Select,
@@ -69,7 +70,7 @@ const EstadoPage = () => {
     const carregarPeriodos = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:5000/api/periodos");
+        const response = await fetch("http://10.40.25.162:5000/api/periodos");
         const result = await response.json();
         if (result.success) {
           setPeriodosDisponiveis(result.data);
@@ -108,7 +109,7 @@ const EstadoPage = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
+        `http://10.40.25.162:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {
@@ -141,61 +142,16 @@ const EstadoPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="page-header py-4 md:py-8 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6 w-full">
-            {/* Botão Voltar - sempre à esquerda */}
-            <div className="flex justify-start w-full lg:w-auto lg:flex-shrink-0 order-1 lg:order-none">
-              <Button
-                onClick={handleGoBack}
-                variant="ghost"
-                size="sm"
-                className="text-white hover:bg-white/10 cursor-pointer text-xs sm:text-sm"
-              >
-                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
-                Voltar
-              </Button>
-            </div>
-
-            {/* Seção Central - Bandeira + Info do Estado */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
-              <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm">
-                <span className="font-bold text-white">JUNTA COMERCIAL</span>
-                <span className="text-blue-100">DO PIAUÍ - JUCEPI</span>
-              </div>
-              <img
-                src="https://www.pi.gov.br/wp-content/uploads/2024/11/logo_white.svg"
-                alt="Governo do Piauí"
-                className="header-logo h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[120px] sm:max-w-[150px] md:max-w-[180px] lg:max-w-none"
-              />
-            </div>
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full lg:flex-1 order-3 lg:order-none">
-              <div className="flex items-center gap-3 sm:gap-4">
-                {/* Bandeira do Estado */}
-                <div className="flex-shrink-0">
-                  <img
-                    src={`/bandeiras-brasileiras/${estado.sigla}.png`}
-                    alt={`Bandeira de ${estado.nome}`}
-                    className="w-14 h-10 sm:w-12 sm:h-8 md:w-14 md:h-9 object-cover rounded border-2 border-white/20 shadow-sm"
-                  />
-                </div>
-
-                {/* Informações do Estado */}
-                <div className="text-center sm:text-left">
-                  <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight">
-                    {estado.nome}
-                  </h1>
-                  <p className="text-blue-100 text-xs sm:text-sm md:text-base mt-0.5">
-                    {estado.sigla} • {estado.regiao}
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Logo do Governo - sempre à direita */}
-          </div>
-        </div>
-      </header>
+      <Header
+        titulo={estado.nome}
+        subtitulo={estado.sigla}
+        imagem={
+          "https://gru.ifsp.edu.br/images/phocagallery/galeria2/image03_grd.png"
+        }
+         
+        showBackButton={true}
+        onGoBack={() => navigate(-1)} // Função para voltar à página anterior
+      />
 
       {/* Main Content */}
       <main className="container mx-auto max-w-6xl px-4 py-8">
