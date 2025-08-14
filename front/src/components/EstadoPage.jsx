@@ -162,20 +162,19 @@ const EstadoPage = () => {
 
             {/* Botão Voltar - sempre à esquerda */}
             <div className="flex justify-start w-full lg:w-auto lg:flex-shrink-0 order-1 lg:order-none">
-              <Link to="/">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  className="text-white hover:bg-white/10 cursor-pointer text-xs sm:text-sm"
-                >
-                  <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
-                  Voltar
-                </Button>
-              </Link>
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-white hover:bg-white/10 cursor-pointer text-xs sm:text-sm"
+                onClick={() => navigate(-1)}
+              >
+                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                Voltar
+              </Button>
             </div>
 
             {/* Seção Central - Bandeira + Info do Estado */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
+            <div className="flex flex-row-reverse sm:flex-row-reverse gap-3 sm:gap-4 justify-center lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
               <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm">
                 <span className="font-bold text-white">JUNTA COMERCIAL</span>
                 <span className="text-blue-100">DO PIAUÍ - JUCEPI</span>
@@ -183,7 +182,7 @@ const EstadoPage = () => {
               <img
                 src="https://www.pi.gov.br/wp-content/uploads/2024/11/logo_white.svg"
                 alt="Governo do Piauí"
-                className="header-logo h-8 sm:h-10 md:h-12 lg:h-14 w-auto max-w-[120px] sm:max-w-[150px] md:max-w-[180px] lg:max-w-none"
+                className="h-9 sm:h-11 w-auto"
               />
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full lg:flex-1 order-3 lg:order-none">
