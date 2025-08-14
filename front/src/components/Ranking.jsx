@@ -48,7 +48,7 @@ const ORDEM_MESES = [
 const mesesMap = {
     janeiro: "Janeiro",
     fevereiro: "Fevereiro",
-    março: "Março",
+    marco: "Março",
     abril: "Abril",
     maio: "Maio",
     junho: "Junho",
@@ -94,7 +94,7 @@ const Ranking = () => {
     useEffect(() => {
         const carregarDadosIniciais = async () => {
             try {
-                const response = await fetch(`http://10.40.25.162:5000/api/periodos`);
+                const response = await fetch(`http://127.0.0.1:5000/api/periodos`);
                 const result = await response.json();
                 if (result.success && Object.keys(result.data).length > 0) {
                     setPeriodos(result.data);
@@ -122,7 +122,7 @@ const Ranking = () => {
         setLoading(true);
         try {
             const response = await fetch(
-                `http://10.40.25.162:5000/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
+                `http://127.0.0.1:5000/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
             );
             const result = await response.json();
             if (result.success) {
@@ -355,7 +355,7 @@ const Ranking = () => {
                             <div className="flex items-center gap-2">
                                 <Trophy className="w-6 h-6" style={{ color: "#034ea2" }} />
                                 <h2 className="text-xl font-bold" style={{ color: "#034ea2" }}>
-                                    {metricas[selectedMetrica]} - Top 3
+                                    {metricas[selectedMetrica]} 
 
                                 </h2>
                             </div>
