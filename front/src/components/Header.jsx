@@ -62,7 +62,7 @@ const Header = (props) => {
               <NavButton
                 to="/ranking"
                 icon={<Trophy className="w-5 h-5" />}
-                text="Ver Ranking"
+                text="Ranking"
               />
             )}
             {isRankingPage && (
