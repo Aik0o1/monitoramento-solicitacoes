@@ -6,9 +6,8 @@ const Header = (props) => {
   // Hook para saber a página atual
   const { pathname } = useLocation();
 
-  // Define as condições de forma mais clara
-  const isHomePage = pathname === "/"; // A página inicial (Estatísticas)
-  const isRankingPage = pathname.includes("/ranking");
+  const isHomePage = pathname === "/estatisticas"; // A página inicial (Estatísticas)
+  const isRankingPage = pathname === ("/");
 
   // Componente interno para os botões, mantendo o código limpo
   const NavButton = ({ to, icon, text }) => (
@@ -60,14 +59,14 @@ const Header = (props) => {
           <div className="flex items-center">
             {isHomePage && (
               <NavButton
-                to="/ranking"
+                to="/"
                 icon={<Trophy className="w-5 h-5" />}
                 text="Ranking"
               />
             )}
             {isRankingPage && (
               <NavButton
-                to="/"
+                to="/estatisticas"
                 icon={<BarChart3 className="w-5 h-5" />}
                 text="Estatísticas"
               />
