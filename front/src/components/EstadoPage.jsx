@@ -156,7 +156,7 @@ const EstadoPage = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="page-header py-4 md:py-8 px-4">
+      <header className="page-header py-6 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6 w-full">
 
@@ -174,8 +174,8 @@ const EstadoPage = () => {
             </div>
 
             {/* Seção Central - Bandeira + Info do Estado */}
-            <div className="flex flex-row-reverse sm:flex-row-reverse gap-3 sm:gap-4 justify-center lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
-              <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm">
+            <div className="flex flex-row-reverse sm:flex-row-reverse gap-3 sm:gap-4 justify-center sm:border-r sm:border-white/20 sm:pr-6 lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
+              <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm ">
                 <span className="font-bold text-white">JUNTA COMERCIAL</span>
                 <span className="text-blue-100">DO PIAUÍ - JUCEPI</span>
               </div>
@@ -198,10 +198,10 @@ const EstadoPage = () => {
 
                 {/* Informações do Estado */}
                 <div className="text-center sm:text-left">
-                  <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white leading-tight">
+                  <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                     {estado.nome}
                   </h1>
-                  <p className="text-blue-100 text-xs sm:text-sm md:text-base mt-0.5">
+                  <p className="text-blue-100 text-xs sm:text-sm md:text-sm mt-0.5">
                     {estado.sigla} • {estado.regiao}
                   </p>
                 </div>
