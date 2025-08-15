@@ -50,6 +50,12 @@ const EstadoPage = () => {
   const navigate = useNavigate();
   const estado = getEstadoBySigla(siglaEstado);
 
+  // const estadoInfo = {
+  //   nome: estado.nome,
+  //   sigla: estado.sigla,
+  //   bandeira: `/bandeiras-brasileiras/${estado.sigla}.png`
+  // };
+
   const mesesMap = {
     janeiro: "Janeiro",
     fevereiro: "Fevereiro",
@@ -70,7 +76,7 @@ const EstadoPage = () => {
     const carregarPeriodos = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://10.40.25.162:5000/api/periodos");
+        const response = await fetch("http://localhost:5000/api/periodos");
         const result = await response.json();
         if (result.success) {
           setPeriodosDisponiveis(result.data);
@@ -109,7 +115,7 @@ const EstadoPage = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://10.40.25.162:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
+        `http://localhost:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {
@@ -136,21 +142,15 @@ const EstadoPage = () => {
     }
   };
 
-  const handleGoBack = () => {
-    navigate(-1);
-  };
-
   return (
     <div className="min-h-screen bg-background">
       <Header
-        titulo={estado.nome}
-        subtitulo={estado.sigla}
-        imagem={
-          "https://gru.ifsp.edu.br/images/phocagallery/galeria2/image03_grd.png"
-        }
-         
+        // pageInfo={estadoInfo}
+        nome={estado.nome}
+        sigla={estado.sigla}
+        bandeira={`/bandeiras-brasileiras/${estado.sigla}.png`}
         showBackButton={true}
-        onGoBack={() => navigate(-1)} // Função para voltar à página anterior
+        onGoBack={() => navigate(-1)}
       />
 
       {/* Main Content */}

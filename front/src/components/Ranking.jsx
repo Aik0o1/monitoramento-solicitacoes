@@ -34,6 +34,7 @@ const metricas = {
 const ORDEM_MESES = [
   "janeiro",
   "fevereiro",
+  "marco",
   "março",
   "abril",
   "maio",
@@ -50,6 +51,7 @@ const mesesMap = {
   janeiro: "Janeiro",
   fevereiro: "Fevereiro",
   março: "Março",
+  marco: "Março",
   abril: "Abril",
   maio: "Maio",
   junho: "Junho",
@@ -96,7 +98,7 @@ const Ranking = () => {
   useEffect(() => {
     const carregarDadosIniciais = async () => {
       try {
-        const response = await fetch(`http://10.40.25.162:5000/api/periodos`);
+        const response = await fetch(`http://localhost:5000/api/periodos`);
         const result = await response.json();
         if (result.success && Object.keys(result.data).length > 0) {
           setPeriodos(result.data);
@@ -124,7 +126,7 @@ const Ranking = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://10.40.25.162:5000/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
+        `http://localhost:5000/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {
@@ -464,7 +466,7 @@ const Ranking = () => {
                 {selectedMonth && selectedYear && (
                   <span>
                     {" "}
-                    • {mesesMap[selectedMonth.toLowerCase()]} de {selectedYear}
+                    - {mesesMap[selectedMonth.toLowerCase()]} de {selectedYear}
                   </span>
                 )}
               </div>
@@ -483,9 +485,11 @@ const Ranking = () => {
           </div>
 
           {!loading && dadosEstados.length > 0 ? (
-            <Card className="border border-[#034ea2] mb-8 rounded-none py-0">
+            <Card className="border border-[#034ea2] rounded-sm mb-8 py-0">
               <CardContent className="p-0">
-                <div className="overflow-x-auto">
+                {/* <div className="overflow-x-auto rounded-2xl"> */}
+
+                <div className="overflow-x-auto rounded-sm">
                   <Table>
                     <TableHeader>
                       <TableRow style={{ backgroundColor: "#f8f9fa" }}>
@@ -517,8 +521,8 @@ const Ranking = () => {
                         return (
                           <TableRow
                             key={uf}
-                            className={`hover:bg-gray-50 ${
-                              posicao <= 3 ? "bg-yellow-50" : ""
+                            className={`hover:bg-blue-100 ${
+                              posicao <= 3 ? "bg-green-100" : ""
                             } cursor-pointer`}
                             onClick={() => navigate(`/${uf}`)}
                           >

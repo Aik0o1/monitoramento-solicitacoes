@@ -2,18 +2,13 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Trophy, ArrowLeft, BarChart3 } from "lucide-react";
 
-const Header = (props) => {
-  // Hook para saber a página atual
+// O Header recebe um objeto 'pageInfo' e as props do botão
+const Header = (props) => {  
   const { pathname } = useLocation();
-
+   const isRankingPage = pathname === "/"; 
   const isHomePage = pathname === "/estatisticas"; // A página inicial (Estatísticas)
-  const isRankingPage = pathname === "/";
-
-  // Componente interno para os botões, mantendo o código limpo
-  // Dentro do seu Header.js, substitua o NavButton antigo por este:
 
   const NavButton = ({ to, onClick, icon, text, className }) => {
-    // 1. Armazenamos todas as classes de estilo em uma variável para não repetir
     const styleClasses = `
     flex items-center justify-center
     px-5 py-3 
@@ -26,7 +21,6 @@ const Header = (props) => {
     hover:-translate-y-0.5
   `;
 
-    // 2. Verificamos se a prop 'to' foi passada. Se sim, renderizamos um <Link>.
     if (to) {
       return (
         <Link to={to} className={`${styleClasses} ${className}`}>
@@ -35,8 +29,6 @@ const Header = (props) => {
         </Link>
       );
     }
-
-    // 3. Se 'to' não foi passada, renderizamos um <button> com o evento onClick.
     return (
       <button onClick={onClick} className={`${styleClasses} ${className}`}>
         {icon}
@@ -49,8 +41,9 @@ const Header = (props) => {
     <header className="page-header bg-[#034ea2] text-white py-6 px-4 sm:px-6">
       <div className="container max-w-6xl mx-auto">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 w-full">
-          {/* Lado esquerdo: Logo + Título + Subtítulo */}
+          {/* Lado esquerdo: Logo + Conteúdo Dinâmico */}
           <div className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left gap-4">
+            {/* Logo Fixo */}
             <div className="flex items-center gap-3 flex-shrink-0">
               <img
                 src="/logo/logo-rodape.png"
@@ -62,16 +55,39 @@ const Header = (props) => {
                 <span>DO PIAUÍ - JUCEPI</span>
               </div>
             </div>
-            <div className="flex flex-col sm:border-l sm:border-white/20 sm:pl-6">
-            <img src={`${props.imagem}`} alt="" />
-              <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">
-                {props.titulo}
-              </h1>
-              <p className="text-blue-100 text-sm">{props.subtitulo}</p>
+
+            {/* Conteúdo que muda com base nas props */}
+            <div className="sm:border-l sm:border-white/20 sm:pl-6">
+              {/* Se a prop 'bandeira' existir, mostra o layout do estado */}
+              {props?.bandeira ? (
+                <div className="flex items-center gap-4">
+                  {" "}
+                  {/* AQUI ESTÁ A MÁGICA */}
+                  <img
+                    src={props.bandeira}
+                    alt={`Bandeira de ${props.nome}`}
+                    className="w-14 h-9 object-cover rounded shadow-md border-2 border-white/20"
+                  />
+                  <div>
+                    <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">
+                      {props.nome}
+                    </h1>
+                    <p className="text-blue-100 text-sm">{props.sigla}</p>
+                  </div>
+                </div>
+              ) : (
+                /* Caso contrário, mostra o título e subtítulo padrão */
+                <div>
+                  <h1 className="text-lg sm:text-xl lg:text-2xl font-bold">
+                    {props?.titulo}
+                  </h1>
+                  <p className="text-blue-100 text-sm">{props?.subtitulo}</p>
+                </div>
+              )}
             </div>
           </div>
 
-          {/* Lado direito: Botão de Navegação Repaginado */}
+          {/* Lado direito: Botão de Navegação */}
           <div className="flex items-center">
             {isHomePage && (
               <NavButton
@@ -80,6 +96,7 @@ const Header = (props) => {
                 text="Ranking"
               />
             )}
+
             {isRankingPage && (
               <NavButton
                 to="/estatisticas"
@@ -87,9 +104,10 @@ const Header = (props) => {
                 text="Estatísticas"
               />
             )}
+
             {props.showBackButton && (
               <NavButton
-                onClick={props.onGoBack} // A MUDANÇA ESTÁ AQUI!
+                to="/"
                 icon={<ArrowLeft className="w-5 h-5" />}
                 text="Voltar"
               />

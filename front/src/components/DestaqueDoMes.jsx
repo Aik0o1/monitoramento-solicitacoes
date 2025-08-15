@@ -71,7 +71,9 @@ const DestaqueDoMes = () => {
       const mesAtual = nomesMeses[mesIndex];
 
       try {
-        const response = await fetch(`http://localhost:5000/api/dados?mes=${mesAtual}&ano=${ano}`);
+        const response = await fetch(
+          `http://localhost:5000/api/dados?mes=${mesAtual}&ano=${ano}`
+        );
 
         if (response.ok) {
           const result = await response.json();
@@ -155,6 +157,7 @@ const DestaqueDoMes = () => {
       janeiro: "Janeiro",
       fevereiro: "Fevereiro",
       marco: "Março",
+      março: "Março",
       abril: "Abril",
       maio: "Maio",
       junho: "Junho",
