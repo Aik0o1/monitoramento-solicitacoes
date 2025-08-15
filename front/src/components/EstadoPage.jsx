@@ -108,7 +108,7 @@ const EstadoPage = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_URL_API}/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
+        `${import.meta.env.VITE_URL_API}/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {
