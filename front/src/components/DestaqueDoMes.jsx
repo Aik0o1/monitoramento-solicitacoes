@@ -181,7 +181,7 @@ const DestaqueDoMes = () => {
                   <div className="absolute inset-0 w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-yellow-400/40 to-orange-500/40 rounded-full animate-ping"></div>
                 </div>
 
-                <div className="min-w-0 flex-1">
+                <div className="min-w-0 flex-1 pt-4">
                   <h2 className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
                     1º LUGAR
                   </h2>
