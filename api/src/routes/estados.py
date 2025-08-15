@@ -76,7 +76,7 @@ def get_available_periods():
     # Itera sobre todos os documentos no banco de dados
     for doc_id in db:
         # Assumindo formato de ID: mes-ano (ex: junho-2025)
-        parts = doc_id.split('-')
+        parts = doc_id.split('_')
         if len(parts) == 2:
             mes, ano = parts
             periods.append({
@@ -119,7 +119,7 @@ def get_periodos():
             
             anos[ano].append({
                 'mes': mes,
-                'filename': f"{mes}-{ano}" # Mantendo a chave 'filename' para consistência com o front-end
+                'filename': f"{mes}_{ano}" # Mantendo a chave 'filename' para consistência com o front-end
             })
         
         return jsonify({
@@ -147,7 +147,7 @@ def get_dados_estado(sigla_estado):
             }), 400
         
         # Construir ID do documento no formato mes-ano
-        doc_id = f"{mes}-{ano}"
+        doc_id = f"{mes}_{ano}"
         
         # Carregar dados do CouchDB
         data = load_document(doc_id)
@@ -191,7 +191,7 @@ def get_todos_dados():
             }), 400
         
         # Construir ID do documento
-        doc_id = f"{mes}-{ano}"
+        doc_id = f"{mes}_{ano}"
         
         # Carregar dados do CouchDB
         data = load_document(doc_id)
