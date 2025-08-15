@@ -180,7 +180,7 @@ const EstadoPage = () => {
                 <span className="text-blue-100">DO PIAUÍ - JUCEPI</span>
               </div>
               <img
-                src="https://www.pi.gov.br/wp-content/uploads/2024/11/logo_white.svg"
+                src="/logo/logo-rodape.png"
                 alt="Governo do Piauí"
                 className="h-9 sm:h-11 w-auto"
               />
