@@ -69,7 +69,7 @@ const EstadoPage = () => {
     const carregarPeriodos = async () => {
       setLoading(true);
       try {
-        const response = await fetch("http://localhost:5000/api/periodos");
+        const response = await fetch(`${import.meta.env.VITE_URL_API}/api/periodos`);
         const result = await response.json();
         if (result.success) {
           setPeriodosDisponiveis(result.data);
@@ -108,7 +108,7 @@ const EstadoPage = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
+        `${import.meta.env.VITE_URL_API}/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {

@@ -98,7 +98,7 @@ const Ranking = () => {
   useEffect(() => {
     const carregarDadosIniciais = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/periodos`);
+        const response = await fetch(`${import.meta.env.VITE_URL_API}/api/periodos`);
         const result = await response.json();
         if (result.success && Object.keys(result.data).length > 0) {
           setPeriodos(result.data);
@@ -126,7 +126,7 @@ const Ranking = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
+        `${import.meta.env.VITE_URL_API}/api/dados?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {

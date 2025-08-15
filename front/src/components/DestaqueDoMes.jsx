@@ -51,7 +51,7 @@ const DestaqueDoMes = () => {
       const mesAtual = nomesMeses[mesIndex];
 
       try {
-        const response = await fetch(`https://rankingnacional-api.jucepi.pi.gov.br/api/dados?mes=${mesAtual}&ano=${ano}`);
+        const response = await fetch(`${import.meta.env.VITE_URL_API}/api/dados?mes=${mesAtual}&ano=${ano}`);
 
         if (response.ok) {
           const result = await response.json();
