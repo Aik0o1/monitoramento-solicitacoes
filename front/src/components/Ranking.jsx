@@ -254,7 +254,7 @@ const Ranking = () => {
           titulo="Ranking"
           subtitulo="Classificação dos estados quanto aos tempos"
         />
-        <div className="flex justify-center items-center py-20">
+        <div className="flex justify-center items-center py-96">
           <p className="text-lg" style={{ color: "#231f20" }}>
             Carregando dados...
           </p>
