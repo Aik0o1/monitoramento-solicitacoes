@@ -20,6 +20,16 @@ import {
 } from "lucide-react";
 import { getEstadoBySigla, estados } from "../data/estados";
 
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
 const ORDEM_MESES = [
   "janeiro",
   "fevereiro",
@@ -45,7 +55,8 @@ const EstadoPage = () => {
   const [dadosEstado, setDadosEstado] = useState(null);
   const [loading, setLoading] = useState(false);
   const [periodosDisponiveis, setPeriodosDisponiveis] = useState({});
-
+  const [dadosHistoricos, setDadosHistoricos] = useState(null);
+  const [dadosGrafico, setDadosGrafico] = useState([]);
   const navigate = useNavigate();
   const estado = getEstadoBySigla(siglaEstado);
 
@@ -113,6 +124,7 @@ const EstadoPage = () => {
       const result = await response.json();
       if (result.success) {
         setDadosEstado(result.data);
+        console.log(dadosEstado)
       } else {
         console.error("Erro na API:", result.error);
         setDadosEstado(null);
@@ -125,15 +137,72 @@ const EstadoPage = () => {
     }
   };
 
+
+  const transformarDadosParaGrafico = (dadosHistoricos, siglaEstado) => {
+    if (!dadosHistoricos || !dadosHistoricos[siglaEstado]) {
+      return [];
+    }
+
+    const mesesOrdenados = [
+      'janeiro', 'fevereiro', 'marco', 'abril', 'maio', 'junho',
+      'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
+    ];
+
+    const dadosEstado = dadosHistoricos[siglaEstado];
+
+    return mesesOrdenados
+      .filter(mes => dadosEstado[mes]) // Só inclui meses que têm dados
+      .map(mes => ({
+        name: mes.charAt(0).toUpperCase() + mes.slice(1), // Capitaliza o nome do mês
+        posicao: dadosEstado[mes].posicao,
+        posicaoRegistro: dadosEstado[mes].posicao_registro,
+        mes: mes
+      }));
+  };
+
+
+  const buscarHistorico = async () => {
+    if (!selectedMonth || !selectedYear || !estado) return;
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_URL_API}/api/dados-anuais/${estado.sigla}/${selectedYear}`
+      );
+      const result = await response.json();
+      if (result.success) {
+        setDadosHistoricos(result.data);
+
+        // Transforma os dados para o formato do gráfico
+        const dadosGrafico = transformarDadosParaGrafico(result.data, estado.sigla);
+        setDadosGrafico(dadosGrafico); // Você precisará criar este estado
+
+        console.log("Dados originais:", result.data);
+        console.log("Dados para gráfico:", dadosGrafico);
+      } else {
+        console.error("Erro na API:", result.error);
+        setDadosHistoricos(null);
+        setDadosGrafico([]);
+      }
+    } catch (error) {
+      console.error("Erro ao buscar dados:", error);
+      setDadosHistoricos(null);
+      setDadosGrafico([]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     buscarDados();
-  }, [selectedMonth, selectedYear, siglaEstado]); // Removido 'estado' e adicionado 'siglaEstado' para mais precisão
+    buscarHistorico()
+  }, [selectedMonth, selectedYear, siglaEstado]);
 
   const handleEstadoChange = (novaSigla) => {
     if (novaSigla && novaSigla !== siglaEstado) {
       navigate(`/${novaSigla}`);
     }
   };
+
 
   if (!estado) {
     return (
@@ -152,6 +221,7 @@ const EstadoPage = () => {
       </div>
     );
   }
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -296,6 +366,8 @@ const EstadoPage = () => {
 
         {dadosEstado && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
+
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -308,13 +380,86 @@ const EstadoPage = () => {
                   </span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className={"flex justify-between"}>
                 <div className="text-3xl font-bold text-[#007932] mb-2">
                   {dadosEstado.posicao}
                 </div>
                 <p className="text-sm text-muted-foreground">
                   {dadosEstado.periodo_filtrado}
                 </p>
+
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" size="sm" className="mt-2 cursor-pointer">
+                      Ver evolução no ano 
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl max-h-[80vh]">
+                    <DialogHeader>
+                      <DialogTitle>Evolução no Ranking Geral- {estado.nome} ({selectedYear})</DialogTitle>
+                      <DialogDescription>
+                        Acompanhe a evolução da posição no ranking ao longo dos meses
+                      </DialogDescription>
+                    </DialogHeader>
+
+                    <div className="w-full h-96 mt-4">
+                      {dadosGrafico && dadosGrafico.length > 0 ? (
+                        <ResponsiveContainer width="100%" height="100%">
+                          <LineChart
+                            data={dadosGrafico}
+                            margin={{
+                              top: 5,
+                              right: 30,
+                              left: 20,
+                              bottom: 5,
+                            }}
+                          >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis
+                              reversed={true}
+                              domain={[1, 'dataMax']}
+                              label={{ value: 'Posição', angle: -90, position: 'insideLeft' }}
+                            />
+                            <Tooltip
+                              formatter={(value, name) => {
+                                if (name === 'posicao') return [value + 'º', 'Posição Geral'];
+                                if (name === 'posicaoRegistro') return [value + 'º', 'Posição Registro'];
+                                return [value, name];
+                              }}
+                            />
+                            <Legend />
+                            <Line
+                              type="monotone"
+                              dataKey="posicao"
+                              stroke="green"
+                              strokeWidth={2}
+                              activeDot={{ r: 6 }}
+                              name="Posição Geral"
+                            />
+                            {/* <Line
+                              type="monotone"
+                              dataKey="posicaoRegistro"
+                              stroke="#82ca9d"
+                              strokeWidth={2}
+                              activeDot={{ r: 6 }}
+                              name="Posição Registro"
+                            /> */}
+                          </LineChart>
+                        </ResponsiveContainer>
+                      ) : (
+                        <div className="flex items-center justify-center h-full">
+                          <div className="text-center">
+                            <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+                            <p className="text-muted-foreground">
+                              {"Carregando dados do gráfico..."}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </CardContent>
             </Card>
 
@@ -330,14 +475,88 @@ const EstadoPage = () => {
                   </span>
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className={"flex justify-between"}>
                 <div className="text-3xl font-bold text-[#007932] mb-2">
                   {dadosEstado.posicao_registro}
                 </div>
                 <p className="text-sm text-muted-foreground">
                   {dadosEstado.periodo_filtrado}
                 </p>
+                
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="outline" size="sm" className="mt-2 cursor-pointer">
+                      Ver evolução no ano 
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-4xl max-h-[80vh]">
+                    <DialogHeader>
+                      <DialogTitle>Evolução no Ranking de Tempo de Registro - {estado.nome} ({selectedYear})</DialogTitle>
+                      <DialogDescription>
+                        Acompanhe a evolução da posição no ranking de tempo de registro ao longo dos meses
+                      </DialogDescription>
+                    </DialogHeader>
+
+                    <div className="w-full h-96 mt-4">
+                      {dadosGrafico && dadosGrafico.length > 0 ? (
+                        <ResponsiveContainer width="100%" height="100%">
+                          <LineChart
+                            data={dadosGrafico}
+                            margin={{
+                              top: 5,
+                              right: 30,
+                              left: 20,
+                              bottom: 5,
+                            }}
+                          >
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis
+                              reversed={true}
+                              domain={[1, 'dataMax']}
+                              label={{ value: 'Posição', angle: -90, position: 'insideLeft' }}
+                            />
+                            <Tooltip
+                              formatter={(value, name) => {
+                                if (name === 'posicao') return [value + 'º', 'Posição Geral'];
+                                if (name === 'posicaoRegistro') return [value + 'º', 'Posição Registro'];
+                                return [value, name];
+                              }}
+                            />
+                            <Legend />
+                            {/* <Line
+                              type="monotone"
+                              dataKey="posicao"
+                              stroke="#8884d8"
+                              strokeWidth={2}
+                              activeDot={{ r: 6 }}
+                              name="Posição Geral"
+                            /> */}
+                            <Line
+                              type="monotone"
+                              dataKey="posicaoRegistro"
+                              stroke="#034ea2"
+                              strokeWidth={2}
+                              activeDot={{ r: 6 }}
+                              name="Posição Registro"
+                            />
+                          </LineChart>
+                        </ResponsiveContainer>
+                      ) : (
+                        <div className="flex items-center justify-center h-full">
+                          <div className="text-center">
+                            <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+                            <p className="text-muted-foreground">
+                              {loading ? "Carregando dados do gráfico..." : "Não há dados disponíveis para exibir o gráfico"}
+                            </p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </CardContent>
+
             </Card>
 
             <Card className="metric-card">
