@@ -211,3 +211,48 @@ def get_todos_dados():
             'success': False,
             'error': str(e)
         }), 500
+    
+
+@estados_bp.route('/api/dados-anuais/<sigla_estado>/<int:ano>', methods=['GET'])
+@cross_origin()
+def get_dados_anuais_estado(sigla_estado, ano):
+    try:
+        meses_possiveis = [
+            'janeiro', 'fevereiro', 'marco', 'abril', 'maio', 'junho',
+            'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
+        ]
+        sigla_upper = sigla_estado.upper()
+        dados_estado = {}
+        
+        for mes in meses_possiveis:
+            doc_id = f"{mes}_{ano}"
+            
+            data = load_document(doc_id)
+            
+            if data is not None and sigla_upper in data:
+                estado_data = data[sigla_upper]
+                
+                dados_estado[mes] = {
+                    "posicao": estado_data.get("posicao"),
+                    "posicao_registro": estado_data.get("posicao_registro"), 
+                    "mes": mes
+                }
+        
+        if not dados_estado:
+            return jsonify({
+                'success': False,
+                'error': f'Nenhum dado encontrado para o estado {sigla_upper} no ano {ano}'
+            }), 404
+        
+        return jsonify({
+            'success': True,
+            'data': {
+                sigla_upper: dados_estado
+            }
+        })
+        
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500

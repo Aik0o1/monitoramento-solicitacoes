@@ -7,7 +7,6 @@ from flask_cors import CORS
 from src.routes.estados import estados_bp
 
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'static'))
-app.config['SECRET_KEY'] = 'asdf#FGSgvasgf$5$WGT'
 
 CORS(app)
 
