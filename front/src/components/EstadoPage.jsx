@@ -391,7 +391,7 @@ const EstadoPage = () => {
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button variant="outline" size="sm" className="mt-2 cursor-pointer">
-                      Ver evolução no ano 
+                      Ver evolução no ano
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[80vh]">
@@ -408,27 +408,51 @@ const EstadoPage = () => {
                           <LineChart
                             data={dadosGrafico}
                             margin={{
-                              top: 5,
+                              top: 20,
                               right: 30,
-                              left: 20,
-                              bottom: 5,
+                              left: 40,
+                              bottom: 60,
                             }}
                           >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" />
+                            <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                            <XAxis
+                              dataKey="name"
+                              angle={-45}
+                              textAnchor="end"
+                              height={80}
+                              interval={0}
+                              tick={{ fontSize: 12 }}
+                            />
                             <YAxis
                               reversed={true}
                               domain={[1, 'dataMax']}
-                              label={{ value: 'Posição', angle: -90, position: 'insideLeft' }}
+                              allowDecimals={false}
+                              type="number"
+                              label={{
+                                value: 'Posição',
+                                angle: -90,
+                                position: 'insideLeft',
+                                style: { textAnchor: 'middle' }
+                              }}
+                              tick={{ fontSize: 12 }}
                             />
                             <Tooltip
                               formatter={(value, name) => {
-                                if (name === 'posicao') return [value + 'º', 'Posição Geral'];
-                                if (name === 'posicaoRegistro') return [value + 'º', 'Posição Registro'];
+                                if (name === 'Posição Registro') return [value + 'º', 'Posição Registro'];
                                 return [value, name];
                               }}
+                              labelFormatter={(label) => `Mês: ${label}`}
+                              contentStyle={{
+                                backgroundColor: '#f8f9fa',
+                                border: '1px solid #dee2e6',
+                                borderRadius: '4px'
+                              }}
                             />
-                            <Legend />
+                            <Legend
+                              wrapperStyle={{
+                                paddingTop: '20px'
+                              }}
+                            />
                             <Line
                               type="monotone"
                               dataKey="posicao"
@@ -437,14 +461,6 @@ const EstadoPage = () => {
                               activeDot={{ r: 6 }}
                               name="Posição Geral"
                             />
-                            {/* <Line
-                              type="monotone"
-                              dataKey="posicaoRegistro"
-                              stroke="#82ca9d"
-                              strokeWidth={2}
-                              activeDot={{ r: 6 }}
-                              name="Posição Registro"
-                            /> */}
                           </LineChart>
                         </ResponsiveContainer>
                       ) : (
@@ -482,11 +498,11 @@ const EstadoPage = () => {
                 <p className="text-sm text-muted-foreground">
                   {dadosEstado.periodo_filtrado}
                 </p>
-                
+
                 <Dialog>
                   <DialogTrigger asChild>
                     <Button variant="outline" size="sm" className="mt-2 cursor-pointer">
-                      Ver evolução no ano 
+                      Ver evolução no ano
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[80vh]">
@@ -503,42 +519,59 @@ const EstadoPage = () => {
                           <LineChart
                             data={dadosGrafico}
                             margin={{
-                              top: 5,
+                              top: 20,
                               right: 30,
-                              left: 20,
-                              bottom: 5,
+                              left: 40,
+                              bottom: 60,
                             }}
                           >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="name" />
+                            <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                            <XAxis
+                              dataKey="name"
+                              angle={-45}
+                              textAnchor="end"
+                              height={80}
+                              interval={0}
+                              tick={{ fontSize: 12 }}
+                            />
                             <YAxis
                               reversed={true}
                               domain={[1, 'dataMax']}
-                              label={{ value: 'Posição', angle: -90, position: 'insideLeft' }}
+                              allowDecimals={false}
+                              type="number"
+                              label={{
+                                value: 'Posição',
+                                angle: -90,
+                                position: 'insideLeft',
+                                style: { textAnchor: 'middle' }
+                              }}
+                              tick={{ fontSize: 12 }}
                             />
                             <Tooltip
                               formatter={(value, name) => {
-                                if (name === 'posicao') return [value + 'º', 'Posição Geral'];
-                                if (name === 'posicaoRegistro') return [value + 'º', 'Posição Registro'];
+                                if (name === 'Posição Registro') return [value + 'º', 'Posição Registro'];
                                 return [value, name];
                               }}
+                              labelFormatter={(label) => `Mês: ${label}`}
+                              contentStyle={{
+                                backgroundColor: '#f8f9fa',
+                                border: '1px solid #dee2e6',
+                                borderRadius: '4px'
+                              }}
                             />
-                            <Legend />
-                            {/* <Line
-                              type="monotone"
-                              dataKey="posicao"
-                              stroke="#8884d8"
-                              strokeWidth={2}
-                              activeDot={{ r: 6 }}
-                              name="Posição Geral"
-                            /> */}
+                            <Legend
+                              wrapperStyle={{
+                                paddingTop: '20px'
+                              }}
+                            />
                             <Line
                               type="monotone"
                               dataKey="posicaoRegistro"
                               stroke="#034ea2"
-                              strokeWidth={2}
-                              activeDot={{ r: 6 }}
+                              strokeWidth={3}
+                              activeDot={{ r: 6, fill: '#034ea2' }}
                               name="Posição Registro"
+                              dot={{ r: 4, fill: '#034ea2' }}
                             />
                           </LineChart>
                         </ResponsiveContainer>
