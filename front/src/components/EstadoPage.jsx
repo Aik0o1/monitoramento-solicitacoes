@@ -484,21 +484,27 @@ const EstadoPage = () => {
                               ]}
                             />
                             <Legend wrapperStyle={{ paddingTop: "20px" }} />
-                            {[...anosComparacao].sort((a, b) => a - b).reverse().map((ano, index) => (
-                              <Line
-                                key={ano}
-                                type="monotone"
-                                dataKey={`posicao_${ano}`}
-                                name={`${ano}`}
-                                stroke={
-                                  ["#007932", "#034ea2", "#fdb913", "#d9534f"][
-                                    index % 4
-                                  ]
-                                }
-                                strokeWidth={2}
-                                activeDot={{ r: 8 }}
-                              />
-                            ))}
+                            {[...anosComparacao]
+                              .sort((a, b) => a - b)
+                              .reverse()
+                              .map((ano, index) => (
+                                <Line
+                                  key={ano}
+                                  type="monotone"
+                                  dataKey={`posicao_${ano}`}
+                                  name={`${ano}`}
+                                  stroke={
+                                    [
+                                      "#007932",
+                                      "#034ea2",
+                                      "#fdb913",
+                                      "#d9534f",
+                                    ][index % 4]
+                                  }
+                                  strokeWidth={2}
+                                  activeDot={{ r: 8 }}
+                                />
+                              ))}
                           </LineChart>
                         </ResponsiveContainer>
                       ) : (
@@ -515,7 +521,7 @@ const EstadoPage = () => {
                 <CardTitle className="flex items-center space-x-2 text-lg">
                   <Trophy className="w-5 h-5 text-[#007932]" />
                   <span>
-                    Ranking - Tempo de Registro
+                    Ranking - Tempo de Registro para Abertura de Empresas
                     <span className="text-sm text-muted-foreground align-super">
                       2
                     </span>
@@ -586,21 +592,27 @@ const EstadoPage = () => {
                               ]}
                             />
                             <Legend wrapperStyle={{ paddingTop: "20px" }} />
-                            {[...anosComparacao].sort((a, b) => a - b).reverse().map((ano, index) => (
-                              <Line
-                                key={ano}
-                                type="monotone"
-                                dataKey={`posicao_registro_${ano}`}
-                                name={`${ano}`}
-                                stroke={
-                                  ["#034ea2", "#007932", "#fdb913", "#d9534f"][
-                                    index % 4
-                                  ]
-                                }
-                                strokeWidth={2}
-                                activeDot={{ r: 8 }}
-                              />
-                            ))}
+                            {[...anosComparacao]
+                              .sort((a, b) => a - b)
+                              .reverse()
+                              .map((ano, index) => (
+                                <Line
+                                  key={ano}
+                                  type="monotone"
+                                  dataKey={`posicao_registro_${ano}`}
+                                  name={`${ano}`}
+                                  stroke={
+                                    [
+                                      "#034ea2",
+                                      "#007932",
+                                      "#fdb913",
+                                      "#d9534f",
+                                    ][index % 4]
+                                  }
+                                  strokeWidth={2}
+                                  activeDot={{ r: 8 }}
+                                />
+                              ))}
                           </LineChart>
                         </ResponsiveContainer>
                       ) : (
@@ -715,6 +727,20 @@ const EstadoPage = () => {
               </p>
             </CardContent>
           </Card>
+        )}
+
+        {dadosEstado && (
+          <div className="text-muted-foreground text-sm mt-6 space-y-1">
+            <p>
+              <span className="align-super text-[10px]">1 </span>
+              Consulta Prévia no Município + Tempo de Registro na Junta
+              Comercial
+            </p>
+            <p>
+              <span className="align-super text-[10px]">2 </span>
+              Tempo de Registro na Junta Comercial
+            </p>
+          </div>
         )}
       </main>
       <Footer />
