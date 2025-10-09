@@ -105,8 +105,6 @@ const EstadoPage = () => {
         }
       } catch (error) {
         console.error("Erro ao carregar períodos:", error);
-      } finally {
-        // O loading principal deve ser controlado pela busca de dados, não aqui
       }
     };
     carregarPeriodos();
@@ -322,7 +320,58 @@ const EstadoPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <header className="page-header py-6 px-4 sm:px-6">
-        {/* Header JSX ... */}
+        <div className="container mx-auto max-w-6xl">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6 w-full">
+            {/* Botão Voltar - sempre à esquerda */}
+            <div className="flex justify-start w-full lg:w-auto lg:flex-shrink-0 order-1 lg:order-none">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-white hover:bg-white/10 cursor-pointer text-xs sm:text-sm"
+                onClick={() => navigate(-1)}
+              >
+                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                Voltar
+              </Button>
+            </div>
+
+            {/* Seção Central - Bandeira + Info do Estado */}
+            <div className="flex flex-row-reverse sm:flex-row-reverse gap-3 sm:gap-4 justify-center sm:border-r sm:border-white/20 sm:pr-6 lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
+              <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm ">
+                <span className="font-bold text-white">JUNTA COMERCIAL</span>
+                <span className="text-blue-100">DO PIAUÍ - JUCEPI</span>
+              </div>
+              <img
+                src="/logo/logo-rodape.png"
+                alt="Governo do Piauí"
+                className="h-9 sm:h-11 w-auto"
+              />
+            </div>
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full lg:flex-1 order-3 lg:order-none">
+              <div className="flex items-center gap-3 sm:gap-4">
+                {/* Bandeira do Estado */}
+                <div className="flex-shrink-0">
+                  <img
+                    src={`/bandeiras-brasileiras/${estado.sigla}.png`}
+                    alt={`Bandeira de ${estado.nome}`}
+                    className="w-14 h-10 sm:w-12 sm:h-8 md:w-14 md:h-9 object-cover rounded border-2 border-white/20 shadow-sm"
+                  />
+                </div>
+
+                {/* Informações do Estado */}
+                <div className="text-center sm:text-left">
+                  <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
+                    {estado.nome}
+                  </h1>
+                  <p className="text-blue-100 text-xs sm:text-sm md:text-sm mt-0.5">
+                    {estado.sigla} • {estado.regiao}
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* Logo do Governo - sempre à direita */}
+          </div>
+        </div>
       </header>
 
       <main className="container mx-auto max-w-6xl px-4 py-8">
