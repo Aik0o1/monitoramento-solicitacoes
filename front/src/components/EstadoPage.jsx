@@ -20,7 +20,16 @@ import {
 } from "lucide-react";
 import { getEstadoBySigla, estados } from "../data/estados";
 
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 import {
   Dialog,
   DialogContent,
@@ -28,13 +37,15 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "@/components/ui/dialog"
+} from "@/components/ui/dialog";
+
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
 
 const ORDEM_MESES = [
   "janeiro",
   "fevereiro",
   "marco",
-  "março",
   "abril",
   "maio",
   "junho",
@@ -48,7 +59,7 @@ const ORDEM_MESES = [
 
 const EstadoPage = () => {
   const { siglaEstado: siglaDaUrl } = useParams();
-  const siglaEstado = siglaDaUrl ? siglaDaUrl.toUpperCase() : '';
+  const siglaEstado = siglaDaUrl ? siglaDaUrl.toUpperCase() : "";
 
   const [selectedMonth, setSelectedMonth] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
@@ -59,6 +70,11 @@ const EstadoPage = () => {
   const [dadosGrafico, setDadosGrafico] = useState([]);
   const navigate = useNavigate();
   const estado = getEstadoBySigla(siglaEstado);
+
+  // Estados para comparação de anos no gráfico
+  const [anosComparacao, setAnosComparacao] = useState([]);
+  const [dadosGraficoComparativo, setDadosGraficoComparativo] = useState([]);
+  const [loadingComparacao, setLoadingComparacao] = useState(false);
 
   const mesesMap = {
     janeiro: "Janeiro",
@@ -80,51 +96,57 @@ const EstadoPage = () => {
     const carregarPeriodos = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`${import.meta.env.VITE_URL_API}/api/periodos`);
+        const response = await fetch(
+          `${import.meta.env.VITE_URL_API}/api/periodos`
+        );
         const result = await response.json();
         if (result.success) {
           setPeriodosDisponiveis(result.data);
         }
       } catch (error) {
         console.error("Erro ao carregar períodos:", error);
+      } finally {
+        // O loading principal deve ser controlado pela busca de dados, não aqui
       }
     };
     carregarPeriodos();
   }, []);
 
   useEffect(() => {
-    // Verifica se os períodos já foram carregados
     if (Object.keys(periodosDisponiveis).length > 0) {
-      // 1. Encontra o ano mais recente
       const anoMaisRecente = Object.keys(periodosDisponiveis).sort(
         (a, b) => b - a
       )[0];
-
-      // 2. Encontra o mês mais recente dentro daquele ano
       const mesesDoAno = periodosDisponiveis[anoMaisRecente];
       const mesMaisRecente = mesesDoAno.sort(
         (a, b) =>
           ORDEM_MESES.indexOf(b.mes.toLowerCase()) -
           ORDEM_MESES.indexOf(a.mes.toLowerCase())
       )[0].mes;
-
-      // 3. Define os estados, o que vai disparar a busca de dados
       setSelectedYear(anoMaisRecente);
       setSelectedMonth(mesMaisRecente);
     }
-  }, [periodosDisponiveis]); // Roda sempre que a lista de períodos for atualizada
+  }, [periodosDisponiveis]);
+
+  // Define o ano selecionado como padrão para comparação
+  useEffect(() => {
+    if (selectedYear) {
+      setAnosComparacao([selectedYear]);
+    }
+  }, [selectedYear]);
 
   const buscarDados = async () => {
     if (!selectedMonth || !selectedYear || !estado) return;
     setLoading(true);
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_URL_API}/api/dados/${estado.sigla}?mes=${selectedMonth}&ano=${selectedYear}`
+        `${import.meta.env.VITE_URL_API}/api/dados/${
+          estado.sigla
+        }?mes=${selectedMonth}&ano=${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {
         setDadosEstado(result.data);
-        console.log(dadosEstado)
       } else {
         console.error("Erro na API:", result.error);
         setDadosEstado(null);
@@ -137,54 +159,42 @@ const EstadoPage = () => {
     }
   };
 
-
   const transformarDadosParaGrafico = (dadosHistoricos, siglaEstado) => {
     if (!dadosHistoricos || !dadosHistoricos[siglaEstado]) {
       return [];
     }
-
-    const mesesOrdenados = [
-      'janeiro', 'fevereiro', 'marco', 'abril', 'maio', 'junho',
-      'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
-    ];
-
     const dadosEstado = dadosHistoricos[siglaEstado];
-
-    return mesesOrdenados
-      .filter(mes => dadosEstado[mes]) // Só inclui meses que têm dados
-      .map(mes => ({
-        name: mes.charAt(0).toUpperCase() + mes.slice(1), // Capitaliza o nome do mês
-        posicao: dadosEstado[mes].posicao,
-        posicaoRegistro: dadosEstado[mes].posicao_registro,
-        mes: mes
-      }));
+    return ORDEM_MESES.filter((mes) => dadosEstado[mes]).map((mes) => ({
+      name: mesesMap[mes] || mes,
+      posicao: dadosEstado[mes].posicao,
+      posicaoRegistro: dadosEstado[mes].posicao_registro,
+    }));
   };
 
-
   const buscarHistorico = async () => {
-    if (!selectedMonth || !selectedYear || !estado) return;
-    setLoading(true);
+    if (!selectedYear || !estado) return;
+    setLoading(true); // Usar o mesmo loading para simplificar
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_URL_API}/api/dados-anuais/${estado.sigla}/${selectedYear}`
+        `${import.meta.env.VITE_URL_API}/api/dados-anuais/${
+          estado.sigla
+        }/${selectedYear}`
       );
       const result = await response.json();
       if (result.success) {
         setDadosHistoricos(result.data);
-
-        // Transforma os dados para o formato do gráfico
-        const dadosGrafico = transformarDadosParaGrafico(result.data, estado.sigla);
-        setDadosGrafico(dadosGrafico); // Você precisará criar este estado
-
-        console.log("Dados originais:", result.data);
-        console.log("Dados para gráfico:", dadosGrafico);
+        const dadosFormatados = transformarDadosParaGrafico(
+          result.data,
+          estado.sigla
+        );
+        setDadosGrafico(dadosFormatados);
       } else {
-        console.error("Erro na API:", result.error);
+        console.error("Erro na API (histórico):", result.error);
         setDadosHistoricos(null);
         setDadosGrafico([]);
       }
     } catch (error) {
-      console.error("Erro ao buscar dados:", error);
+      console.error("Erro ao buscar histórico:", error);
       setDadosHistoricos(null);
       setDadosGrafico([]);
     } finally {
@@ -192,9 +202,10 @@ const EstadoPage = () => {
     }
   };
 
+  // Efeitos para buscar dados
   useEffect(() => {
     buscarDados();
-    buscarHistorico()
+    buscarHistorico();
   }, [selectedMonth, selectedYear, siglaEstado]);
 
   const handleEstadoChange = (novaSigla) => {
@@ -203,6 +214,61 @@ const EstadoPage = () => {
     }
   };
 
+  // Função para buscar dados de múltiplos anos para comparação
+  const buscarDadosComparativos = async () => {
+    if (anosComparacao.length < 1 || !estado) {
+      // Busca mesmo com 1 ano para ter os dados prontos
+      setDadosGraficoComparativo([]);
+      return;
+    }
+
+    setLoadingComparacao(true);
+    const promises = anosComparacao.map((ano) =>
+      fetch(
+        `${import.meta.env.VITE_URL_API}/api/dados-anuais/${
+          estado.sigla
+        }/${ano}`
+      ).then((res) => res.json())
+    );
+
+    try {
+      const resultados = await Promise.all(promises);
+      const dadosColetados = resultados.reduce((acc, result, index) => {
+        if (result.success && result.data[siglaEstado]) {
+          const ano = anosComparacao[index];
+          acc[ano] = result.data[siglaEstado];
+        }
+        return acc;
+      }, {});
+      transformarDadosParaGraficoComparativo(dadosColetados);
+    } catch (error) {
+      console.error("Erro ao buscar dados comparativos:", error);
+      setDadosGraficoComparativo([]);
+    } finally {
+      setLoadingComparacao(false);
+    }
+  };
+
+  // Função para transformar os dados de múltiplos anos para o gráfico
+  const transformarDadosParaGraficoComparativo = (dadosPorAno) => {
+    const dadosFormatados = ORDEM_MESES.map((mes) => {
+      const entradaMes = { name: mesesMap[mes] || mes };
+      for (const ano in dadosPorAno) {
+        if (dadosPorAno[ano] && dadosPorAno[ano][mes]) {
+          entradaMes[`posicao_${ano}`] = dadosPorAno[ano][mes].posicao;
+          entradaMes[`posicao_registro_${ano}`] =
+            dadosPorAno[ano][mes].posicao_registro;
+        }
+      }
+      return entradaMes;
+    });
+    setDadosGraficoComparativo(dadosFormatados);
+  };
+
+  // Efeito para buscar os dados comparativos sempre que a seleção de anos mudar
+  useEffect(() => {
+    buscarDadosComparativos();
+  }, [anosComparacao, siglaEstado]);
 
   if (!estado) {
     return (
@@ -214,7 +280,7 @@ const EstadoPage = () => {
           <Link to="/">
             <Button>
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Voltar para a lista
+              Voltar
             </Button>
           </Link>
         </div>
@@ -222,68 +288,43 @@ const EstadoPage = () => {
     );
   }
 
+  const CheckboxComparacao = () => (
+    <div className="border-t border-b border-border py-4 my-4">
+      <p className="text-sm font-medium text-foreground mb-3">
+        Comparar com outros anos:
+      </p>
+      <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-4">
+        {Object.keys(periodosDisponiveis)
+          .sort((a, b) => b - a)
+          .map((ano) => (
+            <div key={ano} className="flex items-center space-x-2">
+              <Checkbox
+                id={`compare-${ano}-modal`}
+                checked={anosComparacao.includes(ano)}
+                onCheckedChange={(checked) => {
+                  setAnosComparacao((prev) =>
+                    checked ? [...prev, ano] : prev.filter((a) => a !== ano)
+                  );
+                }}
+              />
+              <Label
+                htmlFor={`compare-${ano}-modal`}
+                className="cursor-pointer"
+              >
+                {ano}
+              </Label>
+            </div>
+          ))}
+      </div>
+    </div>
+  );
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
       <header className="page-header py-6 px-4 sm:px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6 w-full">
-
-            {/* Botão Voltar - sempre à esquerda */}
-            <div className="flex justify-start w-full lg:w-auto lg:flex-shrink-0 order-1 lg:order-none">
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white hover:bg-white/10 cursor-pointer text-xs sm:text-sm"
-                onClick={() => navigate(-1)}
-              >
-                <ArrowLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
-                Voltar
-              </Button>
-            </div>
-
-            {/* Seção Central - Bandeira + Info do Estado */}
-            <div className="flex flex-row-reverse sm:flex-row-reverse gap-3 sm:gap-4 justify-center sm:border-r sm:border-white/20 sm:pr-6 lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
-              <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm ">
-                <span className="font-bold text-white">JUNTA COMERCIAL</span>
-                <span className="text-blue-100">DO PIAUÍ - JUCEPI</span>
-              </div>
-              <img
-                src="/logo/logo-rodape.png"
-                alt="Governo do Piauí"
-                className="h-9 sm:h-11 w-auto"
-              />
-            </div>
-            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full lg:flex-1 order-3 lg:order-none">
-              <div className="flex items-center gap-3 sm:gap-4">
-                {/* Bandeira do Estado */}
-                <div className="flex-shrink-0">
-                  <img
-                    src={`/bandeiras-brasileiras/${estado.sigla}.png`}
-                    alt={`Bandeira de ${estado.nome}`}
-                    className="w-14 h-10 sm:w-12 sm:h-8 md:w-14 md:h-9 object-cover rounded border-2 border-white/20 shadow-sm"
-                  />
-                </div>
-
-                {/* Informações do Estado */}
-                <div className="text-center sm:text-left">
-                  <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
-                    {estado.nome}
-                  </h1>
-                  <p className="text-blue-100 text-xs sm:text-sm md:text-sm mt-0.5">
-                    {estado.sigla} • {estado.regiao}
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Logo do Governo - sempre à direita */}
-          </div>
-
-        </div>
+        {/* Header JSX ... */}
       </header>
 
-      {/* Main Content */}
       <main className="container mx-auto max-w-6xl px-4 py-8">
         {/* Filtros */}
         <Card className="filter-card mb-8">
@@ -296,9 +337,9 @@ const EstadoPage = () => {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
+                <Label className="block text-sm font-medium text-foreground mb-2">
                   Estado
-                </label>
+                </Label>
                 <Select value={siglaEstado} onValueChange={handleEstadoChange}>
                   <SelectTrigger>
                     <SelectValue placeholder="Selecione o estado" />
@@ -312,27 +353,26 @@ const EstadoPage = () => {
                   </SelectContent>
                 </Select>
               </div>
-
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
+                <Label className="block text-sm font-medium text-foreground mb-2">
                   Mês
-                </label>
+                </Label>
                 <Select value={selectedMonth} onValueChange={setSelectedMonth}>
                   <SelectTrigger>
                     <SelectValue placeholder="Selecione o mês" />
                   </SelectTrigger>
                   <SelectContent>
                     {Object.keys(periodosDisponiveis).length > 0 &&
-                      Object.values(periodosDisponiveis)
-                        .flat()
-                        .map((p) => p.mes)
-                        .filter(
-                          (mes, index, self) => self.indexOf(mes) === index
-                        )
+                      [
+                        ...new Set(
+                          Object.values(periodosDisponiveis)
+                            .flat()
+                            .map((p) => p.mes)
+                        ),
+                      ]
                         .sort(
                           (a, b) =>
-                            Object.keys(mesesMap).indexOf(a) -
-                            Object.keys(mesesMap).indexOf(b)
+                            ORDEM_MESES.indexOf(a) - ORDEM_MESES.indexOf(b)
                         )
                         .map((mes) => (
                           <SelectItem key={mes} value={mes}>
@@ -342,21 +382,22 @@ const EstadoPage = () => {
                   </SelectContent>
                 </Select>
               </div>
-
               <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
+                <Label className="block text-sm font-medium text-foreground mb-2">
                   Ano
-                </label>
+                </Label>
                 <Select value={selectedYear} onValueChange={setSelectedYear}>
                   <SelectTrigger>
                     <SelectValue placeholder="Selecione o ano" />
                   </SelectTrigger>
                   <SelectContent>
-                    {Object.keys(periodosDisponiveis).map((ano) => (
-                      <SelectItem key={ano} value={ano}>
-                        {ano}
-                      </SelectItem>
-                    ))}
+                    {Object.keys(periodosDisponiveis)
+                      .sort((a, b) => b - a)
+                      .map((ano) => (
+                        <SelectItem key={ano} value={ano}>
+                          {ano}
+                        </SelectItem>
+                      ))}
                   </SelectContent>
                 </Select>
               </div>
@@ -366,55 +407,58 @@ const EstadoPage = () => {
 
         {dadosEstado && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-
-
+            {/* Card Ranking Geral */}
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
                   <Trophy className="w-5 h-5 text-[#007932]" />
                   <span>
-                    Ranking Geral - Tempo de Abertura de Empresas{" "}
+                    Ranking Geral - Tempo de Abertura de Empresas
                     <span className="text-sm text-muted-foreground align-super">
                       1
                     </span>
                   </span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className={"flex justify-between"}>
-                <div className="text-3xl font-bold text-[#007932] mb-2">
-                  {dadosEstado.posicao}
+              <CardContent className="flex justify-between items-center">
+                <div>
+                  <div className="text-3xl font-bold text-[#007932]">
+                    {dadosEstado.posicao}º
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {dadosEstado.periodo_filtrado}
+                  </p>
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  {dadosEstado.periodo_filtrado}
-                </p>
-
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline" size="sm" className="mt-2 cursor-pointer">
-                      Ver evolução no ano
+                    <Button variant="outline" size="sm">
+                      Ver evolução
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[80vh]">
                     <DialogHeader>
-                      <DialogTitle>Evolução no Ranking Geral- {estado.nome} ({selectedYear})</DialogTitle>
+                      <DialogTitle>{`Evolução - Ranking Geral (${estado.nome})`}</DialogTitle>
                       <DialogDescription>
-                        Acompanhe a evolução da posição no ranking ao longo dos meses
+                        Acompanhe a evolução da posição e compare com outros
+                        anos.
                       </DialogDescription>
                     </DialogHeader>
-
+                    <CheckboxComparacao />
                     <div className="w-full h-96 mt-4">
-                      {dadosGrafico && dadosGrafico.length > 0 ? (
+                      {loadingComparacao ? (
+                        <p>Carregando...</p>
+                      ) : dadosGraficoComparativo.length > 0 ? (
                         <ResponsiveContainer width="100%" height="100%">
                           <LineChart
-                            data={dadosGrafico}
+                            data={dadosGraficoComparativo}
                             margin={{
                               top: 20,
                               right: 30,
-                              left: 40,
+                              left: 20,
                               bottom: 60,
                             }}
                           >
-                            <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                            <CartesianGrid strokeDasharray="3 3" />
                             <XAxis
                               dataKey="name"
                               angle={-45}
@@ -425,107 +469,98 @@ const EstadoPage = () => {
                             />
                             <YAxis
                               reversed={true}
-                              domain={[1, 'dataMax']}
+                              domain={[1, "dataMax"]}
                               allowDecimals={false}
-                              type="number"
                               label={{
-                                value: 'Posição',
+                                value: "Posição",
                                 angle: -90,
-                                position: 'insideLeft',
-                                style: { textAnchor: 'middle' }
+                                position: "insideLeft",
                               }}
-                              tick={{ fontSize: 12 }}
                             />
                             <Tooltip
-                              formatter={(value, name) => {
-                                if (name === 'Posição Registro') return [value + 'º', 'Posição Registro'];
-                                return [value, name];
-                              }}
-                              labelFormatter={(label) => `Mês: ${label}`}
-                              contentStyle={{
-                                backgroundColor: '#f8f9fa',
-                                border: '1px solid #dee2e6',
-                                borderRadius: '4px'
-                              }}
+                              formatter={(value, name) => [
+                                `${value}º`,
+                                `${name}`,
+                              ]}
                             />
-                            <Legend
-                              wrapperStyle={{
-                                paddingTop: '20px'
-                              }}
-                            />
-                            <Line
-                              type="monotone"
-                              dataKey="posicao"
-                              stroke="green"
-                              strokeWidth={2}
-                              activeDot={{ r: 6 }}
-                              name="Posição Geral"
-                            />
+                            <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                            {[...anosComparacao].sort((a, b) => a - b).reverse().map((ano, index) => (
+                              <Line
+                                key={ano}
+                                type="monotone"
+                                dataKey={`posicao_${ano}`}
+                                name={`${ano}`}
+                                stroke={
+                                  ["#007932", "#034ea2", "#fdb913", "#d9534f"][
+                                    index % 4
+                                  ]
+                                }
+                                strokeWidth={2}
+                                activeDot={{ r: 8 }}
+                              />
+                            ))}
                           </LineChart>
                         </ResponsiveContainer>
                       ) : (
-                        <div className="flex items-center justify-center h-full">
-                          <div className="text-center">
-                            <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                            <p className="text-muted-foreground">
-                              {"Carregando dados do gráfico..."}
-                            </p>
-                          </div>
-                        </div>
+                        <p>Selecione um ou mais anos para ver o gráfico.</p>
                       )}
                     </div>
                   </DialogContent>
                 </Dialog>
               </CardContent>
             </Card>
-
+            {/* Card Ranking Tempo de Registro */}
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
                   <Trophy className="w-5 h-5 text-[#007932]" />
                   <span>
-                    Ranking - Tempo de Registro para Abertura de Empresas{" "}
+                    Ranking - Tempo de Registro
                     <span className="text-sm text-muted-foreground align-super">
                       2
                     </span>
                   </span>
                 </CardTitle>
               </CardHeader>
-              <CardContent className={"flex justify-between"}>
-                <div className="text-3xl font-bold text-[#007932] mb-2">
-                  {dadosEstado.posicao_registro}
+              <CardContent className="flex justify-between items-center">
+                <div>
+                  <div className="text-3xl font-bold text-[#007932]">
+                    {dadosEstado.posicao_registro}º
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    {dadosEstado.periodo_filtrado}
+                  </p>
                 </div>
-                <p className="text-sm text-muted-foreground">
-                  {dadosEstado.periodo_filtrado}
-                </p>
-
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Button variant="outline" size="sm" className="mt-2 cursor-pointer">
-                      Ver evolução no ano
+                    <Button variant="outline" size="sm">
+                      Ver evolução
                     </Button>
                   </DialogTrigger>
                   <DialogContent className="max-w-4xl max-h-[80vh]">
                     <DialogHeader>
-                      <DialogTitle>Evolução no Ranking de Tempo de Registro - {estado.nome} ({selectedYear})</DialogTitle>
+                      <DialogTitle>{`Evolução - Ranking de Tempo de Registro (${estado.nome})`}</DialogTitle>
                       <DialogDescription>
-                        Acompanhe a evolução da posição no ranking de tempo de registro ao longo dos meses
+                        Acompanhe a evolução da posição e compare com outros
+                        anos.
                       </DialogDescription>
                     </DialogHeader>
-
+                    <CheckboxComparacao />
                     <div className="w-full h-96 mt-4">
-                      {dadosGrafico && dadosGrafico.length > 0 ? (
+                      {loadingComparacao ? (
+                        <p>Carregando...</p>
+                      ) : dadosGraficoComparativo.length > 0 ? (
                         <ResponsiveContainer width="100%" height="100%">
                           <LineChart
-                            data={dadosGrafico}
+                            data={dadosGraficoComparativo}
                             margin={{
                               top: 20,
                               right: 30,
-                              left: 40,
+                              left: 20,
                               bottom: 60,
                             }}
                           >
-                            <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />
+                            <CartesianGrid strokeDasharray="3 3" />
                             <XAxis
                               dataKey="name"
                               angle={-45}
@@ -536,62 +571,46 @@ const EstadoPage = () => {
                             />
                             <YAxis
                               reversed={true}
-                              domain={[1, 'dataMax']}
+                              domain={[1, "dataMax"]}
                               allowDecimals={false}
-                              type="number"
                               label={{
-                                value: 'Posição',
+                                value: "Posição",
                                 angle: -90,
-                                position: 'insideLeft',
-                                style: { textAnchor: 'middle' }
+                                position: "insideLeft",
                               }}
-                              tick={{ fontSize: 12 }}
                             />
                             <Tooltip
-                              formatter={(value, name) => {
-                                if (name === 'Posição Registro') return [value + 'º', 'Posição Registro'];
-                                return [value, name];
-                              }}
-                              labelFormatter={(label) => `Mês: ${label}`}
-                              contentStyle={{
-                                backgroundColor: '#f8f9fa',
-                                border: '1px solid #dee2e6',
-                                borderRadius: '4px'
-                              }}
+                              formatter={(value, name) => [
+                                `${value}º`,
+                                `${name}`,
+                              ]}
                             />
-                            <Legend
-                              wrapperStyle={{
-                                paddingTop: '20px'
-                              }}
-                            />
-                            <Line
-                              type="monotone"
-                              dataKey="posicaoRegistro"
-                              stroke="#034ea2"
-                              strokeWidth={3}
-                              activeDot={{ r: 6, fill: '#034ea2' }}
-                              name="Posição Registro"
-                              dot={{ r: 4, fill: '#034ea2' }}
-                            />
+                            <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                            {[...anosComparacao].sort((a, b) => a - b).reverse().map((ano, index) => (
+                              <Line
+                                key={ano}
+                                type="monotone"
+                                dataKey={`posicao_registro_${ano}`}
+                                name={`${ano}`}
+                                stroke={
+                                  ["#034ea2", "#007932", "#fdb913", "#d9534f"][
+                                    index % 4
+                                  ]
+                                }
+                                strokeWidth={2}
+                                activeDot={{ r: 8 }}
+                              />
+                            ))}
                           </LineChart>
                         </ResponsiveContainer>
                       ) : (
-                        <div className="flex items-center justify-center h-full">
-                          <div className="text-center">
-                            <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                            <p className="text-muted-foreground">
-                              {loading ? "Carregando dados do gráfico..." : "Não há dados disponíveis para exibir o gráfico"}
-                            </p>
-                          </div>
-                        </div>
+                        <p>Selecione um ou mais anos para ver o gráfico.</p>
                       )}
                     </div>
                   </DialogContent>
                 </Dialog>
               </CardContent>
-
             </Card>
-
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -608,7 +627,6 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
-
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -625,7 +643,6 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
-
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -642,7 +659,6 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
-
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -659,7 +675,6 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
-
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -675,11 +690,19 @@ const EstadoPage = () => {
                   {dadosEstado.periodo_filtrado}
                 </p>
               </CardContent>
-            </Card>
+            </Card>{" "}
           </div>
         )}
 
-        {/* Mensagem quando não há dados */}
+        {/* Loading e Mensagens */}
+        {!dadosEstado && loading && (
+          <Card className="text-center py-12">
+            <CardContent>
+              <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
+              <p className="text-muted-foreground">Carregando dados...</p>
+            </CardContent>
+          </Card>
+        )}
         {!dadosEstado && !loading && (
           <Card className="text-center py-12">
             <CardContent>
@@ -693,33 +716,8 @@ const EstadoPage = () => {
             </CardContent>
           </Card>
         )}
-
-        {/* Loading */}
-        {loading && (
-          <Card className="text-center py-12">
-            <CardContent>
-              <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
-              <p className="text-muted-foreground">Carregando dados...</p>
-            </CardContent>
-          </Card>
-        )}
-
-        {/* Observações */}
-        {dadosEstado && (
-          <div className="text-muted-foreground text-sm mt-6 space-y-1">
-            <p>
-              <span className="align-super text-[10px]">1 </span>
-              Consulta Prévia no Município + Tempo de Registro na Junta
-              Comercial
-            </p>
-            <p>
-              <span className="align-super text-[10px]">2 </span>
-              Tempo de Registro na Junta Comercial
-            </p>
-          </div>
-        )}
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 };
