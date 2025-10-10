@@ -71,12 +71,24 @@ const EstadoPage = () => {
   const navigate = useNavigate();
   const estado = getEstadoBySigla(siglaEstado);
 
-  // Estados para comparação de anos no gráfico
   const [anosComparacao, setAnosComparacao] = useState([]);
   const [dadosGraficoComparativo, setDadosGraficoComparativo] = useState([]);
-  const [loadingComparacao, setLoadingComparacao] = useState(false);
 
-  const cacheDadosAnuais = useRef({}); // Cache para os dados anuais
+  const dadosHistoricosCompletosRef = useRef({});
+  const [loadingHistorico, setLoadingHistorico] = useState(true);
+
+  // NOVO: Efeito para limpar os dados antigos quando o estado (sigla) muda.
+  // Isso evita que o gráfico do estado anterior seja exibido enquanto os novos dados carregam.
+  useEffect(() => {
+    // Limpa os dados principais da página
+    setDadosEstado(null);
+    // Limpa o gráfico de comparação
+    setDadosGraficoComparativo([]);
+    // Limpa a seleção de anos para comparação
+    setAnosComparacao([]);
+    // Limpa o cache de dados históricos
+    dadosHistoricosCompletosRef.current = {};
+  }, [siglaEstado]);
 
   const mesesMap = {
     janeiro: "Janeiro",
@@ -96,7 +108,6 @@ const EstadoPage = () => {
 
   useEffect(() => {
     const carregarPeriodos = async () => {
-      setLoading(true);
       try {
         const response = await fetch(
           `${import.meta.env.VITE_URL_API}/api/periodos`
@@ -113,27 +124,75 @@ const EstadoPage = () => {
   }, []);
 
   useEffect(() => {
+    const preCarregarHistoricoCompleto = async () => {
+      if (!siglaEstado || Object.keys(periodosDisponiveis).length === 0) return;
+
+      setLoadingHistorico(true);
+      const anosParaBuscar = Object.keys(periodosDisponiveis);
+
+      const promises = anosParaBuscar.map((ano) =>
+        fetch(
+          `${
+            import.meta.env.VITE_URL_API
+          }/api/dados-anuais/${siglaEstado}/${ano}`
+        )
+          .then((res) => res.json())
+          .then((result) => ({ ano, result }))
+      );
+
+      try {
+        const resultados = await Promise.allSettled(promises);
+
+        const dadosAnuais = {};
+        resultados.forEach((item) => {
+          if (item.status === "fulfilled") {
+            const { ano, result } = item.value;
+            if (result.success && result.data[siglaEstado]) {
+              dadosAnuais[ano] = result.data[siglaEstado];
+            }
+          } else {
+            console.error(
+              `Falha ao carregar dados do ano: ${item.reason?.toString()}`
+            );
+          }
+        });
+
+        dadosHistoricosCompletosRef.current = dadosAnuais;
+      } catch (error) {
+        console.error("Erro massivo ao buscar histórico completo:", error);
+      } finally {
+        setLoadingHistorico(false);
+      }
+    };
+
+    preCarregarHistoricoCompleto();
+  }, [siglaEstado, periodosDisponiveis]);
+
+  useEffect(() => {
     if (Object.keys(periodosDisponiveis).length > 0) {
       const anoMaisRecente = Object.keys(periodosDisponiveis).sort(
         (a, b) => b - a
       )[0];
       const mesesDoAno = periodosDisponiveis[anoMaisRecente];
-      const mesMaisRecente = mesesDoAno.sort(
-        (a, b) =>
-          ORDEM_MESES.indexOf(b.mes.toLowerCase()) -
-          ORDEM_MESES.indexOf(a.mes.toLowerCase())
-      )[0].mes;
-      setSelectedYear(anoMaisRecente);
-      setSelectedMonth(mesMaisRecente);
+      if (mesesDoAno && mesesDoAno.length > 0) {
+        const mesMaisRecente = mesesDoAno.sort(
+          (a, b) =>
+            ORDEM_MESES.indexOf(b.mes.toLowerCase()) -
+            ORDEM_MESES.indexOf(a.mes.toLowerCase())
+        )[0].mes;
+        setSelectedYear(anoMaisRecente);
+        setSelectedMonth(mesMaisRecente);
+      }
     }
   }, [periodosDisponiveis]);
 
-  // Define o ano selecionado como padrão para comparação
   useEffect(() => {
-    if (selectedYear) {
-      setAnosComparacao([selectedYear]);
+    if (!loadingHistorico && selectedYear) {
+      if (!anosComparacao.includes(selectedYear)) {
+        setAnosComparacao([selectedYear]);
+      }
     }
-  }, [selectedYear]);
+  }, [loadingHistorico, selectedYear]); // Dispara quando o loading termina
 
   const buscarDados = async () => {
     if (!selectedMonth || !selectedYear || !estado) return;
@@ -159,21 +218,21 @@ const EstadoPage = () => {
     }
   };
 
-  const transformarDadosParaGrafico = (dadosHistoricos, siglaEstado) => {
-    if (!dadosHistoricos || !dadosHistoricos[siglaEstado]) {
+  const transformarDadosParaGrafico = (dados, sigla) => {
+    if (!dados || !dados[sigla]) {
       return [];
     }
-    const dadosEstado = dadosHistoricos[siglaEstado];
-    return ORDEM_MESES.filter((mes) => dadosEstado[mes]).map((mes) => ({
+    const dadosDoEstado = dados[sigla];
+    return ORDEM_MESES.filter((mes) => dadosDoEstado[mes]).map((mes) => ({
       name: mesesMap[mes] || mes,
-      posicao: dadosEstado[mes].posicao,
-      posicaoRegistro: dadosEstado[mes].posicao_registro,
+      posicao: dadosDoEstado[mes].posicao,
+      posicaoRegistro: dadosDoEstado[mes].posicao_registro,
     }));
   };
 
   const buscarHistorico = async () => {
     if (!selectedYear || !estado) return;
-    setLoading(true); // Usar o mesmo loading para simplificar
+    setLoading(true);
     try {
       const response = await fetch(
         `${import.meta.env.VITE_URL_API}/api/dados-anuais/${
@@ -202,7 +261,6 @@ const EstadoPage = () => {
     }
   };
 
-  // Efeitos para buscar dados
   useEffect(() => {
     buscarDados();
     buscarHistorico();
@@ -214,56 +272,6 @@ const EstadoPage = () => {
     }
   };
 
-  // Função para buscar dados de múltiplos anos para comparação
-  const buscarDadosComparativos = async () => {
-    if (anosComparacao.length < 1 || !estado) {
-      setDadosGraficoComparativo([]);
-      return;
-    }
-
-    setLoadingComparacao(true);
-    const dadosColetados = {};
-    const anosParaBuscar = [];
-
-    // Separa anos em cache dos que precisam de fetch
-    for (const ano of anosComparacao) {
-      if (cacheDadosAnuais.current[ano]) {
-        dadosColetados[ano] = cacheDadosAnuais.current[ano];
-      } else {
-        anosParaBuscar.push(ano);
-      }
-    }
-
-    // Busca apenas os anos que não estão no cache
-    if (anosParaBuscar.length > 0) {
-      const promises = anosParaBuscar.map((ano) =>
-        fetch(
-          `${import.meta.env.VITE_URL_API}/api/dados-anuais/${
-            estado.sigla
-          }/${ano}`
-        ).then((res) => res.json())
-      );
-      try {
-        const resultados = await Promise.all(promises);
-        resultados.forEach((result, index) => {
-          if (result.success && result.data[siglaEstado]) {
-            const ano = anosParaBuscar[index];
-            const data = result.data[siglaEstado];
-            // Salva no cache e nos dados coletados
-            cacheDadosAnuais.current[ano] = data;
-            dadosColetados[ano] = data;
-          }
-        });
-      } catch (error) {
-        console.error("Erro ao buscar dados comparativos:", error);
-      }
-    }
-
-    transformarDadosParaGraficoComparativo(dadosColetados);
-    setLoadingComparacao(false);
-  };
-  
-  // Função para transformar os dados de múltiplos anos para o gráfico
   const transformarDadosParaGraficoComparativo = (dadosPorAno) => {
     const dadosFormatados = ORDEM_MESES.map((mes) => {
       const entradaMes = { name: mesesMap[mes] || mes };
@@ -279,10 +287,21 @@ const EstadoPage = () => {
     setDadosGraficoComparativo(dadosFormatados);
   };
 
-  // Efeito para buscar os dados comparativos sempre que a seleção de anos mudar
   useEffect(() => {
-    buscarDadosComparativos();
-  }, [anosComparacao, siglaEstado]);
+    if (loadingHistorico || anosComparacao.length < 1) {
+      setDadosGraficoComparativo([]);
+      return;
+    }
+
+    const dadosColetados = {};
+    for (const ano of anosComparacao) {
+      if (dadosHistoricosCompletosRef.current[ano]) {
+        dadosColetados[ano] = dadosHistoricosCompletosRef.current[ano];
+      }
+    }
+
+    transformarDadosParaGraficoComparativo(dadosColetados);
+  }, [anosComparacao, siglaEstado, loadingHistorico]);
 
   if (!estado) {
     return (
@@ -307,29 +326,36 @@ const EstadoPage = () => {
       <p className="text-sm font-medium text-foreground mb-3">
         Comparar com outros anos:
       </p>
-      <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-4">
-        {Object.keys(periodosDisponiveis)
-          .sort((a, b) => b - a)
-          .map((ano) => (
-            <div key={ano} className="flex items-center space-x-2">
-              <Checkbox
-                id={`compare-${ano}-modal`}
-                checked={anosComparacao.includes(ano)}
-                onCheckedChange={(checked) => {
-                  setAnosComparacao((prev) =>
-                    checked ? [...prev, ano] : prev.filter((a) => a !== ano)
-                  );
-                }}
-              />
-              <Label
-                htmlFor={`compare-${ano}-modal`}
-                className="cursor-pointer"
-              >
-                {ano}
-              </Label>
-            </div>
-          ))}
-      </div>
+      {loadingHistorico ? (
+        <p className="text-sm text-muted-foreground">
+          Carregando dados históricos...
+        </p>
+      ) : (
+        <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-4">
+          {Object.keys(periodosDisponiveis)
+            .sort((a, b) => b - a)
+            .map((ano) => (
+              <div key={ano} className="flex items-center space-x-2">
+                <Checkbox
+                  id={`compare-${ano}-modal`}
+                  checked={anosComparacao.includes(ano)}
+                  onCheckedChange={(checked) => {
+                    setAnosComparacao((prev) =>
+                      checked ? [...prev, ano] : prev.filter((a) => a !== ano)
+                    );
+                  }}
+                  disabled={!dadosHistoricosCompletosRef.current[ano]}
+                />
+                <Label
+                  htmlFor={`compare-${ano}-modal`}
+                  className="cursor-pointer"
+                >
+                  {ano}
+                </Label>
+              </div>
+            ))}
+        </div>
+      )}
     </div>
   );
 
@@ -338,7 +364,6 @@ const EstadoPage = () => {
       <header className="page-header py-6 px-4 sm:px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6 w-full">
-            {/* Botão Voltar - sempre à esquerda */}
             <div className="flex justify-start w-full lg:w-auto lg:flex-shrink-0 order-1 lg:order-none">
               <Button
                 variant="ghost"
@@ -351,7 +376,6 @@ const EstadoPage = () => {
               </Button>
             </div>
 
-            {/* Seção Central - Bandeira + Info do Estado */}
             <div className="flex flex-row-reverse sm:flex-row-reverse gap-3 sm:gap-4 justify-center sm:border-r sm:border-white/20 sm:pr-6 lg:justify-end w-full lg:w-auto lg:flex-shrink-0 order-2 lg:order-none items-center">
               <div className="flex flex-col text-center sm:text-left text-xs sm:text-sm ">
                 <span className="font-bold text-white">JUNTA COMERCIAL</span>
@@ -365,7 +389,6 @@ const EstadoPage = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full lg:flex-1 order-3 lg:order-none">
               <div className="flex items-center gap-3 sm:gap-4">
-                {/* Bandeira do Estado */}
                 <div className="flex-shrink-0">
                   <img
                     src={`/bandeiras-brasileiras/${estado.sigla}.png`}
@@ -374,7 +397,6 @@ const EstadoPage = () => {
                   />
                 </div>
 
-                {/* Informações do Estado */}
                 <div className="text-center sm:text-left">
                   <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                     {estado.nome}
@@ -385,13 +407,11 @@ const EstadoPage = () => {
                 </div>
               </div>
             </div>
-            {/* Logo do Governo - sempre à direita */}
           </div>
         </div>
       </header>
 
       <main className="container mx-auto max-w-6xl px-4 py-8">
-        {/* Filtros */}
         <Card className="filter-card mb-8">
           <CardHeader>
             <CardTitle className="flex items-center space-x-2">
@@ -472,7 +492,6 @@ const EstadoPage = () => {
 
         {dadosEstado && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-            {/* Card Ranking Geral */}
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -480,6 +499,7 @@ const EstadoPage = () => {
                   <span>
                     Ranking Geral - Tempo de Abertura de Empresas
                     <span className="text-sm text-muted-foreground align-super">
+                      {" "}
                       1
                     </span>
                   </span>
@@ -510,9 +530,7 @@ const EstadoPage = () => {
                     </DialogHeader>
                     <CheckboxComparacao />
                     <div className="w-full h-96 mt-4">
-                      {loadingComparacao ? (
-                        <p>Carregando...</p>
-                      ) : dadosGraficoComparativo.length > 0 ? (
+                      {dadosGraficoComparativo.length > 0 ? (
                         <ResponsiveContainer width="100%" height="100%">
                           <LineChart
                             data={dadosGraficoComparativo}
@@ -550,8 +568,7 @@ const EstadoPage = () => {
                             />
                             <Legend wrapperStyle={{ paddingTop: "20px" }} />
                             {[...anosComparacao]
-                              .sort((a, b) => a - b)
-                              .reverse()
+                              .sort((a, b) => b - a)
                               .map((ano, index) => (
                                 <Line
                                   key={ano}
@@ -564,7 +581,9 @@ const EstadoPage = () => {
                                       "#034ea2",
                                       "#fdb913",
                                       "#d9534f",
-                                    ][index % 4]
+                                      "#5bc0de",
+                                      "#f0ad4e",
+                                    ][index % 6]
                                   }
                                   strokeWidth={2}
                                   activeDot={{ r: 8 }}
@@ -573,21 +592,28 @@ const EstadoPage = () => {
                           </LineChart>
                         </ResponsiveContainer>
                       ) : (
-                        <p>Selecione um ou mais anos para ver o gráfico.</p>
+                        <div className="flex items-center justify-center h-full">
+                          <p className="text-muted-foreground">
+                            {loadingHistorico
+                              ? "Carregando dados para comparação..."
+                              : "Selecione um ou mais anos para ver o gráfico."}
+                          </p>
+                        </div>
                       )}
                     </div>
                   </DialogContent>
                 </Dialog>
               </CardContent>
             </Card>
-            {/* Card Ranking Tempo de Registro */}
+
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
                   <Trophy className="w-5 h-5 text-[#007932]" />
                   <span>
-                    Ranking - Tempo de Registro para Abertura de Empresas
+                    Ranking - Tempo de Registro
                     <span className="text-sm text-muted-foreground align-super">
+                      {" "}
                       2
                     </span>
                   </span>
@@ -618,9 +644,7 @@ const EstadoPage = () => {
                     </DialogHeader>
                     <CheckboxComparacao />
                     <div className="w-full h-96 mt-4">
-                      {loadingComparacao ? (
-                        <p>Carregando...</p>
-                      ) : dadosGraficoComparativo.length > 0 ? (
+                      {dadosGraficoComparativo.length > 0 ? (
                         <ResponsiveContainer width="100%" height="100%">
                           <LineChart
                             data={dadosGraficoComparativo}
@@ -658,8 +682,7 @@ const EstadoPage = () => {
                             />
                             <Legend wrapperStyle={{ paddingTop: "20px" }} />
                             {[...anosComparacao]
-                              .sort((a, b) => a - b)
-                              .reverse()
+                              .sort((a, b) => b - a)
                               .map((ano, index) => (
                                 <Line
                                   key={ano}
@@ -672,7 +695,9 @@ const EstadoPage = () => {
                                       "#007932",
                                       "#fdb913",
                                       "#d9534f",
-                                    ][index % 4]
+                                      "#5bc0de",
+                                      "#f0ad4e",
+                                    ][index % 6]
                                   }
                                   strokeWidth={2}
                                   activeDot={{ r: 8 }}
@@ -681,13 +706,20 @@ const EstadoPage = () => {
                           </LineChart>
                         </ResponsiveContainer>
                       ) : (
-                        <p>Selecione um ou mais anos para ver o gráfico.</p>
+                        <div className="flex items-center justify-center h-full">
+                          <p className="text-muted-foreground">
+                            {loadingHistorico
+                              ? "Carregando dados para comparação..."
+                              : "Selecione um ou mais anos para ver o gráfico."}
+                          </p>
+                        </div>
                       )}
                     </div>
                   </DialogContent>
                 </Dialog>
               </CardContent>
             </Card>
+
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -704,6 +736,7 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
+
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -720,6 +753,7 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
+
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -736,6 +770,7 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
+
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -752,6 +787,7 @@ const EstadoPage = () => {
                 </p>
               </CardContent>
             </Card>
+
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -767,12 +803,11 @@ const EstadoPage = () => {
                   {dadosEstado.periodo_filtrado}
                 </p>
               </CardContent>
-            </Card>{" "}
+            </Card>
           </div>
         )}
 
-        {/* Loading e Mensagens */}
-        {!dadosEstado && loading && (
+        {!dadosEstado && (loading || loadingHistorico) && (
           <Card className="text-center py-12">
             <CardContent>
               <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
@@ -780,7 +815,7 @@ const EstadoPage = () => {
             </CardContent>
           </Card>
         )}
-        {!dadosEstado && !loading && (
+        {!dadosEstado && !loading && !loadingHistorico && (
           <Card className="text-center py-12">
             <CardContent>
               <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
