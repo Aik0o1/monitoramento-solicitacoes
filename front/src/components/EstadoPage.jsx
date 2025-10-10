@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -75,6 +75,8 @@ const EstadoPage = () => {
   const [anosComparacao, setAnosComparacao] = useState([]);
   const [dadosGraficoComparativo, setDadosGraficoComparativo] = useState([]);
   const [loadingComparacao, setLoadingComparacao] = useState(false);
+
+  const cacheDadosAnuais = useRef({}); // Cache para os dados anuais
 
   const mesesMap = {
     janeiro: "Janeiro",
@@ -215,38 +217,52 @@ const EstadoPage = () => {
   // Função para buscar dados de múltiplos anos para comparação
   const buscarDadosComparativos = async () => {
     if (anosComparacao.length < 1 || !estado) {
-      // Busca mesmo com 1 ano para ter os dados prontos
       setDadosGraficoComparativo([]);
       return;
     }
 
     setLoadingComparacao(true);
-    const promises = anosComparacao.map((ano) =>
-      fetch(
-        `${import.meta.env.VITE_URL_API}/api/dados-anuais/${
-          estado.sigla
-        }/${ano}`
-      ).then((res) => res.json())
-    );
+    const dadosColetados = {};
+    const anosParaBuscar = [];
 
-    try {
-      const resultados = await Promise.all(promises);
-      const dadosColetados = resultados.reduce((acc, result, index) => {
-        if (result.success && result.data[siglaEstado]) {
-          const ano = anosComparacao[index];
-          acc[ano] = result.data[siglaEstado];
-        }
-        return acc;
-      }, {});
-      transformarDadosParaGraficoComparativo(dadosColetados);
-    } catch (error) {
-      console.error("Erro ao buscar dados comparativos:", error);
-      setDadosGraficoComparativo([]);
-    } finally {
-      setLoadingComparacao(false);
+    // Separa anos em cache dos que precisam de fetch
+    for (const ano of anosComparacao) {
+      if (cacheDadosAnuais.current[ano]) {
+        dadosColetados[ano] = cacheDadosAnuais.current[ano];
+      } else {
+        anosParaBuscar.push(ano);
+      }
     }
-  };
 
+    // Busca apenas os anos que não estão no cache
+    if (anosParaBuscar.length > 0) {
+      const promises = anosParaBuscar.map((ano) =>
+        fetch(
+          `${import.meta.env.VITE_URL_API}/api/dados-anuais/${
+            estado.sigla
+          }/${ano}`
+        ).then((res) => res.json())
+      );
+      try {
+        const resultados = await Promise.all(promises);
+        resultados.forEach((result, index) => {
+          if (result.success && result.data[siglaEstado]) {
+            const ano = anosParaBuscar[index];
+            const data = result.data[siglaEstado];
+            // Salva no cache e nos dados coletados
+            cacheDadosAnuais.current[ano] = data;
+            dadosColetados[ano] = data;
+          }
+        });
+      } catch (error) {
+        console.error("Erro ao buscar dados comparativos:", error);
+      }
+    }
+
+    transformarDadosParaGraficoComparativo(dadosColetados);
+    setLoadingComparacao(false);
+  };
+  
   // Função para transformar os dados de múltiplos anos para o gráfico
   const transformarDadosParaGraficoComparativo = (dadosPorAno) => {
     const dadosFormatados = ORDEM_MESES.map((mes) => {
