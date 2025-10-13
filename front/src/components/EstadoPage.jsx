@@ -66,27 +66,18 @@ const EstadoPage = () => {
   const [dadosEstado, setDadosEstado] = useState(null);
   const [loading, setLoading] = useState(false);
   const [periodosDisponiveis, setPeriodosDisponiveis] = useState({});
-  const [dadosHistoricos, setDadosHistoricos] = useState(null);
-  const [dadosGrafico, setDadosGrafico] = useState([]);
   const navigate = useNavigate();
   const estado = getEstadoBySigla(siglaEstado);
 
   const [anosComparacao, setAnosComparacao] = useState([]);
   const [dadosGraficoComparativo, setDadosGraficoComparativo] = useState([]);
-
   const dadosHistoricosCompletosRef = useRef({});
   const [loadingHistorico, setLoadingHistorico] = useState(true);
 
-  // NOVO: Efeito para limpar os dados antigos quando o estado (sigla) muda.
-  // Isso evita que o gráfico do estado anterior seja exibido enquanto os novos dados carregam.
   useEffect(() => {
-    // Limpa os dados principais da página
     setDadosEstado(null);
-    // Limpa o gráfico de comparação
     setDadosGraficoComparativo([]);
-    // Limpa a seleção de anos para comparação
     setAnosComparacao([]);
-    // Limpa o cache de dados históricos
     dadosHistoricosCompletosRef.current = {};
   }, [siglaEstado]);
 
@@ -142,7 +133,6 @@ const EstadoPage = () => {
 
       try {
         const resultados = await Promise.allSettled(promises);
-
         const dadosAnuais = {};
         resultados.forEach((item) => {
           if (item.status === "fulfilled") {
@@ -156,7 +146,6 @@ const EstadoPage = () => {
             );
           }
         });
-
         dadosHistoricosCompletosRef.current = dadosAnuais;
       } catch (error) {
         console.error("Erro massivo ao buscar histórico completo:", error);
@@ -188,82 +177,36 @@ const EstadoPage = () => {
 
   useEffect(() => {
     if (!loadingHistorico && selectedYear) {
-      if (!anosComparacao.includes(selectedYear)) {
-        setAnosComparacao([selectedYear]);
-      }
+      setAnosComparacao([selectedYear]);
     }
-  }, [loadingHistorico, selectedYear]); // Dispara quando o loading termina
+  }, [loadingHistorico, selectedYear]);
 
-  const buscarDados = async () => {
-    if (!selectedMonth || !selectedYear || !estado) return;
-    setLoading(true);
-    try {
-      const response = await fetch(
-        `${import.meta.env.VITE_URL_API}/api/dados/${
-          estado.sigla
-        }?mes=${selectedMonth}&ano=${selectedYear}`
-      );
-      const result = await response.json();
-      if (result.success) {
-        setDadosEstado(result.data);
-      } else {
-        console.error("Erro na API:", result.error);
-        setDadosEstado(null);
-      }
-    } catch (error) {
-      console.error("Erro ao buscar dados:", error);
-      setDadosEstado(null);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const transformarDadosParaGrafico = (dados, sigla) => {
-    if (!dados || !dados[sigla]) {
-      return [];
-    }
-    const dadosDoEstado = dados[sigla];
-    return ORDEM_MESES.filter((mes) => dadosDoEstado[mes]).map((mes) => ({
-      name: mesesMap[mes] || mes,
-      posicao: dadosDoEstado[mes].posicao,
-      posicaoRegistro: dadosDoEstado[mes].posicao_registro,
-    }));
-  };
-
-  const buscarHistorico = async () => {
-    if (!selectedYear || !estado) return;
-    setLoading(true);
-    try {
-      const response = await fetch(
-        `${import.meta.env.VITE_URL_API}/api/dados-anuais/${
-          estado.sigla
-        }/${selectedYear}`
-      );
-      const result = await response.json();
-      if (result.success) {
-        setDadosHistoricos(result.data);
-        const dadosFormatados = transformarDadosParaGrafico(
-          result.data,
-          estado.sigla
-        );
-        setDadosGrafico(dadosFormatados);
-      } else {
-        console.error("Erro na API (histórico):", result.error);
-        setDadosHistoricos(null);
-        setDadosGrafico([]);
-      }
-    } catch (error) {
-      console.error("Erro ao buscar histórico:", error);
-      setDadosHistoricos(null);
-      setDadosGrafico([]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
+  // LÓGICA: Busca os dados para os CARDS da página principal.
   useEffect(() => {
+    const buscarDados = async () => {
+      if (!selectedMonth || !selectedYear || !estado) return;
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `${import.meta.env.VITE_URL_API}/api/dados/${
+            estado.sigla
+          }?mes=${selectedMonth}&ano=${selectedYear}`
+        );
+        const result = await response.json();
+        if (result.success) {
+          setDadosEstado(result.data);
+        } else {
+          setDadosEstado(null);
+        }
+      } catch (error) {
+        setDadosEstado(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
     buscarDados();
-    buscarHistorico();
+    // AÇÃO: A função buscarHistorico() foi removida daqui por ser redundante.
   }, [selectedMonth, selectedYear, siglaEstado]);
 
   const handleEstadoChange = (novaSigla) => {
@@ -283,7 +226,7 @@ const EstadoPage = () => {
         }
       }
       return entradaMes;
-    });
+    }).filter((m) => m.name); // Garante que meses como "marco" não criem entradas vazias
     setDadosGraficoComparativo(dadosFormatados);
   };
 
@@ -292,16 +235,14 @@ const EstadoPage = () => {
       setDadosGraficoComparativo([]);
       return;
     }
-
     const dadosColetados = {};
     for (const ano of anosComparacao) {
       if (dadosHistoricosCompletosRef.current[ano]) {
         dadosColetados[ano] = dadosHistoricosCompletosRef.current[ano];
       }
     }
-
     transformarDadosParaGraficoComparativo(dadosColetados);
-  }, [anosComparacao, siglaEstado, loadingHistorico]);
+  }, [anosComparacao, loadingHistorico]);
 
   if (!estado) {
     return (
@@ -489,7 +430,6 @@ const EstadoPage = () => {
             </div>
           </CardContent>
         </Card>
-
         {dadosEstado && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <Card className="metric-card">
@@ -567,7 +507,7 @@ const EstadoPage = () => {
                               ]}
                             />
                             <Legend wrapperStyle={{ paddingTop: "20px" }} />
-                            {[...anosComparacao]
+                            {anosComparacao
                               .sort((a, b) => b - a)
                               .map((ano, index) => (
                                 <Line
@@ -595,8 +535,8 @@ const EstadoPage = () => {
                         <div className="flex items-center justify-center h-full">
                           <p className="text-muted-foreground">
                             {loadingHistorico
-                              ? "Carregando dados para comparação..."
-                              : "Selecione um ou mais anos para ver o gráfico."}
+                              ? "Carregando..."
+                              : "Selecione um ano para ver o gráfico."}
                           </p>
                         </div>
                       )}
@@ -681,7 +621,7 @@ const EstadoPage = () => {
                               ]}
                             />
                             <Legend wrapperStyle={{ paddingTop: "20px" }} />
-                            {[...anosComparacao]
+                            {anosComparacao
                               .sort((a, b) => b - a)
                               .map((ano, index) => (
                                 <Line
@@ -709,8 +649,8 @@ const EstadoPage = () => {
                         <div className="flex items-center justify-center h-full">
                           <p className="text-muted-foreground">
                             {loadingHistorico
-                              ? "Carregando dados para comparação..."
-                              : "Selecione um ou mais anos para ver o gráfico."}
+                              ? "Carregando..."
+                              : "Selecione um ano para ver o gráfico."}
                           </p>
                         </div>
                       )}
@@ -832,13 +772,12 @@ const EstadoPage = () => {
         {dadosEstado && (
           <div className="text-muted-foreground text-sm mt-6 space-y-1">
             <p>
-              <span className="align-super text-[10px]">1 </span>
-              Consulta Prévia no Município + Tempo de Registro na Junta
-              Comercial
+              <span className="align-super text-[10px]">1 </span> Consulta
+              Prévia no Município + Tempo de Registro na Junta Comercial
             </p>
             <p>
-              <span className="align-super text-[10px]">2 </span>
-              Tempo de Registro na Junta Comercial
+              <span className="align-super text-[10px]">2 </span> Tempo de
+              Registro na Junta Comercial
             </p>
           </div>
         )}
