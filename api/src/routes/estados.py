@@ -5,29 +5,31 @@ from flask_cors import cross_origin
 from dotenv import load_dotenv
 from urllib.parse import quote
 
-estados_bp = Blueprint('estados', __name__)
+estados_bp = Blueprint("estados", __name__)
 
 load_dotenv()  # take environment variables
 
 db_password = os.getenv("SENHA")
 db_ip = os.getenv("IP")
-db_user = os.getenv("USUARIO", "admin") # Usa 'admin' como padrão se não for definido
-DB_NAME = 'ranking-nacional'
+db_user = os.getenv("USUARIO", "admin")  # Usa 'admin' como padrão se não for definido
+DB_NAME = "ranking-nacional"
 
 # alida se as variáveis essenciais foram definidas no seu arquivo .env
 if not all([db_password, db_ip, db_user]):
-    raise ValueError("As variáveis de ambiente SENHA, IP, e USUARIO devem ser definidas.")
+    raise ValueError(
+        "As variáveis de ambiente SENHA, IP, e USUARIO devem ser definidas."
+    )
 
 # --- 3. Estabelecer Conexão com o Servidor (Apenas uma vez) ---
 server = None
 try:
     # Codifica a senha e monta a URL de conexão
     encoded_password = quote(db_password)
-    couchdb_url = f'http://{db_user}:{encoded_password}@{db_ip}'
-    
+    couchdb_url = f"http://{db_user}:{encoded_password}@{db_ip}"
+
     # Conecta ao servidor
     server = couchdb.Server(couchdb_url)
-    
+
     # Confirma que a conexão é válida
     server.version()
     print(f"Conexão com o servidor CouchDB em '{db_ip}' estabelecida com sucesso.")
@@ -61,13 +63,15 @@ def get_db():
         else:
             print(f"Criando banco de dados '{DB_NAME}'...")
             db = server.create(DB_NAME)
-        
+
         return db
     except Exception as e:
         # Lança um erro que pode ser capturado pelas rotas do Flask
-        raise ConnectionError(f"Não foi possível acessar o banco de dados '{DB_NAME}': {e}")
+        raise ConnectionError(
+            f"Não foi possível acessar o banco de dados '{DB_NAME}': {e}"
+        )
 
-# --- Data Access Functions (Refactored) ---
+
 def get_available_periods():
     """Retorna os períodos disponíveis baseados nos documentos do CouchDB"""
     db = get_db()
@@ -75,17 +79,54 @@ def get_available_periods():
     
     # Itera sobre todos os documentos no banco de dados
     for doc_id in db:
-        # Assumindo formato de ID: mes-ano (ex: junho-2025)
-        parts = doc_id.split('_')
-        if len(parts) == 2:
-            mes, ano = parts
-            periods.append({
-                'mes': mes,
-                'ano': ano,
-                'doc_id': doc_id # Usado internamente se necessário
-            })
+        # AQUI ESTÁ A CORREÇÃO: Ignora os documentos de design
+        if not doc_id.startswith('_design'):
+            parts = doc_id.split('_')
+            if len(parts) == 2:
+                mes, ano = parts
+                periods.append({
+                    'mes': mes,
+                    'ano': ano,
+                    'doc_id': doc_id
+                })
             
     return periods
+
+# O resto das suas funções (load_document, load_annual_data_from_view, etc.)
+# e todas as suas rotas permanecem IGUAIS.
+
+# Adicione esta nova função junto com as outras
+def load_annual_data_from_view(ano):
+
+    db = get_db()
+    results = {}
+    try:
+
+        query_result = db.view(
+            "dados/by_ano_mes",
+            startkey=[str(ano)],
+            endkey=[str(ano), {}],
+            include_docs=True,
+        )
+
+        for row in query_result:
+            if row.doc:
+                doc_data = row.doc
+                doc_id = doc_data["_id"]
+
+                # Remove os campos internos do CouchDB
+                cleaned_doc = {
+                    key: value
+                    for key, value in doc_data.items()
+                    if not key.startswith("_")
+                }
+                results[doc_id] = cleaned_doc
+
+        return results
+    except Exception as e:
+        print(f"Erro ao buscar dados da view para o ano {ano}: {e}")
+        return {}
+
 
 def load_document(doc_id):
     """Carrega dados de um documento específico do CouchDB"""
@@ -93,143 +134,135 @@ def load_document(doc_id):
     try:
         doc = db[doc_id]
         # Remove os campos internos do CouchDB (_id, _rev) para uma resposta limpa
-        return {key: value for key, value in doc.items() if not key.startswith('_')}
+        return {key: value for key, value in doc.items() if not key.startswith("_")}
     except couchdb.http.ResourceNotFound:
-        return None # Documento não encontrado
+        return None  # Documento não encontrado
     except Exception:
-        return None # Outros erros de decodificação ou conexão
+        return None  # Outros erros de decodificação ou conexão
+
 
 # --- API Endpoints (Updated) ---
 
-@estados_bp.route('/api/periodos', methods=['GET'])
+
+@estados_bp.route("/api/periodos", methods=["GET"])
 @cross_origin()
 def get_periodos():
     """Retorna todos os períodos disponíveis"""
     try:
         periods = get_available_periods()
-        
+
         # Organizar por ano e mês (lógica idêntica à original)
         anos = {}
         for period in periods:
-            ano = period['ano']
-            mes = period['mes']
-            
+            ano = period["ano"]
+            mes = period["mes"]
+
             if ano not in anos:
                 anos[ano] = []
-            
-            anos[ano].append({
-                'mes': mes,
-                'filename': f"{mes}_{ano}" 
-            })
-        
-        return jsonify({
-            'success': True,
-            'data': anos
-        })
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 500
 
-@estados_bp.route('/api/dados/<sigla_estado>', methods=['GET'])
+            anos[ano].append({"mes": mes, "filename": f"{mes}_{ano}"})
+
+        return jsonify({"success": True, "data": anos})
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
+@estados_bp.route("/api/dados/<sigla_estado>", methods=["GET"])
 @cross_origin()
 def get_dados_estado(sigla_estado):
     """Retorna dados de um estado específico para um período"""
     try:
-        mes = request.args.get('mes')
-        ano = request.args.get('ano')
-        
+        mes = request.args.get("mes")
+        ano = request.args.get("ano")
+
         if not mes or not ano:
-            return jsonify({
-                'success': False,
-                'error': 'Parâmetros mes e ano são obrigatórios'
-            }), 400
-        
+            return jsonify(
+                {"success": False, "error": "Parâmetros mes e ano são obrigatórios"}
+            ), 400
+
         # Construir ID do documento no formato mes-ano
         doc_id = f"{mes}_{ano}"
-        
+
         # Carregar dados do CouchDB
         data = load_document(doc_id)
         if data is None:
-            return jsonify({
-                'success': False,
-                'error': 'Dados não encontrados para o período especificado'
-            }), 404
-        
+            return jsonify(
+                {
+                    "success": False,
+                    "error": "Dados não encontrados para o período especificado",
+                }
+            ), 404
+
         # Verificar se o estado existe nos dados
         sigla_upper = sigla_estado.upper()
         if sigla_upper not in data:
-            return jsonify({
-                'success': False,
-                'error': f'Estado {sigla_upper} não encontrado nos dados'
-            }), 404
-        
-        return jsonify({
-            'success': True,
-            'data': data[sigla_upper]
-        })
-        
-    except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 500
+            return jsonify(
+                {
+                    "success": False,
+                    "error": f"Estado {sigla_upper} não encontrado nos dados",
+                }
+            ), 404
 
-@estados_bp.route('/api/dados', methods=['GET'])
+        return jsonify({"success": True, "data": data[sigla_upper]})
+
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
+
+@estados_bp.route("/api/dados", methods=["GET"])
 @cross_origin()
 def get_todos_dados():
     """Retorna dados de todos os estados para um período"""
     try:
-        mes = request.args.get('mes')
-        ano = request.args.get('ano')
-        
+        mes = request.args.get("mes")
+        ano = request.args.get("ano")
+
         if not mes or not ano:
-            return jsonify({
-                'success': False,
-                'error': 'Parâmetros mes e ano são obrigatórios'
-            }), 400
-        
+            return jsonify(
+                {"success": False, "error": "Parâmetros mes e ano são obrigatórios"}
+            ), 400
+
         # Construir ID do documento
         doc_id = f"{mes}_{ano}"
-        
+
         # Carregar dados do CouchDB
         data = load_document(doc_id)
         if data is None:
-            return jsonify({
-                'success': False,
-                'error': 'Dados não encontrados para o período especificado'
-            }), 404
-        
-        return jsonify({
-            'success': True,
-            'data': data
-        })
-        
+            return jsonify(
+                {
+                    "success": False,
+                    "error": "Dados não encontrados para o período especificado",
+                }
+            ), 404
+
+        return jsonify({"success": True, "data": data})
+
     except Exception as e:
-        return jsonify({
-            'success': False,
-            'error': str(e)
-        }), 500
-    
+        return jsonify({"success": False, "error": str(e)}), 500
+
 
 @estados_bp.route('/api/dados-anuais/<sigla_estado>/<int:ano>', methods=['GET'])
 @cross_origin()
 def get_dados_anuais_estado(sigla_estado, ano):
     try:
-        meses_possiveis = [
-            'janeiro', 'fevereiro', 'marco', 'abril', 'maio', 'junho',
-            'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
-        ]
+        # 1. FAÇA UMA ÚNICA CHAMADA AO BANCO USANDO A VIEW
+        dados_do_ano_inteiro = load_annual_data_from_view(ano)
+
+        if not dados_do_ano_inteiro:
+            return jsonify({
+                'success': False,
+                'error': f'Nenhum dado encontrado para o ano {ano} usando a view'
+            }), 404
+
         sigla_upper = sigla_estado.upper()
         dados_estado = {}
         
-        for mes in meses_possiveis:
-            doc_id = f"{mes}_{ano}"
+        # 2. O loop agora é instantâneo, pois processa dados que já estão na memória
+        for doc_id, data in dados_do_ano_inteiro.items():
+            # O doc_id é algo como "janeiro_2024", então extraímos o mês
+            mes = doc_id.split('_')[0]
             
-            data = load_document(doc_id)
-            
-            if data is not None and sigla_upper in data:
+            if sigla_upper in data:
                 estado_data = data[sigla_upper]
                 
                 dados_estado[mes] = {
