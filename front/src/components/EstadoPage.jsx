@@ -284,7 +284,8 @@ const EstadoPage = () => {
           Carregando dados históricos em segundo plano...
         </p>
       ) : (
-        <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-5">
+          {" "}
           {Object.keys(periodosDisponiveis)
             .sort((a, b) => b - a)
             .map((ano) => (
@@ -467,6 +468,7 @@ const EstadoPage = () => {
 
         {dadosEstado && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            {/* Card: Ranking Geral */}
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -495,7 +497,8 @@ const EstadoPage = () => {
                       Ver evolução
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl max-h-[90vh] sm:h-[85vh] flex flex-col">
+
+                  <DialogContent className="w-[90vw] rounded-lg max-w-4xl max-h-[90vh] md:h-auto md:w-full flex flex-col">
                     <DialogHeader>
                       <DialogTitle>{`Evolução - Ranking Geral (${estado.nome})`}</DialogTitle>
                       <DialogDescription>
@@ -503,7 +506,9 @@ const EstadoPage = () => {
                         anos.
                       </DialogDescription>
                     </DialogHeader>
-                    <div className="flex-1 overflow-y-auto -mx-6 px-6 pt-4">
+
+                    {/* Wrapper de scroll SÓ para mobile */}
+                    <div className="flex-1 overflow-y-auto md:flex-initial md:overflow-y-visible -mx-6 px-6 md:mx-0 md:px-0">
                       <CheckboxComparacao />
                       <div className="w-full h-96">
                         {dadosGraficoComparativo.length > 0 ? (
@@ -539,7 +544,7 @@ const EstadoPage = () => {
                               <Tooltip
                                 formatter={(value, name) => [
                                   `${value}º`,
-                                  `${name}`,
+                                  `${name.split("_").pop()}`,
                                 ]}
                               />
                               <Legend wrapperStyle={{ paddingTop: "20px" }} />
@@ -583,6 +588,7 @@ const EstadoPage = () => {
               </CardContent>
             </Card>
 
+            {/* Card: Ranking de Tempo de Registro */}
             <Card className="metric-card">
               <CardHeader className="pb-3">
                 <CardTitle className="flex items-center space-x-2 text-lg">
@@ -611,7 +617,8 @@ const EstadoPage = () => {
                       Ver evolução
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl max-h-[90vh] sm:h-[85vh] flex flex-col">
+
+                  <DialogContent className="w-[90vw] rounded-lg max-w-4xl max-h-[90vh] md:h-auto md:w-full flex flex-col">
                     <DialogHeader>
                       <DialogTitle>{`Evolução - Ranking de Tempo de Registro (${estado.nome})`}</DialogTitle>
                       <DialogDescription>
@@ -620,7 +627,8 @@ const EstadoPage = () => {
                       </DialogDescription>
                     </DialogHeader>
 
-                    <div className="flex-1 overflow-y-auto -mx-6 px-6 pt-4">
+                    {/* Wrapper de scroll SÓ para mobile */}
+                    <div className="flex-1 overflow-y-auto md:flex-initial md:overflow-y-visible -mx-6 px-6 md:mx-0 md:px-0 pt-4">
                       <CheckboxComparacao />
                       <div className="w-full h-96 mt-4">
                         {dadosGraficoComparativo.length > 0 ? (
@@ -656,7 +664,7 @@ const EstadoPage = () => {
                               <Tooltip
                                 formatter={(value, name) => [
                                   `${value}º`,
-                                  `${name}`,
+                                  `${name.split("_").pop()}`,
                                 ]}
                               />
                               <Legend wrapperStyle={{ paddingTop: "20px" }} />
