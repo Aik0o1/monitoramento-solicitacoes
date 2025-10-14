@@ -64,7 +64,7 @@ const EstadoPage = () => {
   const [selectedMonth, setSelectedMonth] = useState("");
   const [selectedYear, setSelectedYear] = useState("");
   const [dadosEstado, setDadosEstado] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true); // Controla o loading inicial dos cards
   const [periodosDisponiveis, setPeriodosDisponiveis] = useState({});
   const navigate = useNavigate();
   const estado = getEstadoBySigla(siglaEstado);
@@ -72,13 +72,18 @@ const EstadoPage = () => {
   const [anosComparacao, setAnosComparacao] = useState([]);
   const [dadosGraficoComparativo, setDadosGraficoComparativo] = useState([]);
   const dadosHistoricosCompletosRef = useRef({});
-  const [loadingHistorico, setLoadingHistorico] = useState(true);
+  const [loadingHistorico, setLoadingHistorico] = useState(false); // Controla o loading em segundo plano do histórico
+  const historicoFetchIniciado = useRef(false); // Garante que o fetch do histórico só rode uma vez
 
   useEffect(() => {
+    // Reseta tudo ao trocar de estado para evitar mostrar dados antigos
     setDadosEstado(null);
     setDadosGraficoComparativo([]);
     setAnosComparacao([]);
     dadosHistoricosCompletosRef.current = {};
+    setLoading(true);
+    setLoadingHistorico(false);
+    historicoFetchIniciado.current = false;
   }, [siglaEstado]);
 
   const mesesMap = {
@@ -115,12 +120,60 @@ const EstadoPage = () => {
   }, []);
 
   useEffect(() => {
+    if (Object.keys(periodosDisponiveis).length > 0) {
+      const anoMaisRecente = Object.keys(periodosDisponiveis).sort(
+        (a, b) => b - a
+      )[0];
+      const mesesDoAno = periodosDisponiveis[anoMaisRecente];
+      if (mesesDoAno && mesesDoAno.length > 0) {
+        const mesMaisRecente = mesesDoAno.sort(
+          (a, b) =>
+            ORDEM_MESES.indexOf(b.mes.toLowerCase()) -
+            ORDEM_MESES.indexOf(a.mes.toLowerCase())
+        )[0].mes;
+        setSelectedYear(anoMaisRecente);
+        setSelectedMonth(mesMaisRecente);
+      }
+    }
+  }, [periodosDisponiveis]);
+
+  // FASE 1: Carrega os dados prioritários para os cards da página.
+  useEffect(() => {
+    const buscarDados = async () => {
+      if (!selectedMonth || !selectedYear || !estado) return;
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `${import.meta.env.VITE_URL_API}/api/dados/${
+            estado.sigla
+          }?mes=${selectedMonth}&ano=${selectedYear}`
+        );
+        const result = await response.json();
+        setDadosEstado(result.success ? result.data : null);
+      } catch (error) {
+        setDadosEstado(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+    buscarDados();
+  }, [selectedMonth, selectedYear, siglaEstado]);
+
+  // FASE 2: Carrega o histórico completo em SEGUNDO PLANO, após a FASE 1.
+  useEffect(() => {
     const preCarregarHistoricoCompleto = async () => {
-      if (!siglaEstado || Object.keys(periodosDisponiveis).length === 0) return;
+      if (
+        !siglaEstado ||
+        Object.keys(periodosDisponiveis).length === 0 ||
+        historicoFetchIniciado.current
+      ) {
+        return;
+      }
 
+      historicoFetchIniciado.current = true;
       setLoadingHistorico(true);
-      const anosParaBuscar = Object.keys(periodosDisponiveis);
 
+      const anosParaBuscar = Object.keys(periodosDisponiveis);
       const promises = anosParaBuscar.map((ano) =>
         fetch(
           `${
@@ -140,74 +193,32 @@ const EstadoPage = () => {
             if (result.success && result.data[siglaEstado]) {
               dadosAnuais[ano] = result.data[siglaEstado];
             }
-          } else {
-            console.error(
-              `Falha ao carregar dados do ano: ${item.reason?.toString()}`
-            );
           }
         });
         dadosHistoricosCompletosRef.current = dadosAnuais;
       } catch (error) {
-        console.error("Erro massivo ao buscar histórico completo:", error);
+        console.error("Erro ao pré-carregar histórico completo:", error);
       } finally {
         setLoadingHistorico(false);
       }
     };
 
-    preCarregarHistoricoCompleto();
-  }, [siglaEstado, periodosDisponiveis]);
-
-  useEffect(() => {
-    if (Object.keys(periodosDisponiveis).length > 0) {
-      const anoMaisRecente = Object.keys(periodosDisponiveis).sort(
-        (a, b) => b - a
-      )[0];
-      const mesesDoAno = periodosDisponiveis[anoMaisRecente];
-      if (mesesDoAno && mesesDoAno.length > 0) {
-        const mesMaisRecente = mesesDoAno.sort(
-          (a, b) =>
-            ORDEM_MESES.indexOf(b.mes.toLowerCase()) -
-            ORDEM_MESES.indexOf(a.mes.toLowerCase())
-        )[0].mes;
-        setSelectedYear(anoMaisRecente);
-        setSelectedMonth(mesMaisRecente);
-      }
+    // Dispara a FASE 2 somente após a FASE 1 ter terminado com sucesso.
+    if (dadosEstado) {
+      preCarregarHistoricoCompleto();
     }
-  }, [periodosDisponiveis]);
+  }, [dadosEstado, siglaEstado, periodosDisponiveis]);
 
   useEffect(() => {
-    if (!loadingHistorico && selectedYear) {
+    // Define o ano padrão para o gráfico DEPOIS que o histórico carregar
+    if (
+      !loadingHistorico &&
+      selectedYear &&
+      dadosHistoricosCompletosRef.current[selectedYear]
+    ) {
       setAnosComparacao([selectedYear]);
     }
   }, [loadingHistorico, selectedYear]);
-
-  // LÓGICA: Busca os dados para os CARDS da página principal.
-  useEffect(() => {
-    const buscarDados = async () => {
-      if (!selectedMonth || !selectedYear || !estado) return;
-      setLoading(true);
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_URL_API}/api/dados/${
-            estado.sigla
-          }?mes=${selectedMonth}&ano=${selectedYear}`
-        );
-        const result = await response.json();
-        if (result.success) {
-          setDadosEstado(result.data);
-        } else {
-          setDadosEstado(null);
-        }
-      } catch (error) {
-        setDadosEstado(null);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    buscarDados();
-    // AÇÃO: A função buscarHistorico() foi removida daqui por ser redundante.
-  }, [selectedMonth, selectedYear, siglaEstado]);
 
   const handleEstadoChange = (novaSigla) => {
     if (novaSigla && novaSigla !== siglaEstado) {
@@ -226,12 +237,12 @@ const EstadoPage = () => {
         }
       }
       return entradaMes;
-    }).filter((m) => m.name); // Garante que meses como "marco" não criem entradas vazias
+    }).filter((m) => m.name);
     setDadosGraficoComparativo(dadosFormatados);
   };
 
   useEffect(() => {
-    if (loadingHistorico || anosComparacao.length < 1) {
+    if (anosComparacao.length < 1) {
       setDadosGraficoComparativo([]);
       return;
     }
@@ -242,7 +253,7 @@ const EstadoPage = () => {
       }
     }
     transformarDadosParaGraficoComparativo(dadosColetados);
-  }, [anosComparacao, loadingHistorico]);
+  }, [anosComparacao]);
 
   if (!estado) {
     return (
@@ -267,9 +278,10 @@ const EstadoPage = () => {
       <p className="text-sm font-medium text-foreground mb-3">
         Comparar com outros anos:
       </p>
-      {loadingHistorico ? (
+      {loadingHistorico &&
+      Object.keys(dadosHistoricosCompletosRef.current).length === 0 ? (
         <p className="text-sm text-muted-foreground">
-          Carregando dados históricos...
+          Carregando dados históricos em segundo plano...
         </p>
       ) : (
         <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 gap-4">
@@ -430,6 +442,30 @@ const EstadoPage = () => {
             </div>
           </CardContent>
         </Card>
+
+        {loading && (
+          <Card className="text-center py-12">
+            <CardContent>
+              <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
+              <p className="text-muted-foreground">Carregando dados...</p>
+            </CardContent>
+          </Card>
+        )}
+
+        {!loading && !dadosEstado && (
+          <Card className="text-center py-12">
+            <CardContent>
+              <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                Dados não disponíveis
+              </h3>
+              <p className="text-muted-foreground">
+                Não foram encontrados dados para o período selecionado.
+              </p>
+            </CardContent>
+          </Card>
+        )}
+
         {dadosEstado && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <Card className="metric-card">
@@ -745,28 +781,6 @@ const EstadoPage = () => {
               </CardContent>
             </Card>
           </div>
-        )}
-
-        {!dadosEstado && (loading || loadingHistorico) && (
-          <Card className="text-center py-12">
-            <CardContent>
-              <div className="animate-spin w-8 h-8 border-4 border-primary border-t-transparent rounded-full mx-auto mb-4"></div>
-              <p className="text-muted-foreground">Carregando dados...</p>
-            </CardContent>
-          </Card>
-        )}
-        {!dadosEstado && !loading && !loadingHistorico && (
-          <Card className="text-center py-12">
-            <CardContent>
-              <TrendingUp className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-              <h3 className="text-lg font-semibold text-foreground mb-2">
-                Selecione um período
-              </h3>
-              <p className="text-muted-foreground">
-                Escolha o mês e ano para visualizar os dados de {estado.nome}
-              </p>
-            </CardContent>
-          </Card>
         )}
 
         {dadosEstado && (
