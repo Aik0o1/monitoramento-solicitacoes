@@ -274,7 +274,7 @@ const EstadoPage = () => {
   }
 
   const CheckboxComparacao = () => (
-    <div className="border-t border-b border-border py-4 my-4">
+    <div className="border-t border-b border-border py-4">
       <p className="text-sm font-medium text-foreground mb-3">
         Comparar com outros anos:
       </p>
@@ -288,7 +288,11 @@ const EstadoPage = () => {
           {Object.keys(periodosDisponiveis)
             .sort((a, b) => b - a)
             .map((ano) => (
-              <div key={ano} className="flex items-center space-x-2">
+              <Label
+                key={ano}
+                htmlFor={`compare-${ano}-modal`}
+                className="flex items-center space-x-2 cursor-pointer rounded-md p-2 transition-colors hover:bg-blue-200"
+              >
                 <Checkbox
                   id={`compare-${ano}-modal`}
                   checked={anosComparacao.includes(ano)}
@@ -299,13 +303,8 @@ const EstadoPage = () => {
                   }}
                   disabled={!dadosHistoricosCompletosRef.current[ano]}
                 />
-                <Label
-                  htmlFor={`compare-${ano}-modal`}
-                  className="cursor-pointer"
-                >
-                  {ano}
-                </Label>
-              </div>
+                <span>{ano}</span>
+              </Label>
             ))}
         </div>
       )}
@@ -496,7 +495,7 @@ const EstadoPage = () => {
                       Ver evolução
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl max-h-[80vh]">
+                  <DialogContent className="max-w-4xl max-h-[90vh] sm:h-[85vh] flex flex-col">
                     <DialogHeader>
                       <DialogTitle>{`Evolução - Ranking Geral (${estado.nome})`}</DialogTitle>
                       <DialogDescription>
@@ -504,78 +503,80 @@ const EstadoPage = () => {
                         anos.
                       </DialogDescription>
                     </DialogHeader>
-                    <CheckboxComparacao />
-                    <div className="w-full h-96 mt-4">
-                      {dadosGraficoComparativo.length > 0 ? (
-                        <ResponsiveContainer width="100%" height="100%">
-                          <LineChart
-                            data={dadosGraficoComparativo}
-                            margin={{
-                              top: 20,
-                              right: 30,
-                              left: 20,
-                              bottom: 60,
-                            }}
-                          >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis
-                              dataKey="name"
-                              angle={-45}
-                              textAnchor="end"
-                              height={80}
-                              interval={0}
-                              tick={{ fontSize: 12 }}
-                            />
-                            <YAxis
-                              reversed={true}
-                              domain={[1, "dataMax"]}
-                              allowDecimals={false}
-                              label={{
-                                value: "Posição",
-                                angle: -90,
-                                position: "insideLeft",
+                    <div className="flex-1 overflow-y-auto -mx-6 px-6 pt-4">
+                      <CheckboxComparacao />
+                      <div className="w-full h-96">
+                        {dadosGraficoComparativo.length > 0 ? (
+                          <ResponsiveContainer width="100%" height="100%">
+                            <LineChart
+                              data={dadosGraficoComparativo}
+                              margin={{
+                                top: 20,
+                                right: 30,
+                                left: 20,
+                                bottom: 60,
                               }}
-                            />
-                            <Tooltip
-                              formatter={(value, name) => [
-                                `${value}º`,
-                                `${name}`,
-                              ]}
-                            />
-                            <Legend wrapperStyle={{ paddingTop: "20px" }} />
-                            {anosComparacao
-                              .sort((a, b) => b - a)
-                              .map((ano, index) => (
-                                <Line
-                                  key={ano}
-                                  type="monotone"
-                                  dataKey={`posicao_${ano}`}
-                                  name={`${ano}`}
-                                  stroke={
-                                    [
-                                      "#007932",
-                                      "#034ea2",
-                                      "#fdb913",
-                                      "#d9534f",
-                                      "#5bc0de",
-                                      "#f0ad4e",
-                                    ][index % 6]
-                                  }
-                                  strokeWidth={2}
-                                  activeDot={{ r: 8 }}
-                                />
-                              ))}
-                          </LineChart>
-                        </ResponsiveContainer>
-                      ) : (
-                        <div className="flex items-center justify-center h-full">
-                          <p className="text-muted-foreground">
-                            {loadingHistorico
-                              ? "Carregando..."
-                              : "Selecione um ano para ver o gráfico."}
-                          </p>
-                        </div>
-                      )}
+                            >
+                              <CartesianGrid strokeDasharray="3 3" />
+                              <XAxis
+                                dataKey="name"
+                                angle={-45}
+                                textAnchor="end"
+                                height={80}
+                                interval={0}
+                                tick={{ fontSize: 12 }}
+                              />
+                              <YAxis
+                                reversed={true}
+                                domain={[1, "dataMax"]}
+                                allowDecimals={false}
+                                label={{
+                                  value: "Posição",
+                                  angle: -90,
+                                  position: "insideLeft",
+                                }}
+                              />
+                              <Tooltip
+                                formatter={(value, name) => [
+                                  `${value}º`,
+                                  `${name}`,
+                                ]}
+                              />
+                              <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                              {anosComparacao
+                                .sort((a, b) => b - a)
+                                .map((ano, index) => (
+                                  <Line
+                                    key={ano}
+                                    type="monotone"
+                                    dataKey={`posicao_${ano}`}
+                                    name={`${ano}`}
+                                    stroke={
+                                      [
+                                        "#007932",
+                                        "#034ea2",
+                                        "#fdb913",
+                                        "#d9534f",
+                                        "#5bc0de",
+                                        "#f0ad4e",
+                                      ][index % 6]
+                                    }
+                                    strokeWidth={2}
+                                    activeDot={{ r: 8 }}
+                                  />
+                                ))}
+                            </LineChart>
+                          </ResponsiveContainer>
+                        ) : (
+                          <div className="flex items-center justify-center h-full">
+                            <p className="text-muted-foreground">
+                              {loadingHistorico
+                                ? "Carregando..."
+                                : "Selecione um ano para ver o gráfico."}
+                            </p>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </DialogContent>
                 </Dialog>
@@ -610,7 +611,7 @@ const EstadoPage = () => {
                       Ver evolução
                     </Button>
                   </DialogTrigger>
-                  <DialogContent className="max-w-4xl max-h-[80vh]">
+                  <DialogContent className="max-w-4xl max-h-[90vh] sm:h-[85vh] flex flex-col">
                     <DialogHeader>
                       <DialogTitle>{`Evolução - Ranking de Tempo de Registro (${estado.nome})`}</DialogTitle>
                       <DialogDescription>
@@ -618,78 +619,81 @@ const EstadoPage = () => {
                         anos.
                       </DialogDescription>
                     </DialogHeader>
-                    <CheckboxComparacao />
-                    <div className="w-full h-96 mt-4">
-                      {dadosGraficoComparativo.length > 0 ? (
-                        <ResponsiveContainer width="100%" height="100%">
-                          <LineChart
-                            data={dadosGraficoComparativo}
-                            margin={{
-                              top: 20,
-                              right: 30,
-                              left: 20,
-                              bottom: 60,
-                            }}
-                          >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis
-                              dataKey="name"
-                              angle={-45}
-                              textAnchor="end"
-                              height={80}
-                              interval={0}
-                              tick={{ fontSize: 12 }}
-                            />
-                            <YAxis
-                              reversed={true}
-                              domain={[1, "dataMax"]}
-                              allowDecimals={false}
-                              label={{
-                                value: "Posição",
-                                angle: -90,
-                                position: "insideLeft",
+
+                    <div className="flex-1 overflow-y-auto -mx-6 px-6 pt-4">
+                      <CheckboxComparacao />
+                      <div className="w-full h-96 mt-4">
+                        {dadosGraficoComparativo.length > 0 ? (
+                          <ResponsiveContainer width="100%" height="100%">
+                            <LineChart
+                              data={dadosGraficoComparativo}
+                              margin={{
+                                top: 20,
+                                right: 30,
+                                left: 20,
+                                bottom: 60,
                               }}
-                            />
-                            <Tooltip
-                              formatter={(value, name) => [
-                                `${value}º`,
-                                `${name}`,
-                              ]}
-                            />
-                            <Legend wrapperStyle={{ paddingTop: "20px" }} />
-                            {anosComparacao
-                              .sort((a, b) => b - a)
-                              .map((ano, index) => (
-                                <Line
-                                  key={ano}
-                                  type="monotone"
-                                  dataKey={`posicao_registro_${ano}`}
-                                  name={`${ano}`}
-                                  stroke={
-                                    [
-                                      "#034ea2",
-                                      "#007932",
-                                      "#fdb913",
-                                      "#d9534f",
-                                      "#5bc0de",
-                                      "#f0ad4e",
-                                    ][index % 6]
-                                  }
-                                  strokeWidth={2}
-                                  activeDot={{ r: 8 }}
-                                />
-                              ))}
-                          </LineChart>
-                        </ResponsiveContainer>
-                      ) : (
-                        <div className="flex items-center justify-center h-full">
-                          <p className="text-muted-foreground">
-                            {loadingHistorico
-                              ? "Carregando..."
-                              : "Selecione um ano para ver o gráfico."}
-                          </p>
-                        </div>
-                      )}
+                            >
+                              <CartesianGrid strokeDasharray="3 3" />
+                              <XAxis
+                                dataKey="name"
+                                angle={-45}
+                                textAnchor="end"
+                                height={80}
+                                interval={0}
+                                tick={{ fontSize: 12 }}
+                              />
+                              <YAxis
+                                reversed={true}
+                                domain={[1, "dataMax"]}
+                                allowDecimals={false}
+                                label={{
+                                  value: "Posição",
+                                  angle: -90,
+                                  position: "insideLeft",
+                                }}
+                              />
+                              <Tooltip
+                                formatter={(value, name) => [
+                                  `${value}º`,
+                                  `${name}`,
+                                ]}
+                              />
+                              <Legend wrapperStyle={{ paddingTop: "20px" }} />
+                              {anosComparacao
+                                .sort((a, b) => b - a)
+                                .map((ano, index) => (
+                                  <Line
+                                    key={ano}
+                                    type="monotone"
+                                    dataKey={`posicao_registro_${ano}`}
+                                    name={`${ano}`}
+                                    stroke={
+                                      [
+                                        "#034ea2",
+                                        "#007932",
+                                        "#fdb913",
+                                        "#d9534f",
+                                        "#5bc0de",
+                                        "#f0ad4e",
+                                      ][index % 6]
+                                    }
+                                    strokeWidth={2}
+                                    activeDot={{ r: 8 }}
+                                  />
+                                ))}
+                            </LineChart>
+                          </ResponsiveContainer>
+                        ) : (
+                          <div className="flex items-center justify-center h-full">
+                            <p className="text-muted-foreground">
+                              {loadingHistorico
+                                ? "Carregando..."
+                                : "Selecione um ano para ver o gráfico."}
+                            </p>
+                          </div>
+                        )}
+                      </div>
                     </div>
                   </DialogContent>
                 </Dialog>
