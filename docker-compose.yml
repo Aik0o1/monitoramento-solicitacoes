@@ -1,16 +1,15 @@
-version: '3.8'
-
-services:
+ services:
   frontend:
-    build:
-      context: ./frontend
+    # image: front-ranking-receita:20.0
+    image: front-comparativo-anual:2.0
+    container_name: front-ranking-receita
     ports:
       - "3000:80"
     depends_on:
       - backend
 
   backend:
-    build:
-      context: ./backend
-    ports:
-      - "5000:5000"
+    # image: api-ranking-receita:7.0
+    image: test-api-comparativo-anual:1.0
+    container_name: api-ranking-receita
+    restart: unless-stopped
