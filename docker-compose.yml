@@ -1,15 +1,35 @@
  services:
   frontend:
+    build:
+      context: ./front
+      network: host
+      args:
+        INFISICAL_CLIENT_ID: ${INFISICAL_CLIENT_ID}
+        INFISICAL_CLIENT_SECRET: ${INFISICAL_CLIENT_SECRET}
+        INFISICAL_PROJECT_ID: ${INFISICAL_PROJECT_ID}
+        INFISICAL_HOST: ${INFISICAL_HOST_FRONT}
     # image: front-ranking-receita:20.0
-    image: front-comparativo-anual:2.0
-    container_name: front-ranking-receita
+    image: front-comparativo-anual:3.0
+    container_name: front-ranking-receita-infisical
     ports:
       - "3000:80"
     depends_on:
       - backend
+    restart: unless-stopped
+    
 
   backend:
+    build:
+      context: ./api
+      network: host
     # image: api-ranking-receita:7.0
     image: test-api-comparativo-anual:1.0
-    container_name: api-ranking-receita
+    container_name: api-ranking-receita-infisical
     restart: unless-stopped
+    environment:
+      INFISICAL_CLIENT_ID: ${INFISICAL_CLIENT_ID}
+      INFISICAL_CLIENT_SECRET: ${INFISICAL_CLIENT_SECRET}
+      INFISICAL_PROJECT_ID: ${INFISICAL_PROJECT_ID}
+      INFISICAL_HOST: ${INFISICAL_HOST_BACK}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
