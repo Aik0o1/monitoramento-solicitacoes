@@ -455,6 +455,7 @@ const EstadoPage = () => {
                             .map((p) => p.mes)
                         ),
                       ]
+                        .filter(Boolean)
                         .sort(
                           (a, b) =>
                             ORDEM_MESES.indexOf(a) - ORDEM_MESES.indexOf(b)
@@ -477,6 +478,7 @@ const EstadoPage = () => {
                   </SelectTrigger>
                   <SelectContent>
                     {Object.keys(periodosDisponiveis)
+                      .filter(Boolean)
                       .sort((a, b) => b - a)
                       .map((ano) => (
                         <SelectItem key={ano} value={ano}>
