@@ -5,8 +5,6 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN pip install --no-cache-dir -r requirements.txt
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl ca-certificates bash \
     && curl -1sLf 'https://artifacts-cli.infisical.com/setup.deb.sh' | bash \
@@ -30,4 +28,4 @@ CMD ["sh", "-c", "\
     --projectId \"$INFISICAL_PROJECT_ID\" \
     --env=prod \
     --domain=\"$INFISICAL_HOST\" \
-    -- gunicorn --bind 0.0.0.0:5000 main:app"]
+    -- gunicorn --bind 0.0.0.0:5000 --workers 4 --timeout 120 src.main:app"]
