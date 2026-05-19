@@ -20,52 +20,23 @@ if not all([db_password, db_ip, db_user]):
 
 # --- 3. Estabelecer Conexão com o Servidor (Apenas uma vez) ---
 server = None
+_db = None
+
 try:
-    # Codifica a senha e monta a URL de conexão
     encoded_password = quote(db_password)
     couchdb_url = f'http://{db_user}:{encoded_password}@{db_ip}'
-    
-    # Conecta ao servidor
     server = couchdb.Server(couchdb_url)
-    
-    # Confirma que a conexão é válida
     server.version()
-    print(f"Conexão com o servidor CouchDB em '{db_ip}' estabelecida com sucesso.")
-
+    _db = server[DB_NAME] if DB_NAME in server else server.create(DB_NAME)
+    print(f"Conexão com CouchDB em '{db_ip}' estabelecida com sucesso.")
 except Exception as e:
-    # Se a conexão inicial falhar, imprime um erro crítico.
-    print(f"ERRO CRÍTICO: Não foi possível conectar ao servidor CouchDB. {e}")
-    # 'server' permanecerá como None, e a função get_db() irá falhar.
+    print(f"ERRO CRÍTICO: Não foi possível conectar ao CouchDB. {e}")
 
 
-# --- 4. Função para Obter o Banco de Dados ---
 def get_db():
-    """
-    Obtém o banco de dados 'ranking-nacional' a partir da conexão existente.
-    Cria o banco de dados se ele não existir.
-
-    Raises:
-        ConnectionError: Se a conexão com o servidor não foi estabelecida.
-
-    Returns:
-        couchdb.Database: O objeto do banco de dados.
-    """
-    # Verifica se a conexão global foi bem-sucedida
-    if server is None:
+    if _db is None:
         raise ConnectionError("A conexão com o servidor CouchDB não foi estabelecida.")
-
-    try:
-        # Seleciona o banco de dados ou o cria se não existir
-        if DB_NAME in server:
-            db = server[DB_NAME]
-        else:
-            print(f"Criando banco de dados '{DB_NAME}'...")
-            db = server.create(DB_NAME)
-        
-        return db
-    except Exception as e:
-        # Lança um erro que pode ser capturado pelas rotas do Flask
-        raise ConnectionError(f"Não foi possível acessar o banco de dados '{DB_NAME}': {e}")
+    return _db
 
 # --- Data Access Functions (Refactored) ---
 def get_available_periods():
