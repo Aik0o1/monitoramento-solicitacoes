@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-container flex gap-10 justify-center">
           {/* Logo Section */}
           <div>
-            <img src="/logo/logo-rodape.png" alt="Governo do Piaui" className="h-20" />
+            <img src="/logo/brasao-pi.png" alt="Governo do Piaui" className="h-20" />
           </div>
 
           {/* Orgão Section */}

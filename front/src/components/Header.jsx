@@ -38,9 +38,9 @@ const Header = (props) => {
           <div className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left gap-4">
             <div className="flex items-center gap-3 flex-shrink-0">
               <img
-                src="/logo/logo-rodape.png"
+                src="/logo/brasao-pi.png"
                 alt="Governo do Piauí"
-                className="h-9 sm:h-11 w-auto"
+                className="h-20"
               />
               <div className="flex flex-col text-xs sm:text-sm leading-tight">
                 <span className="font-bold">JUNTA COMERCIAL</span>
