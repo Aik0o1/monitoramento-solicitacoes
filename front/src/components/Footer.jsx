@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="footer bg-blue-800 text-white">
-      <div className="grid grid-cols-4">
+      {/* <div className="grid grid-cols-4">
 
         <div className="h-3 sm:h-3 bg-yellow-500"></div>
         <div className="h-3 sm:h-3 bg-red-700"></div>
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="h-3 sm:h-3 bg-blue-800"></div>
         <div className="h-3 sm:h-3"></div>
 
-      </div>
+      </div> */}
       <div className="content mx-auto p-8">
         <div className="footer-container flex gap-10 justify-center">
           {/* Logo Section */}
